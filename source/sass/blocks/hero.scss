@@ -1,7 +1,7 @@
 .hero {
   background: $color-gradient;
   padding-bottom: 120px;
-  @include vp-1199 {
+  @include vp-1365 {
     padding-bottom: 100px;
   }
   @include vp-767 {
@@ -14,7 +14,7 @@
   align-items: flex-start;
   column-gap: 56px;
 
-  @include vp-1199 {
+  @include vp-1365 {
     column-gap: 30px;
   }
 
@@ -29,7 +29,7 @@
     align-items: flex-end;
     padding-top: 52px;
 
-    @include vp-1199 {
+    @include vp-1365 {
       padding-top: 31px;
     }
 
@@ -50,7 +50,7 @@
   justify-items: end;
   align-items: start;
 
-  @include vp-1199 {
+  @include vp-1365 {
     grid-template-columns: auto 185px;
   }
 
@@ -76,7 +76,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    @include vp-1199 {
+    @include vp-1365 {
       padding-right: 26px;
     }
 
@@ -96,7 +96,7 @@
     margin-bottom: 40px;
     color: $text-light;
 
-    @include vp-1199 {
+    @include vp-1365 {
       margin-top: 10px;
       margin-bottom: 50px;
     }
@@ -120,7 +120,7 @@
 .hero__btn {
   max-width: 270px;
 
-  @include vp-1199 {
+  @include vp-1365 {
     max-width: 185px;
   }
 
@@ -132,7 +132,7 @@
 .hero__col--img img {
   width: 500px;
   height: 524px;
-  @include vp-1199 {
+  @include vp-1365 {
     width: 324px;
     height: 390px;
   }

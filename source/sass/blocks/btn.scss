@@ -15,7 +15,7 @@
   transition: opacity $trans-default, background-color $trans-default,
     color $trans-default;
 
-  @include vp-1199 {
+  @include vp-1365 {
     min-height: 56px;
   }
 

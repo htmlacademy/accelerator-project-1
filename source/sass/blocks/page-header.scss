@@ -3,7 +3,7 @@
   padding-bottom: 30px;
   margin-bottom: 30px;
 
-  @include vp-1199 {
+  @include vp-1365 {
     margin-bottom: 0;
   }
 
@@ -52,7 +52,7 @@
     pointer-events: none;
     color: rgba(#f8f9fc, 0.5);
   }
-  @include vp-1199 {
+  @include vp-1365 {
     font-size: 24px;
     line-height: 24px;
   }

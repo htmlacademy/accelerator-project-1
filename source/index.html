@@ -84,7 +84,9 @@
               <div class="about__wrapper">
                 <div class="about__col about__col--content">
                   <div class="about__head">
-                    <h3 class="about__title section-title">Тренажёрный зал</h3>
+                    <h3 class="about__title section-title section-title--dark">
+                      Тренажёрный зал
+                    </h3>
                     <p class="about__descr">Просторный зал площадью 900 кв/м</p>
                   </div>
 
@@ -138,7 +140,7 @@
                       height="400"
                       src="img/gym-desktop.jpg"
                       srcset="img/gym-desktop@2x.jpg 2x"
-                      alt="."
+                      alt="зал с тренажерами на светлом фоне."
                     /><!-- desktop -->
                   </picture>
                 </div>
@@ -193,7 +195,7 @@
                         height="230"
                         src="img/video-preview-desktop.jpg"
                         srcset="img/video-preview-desktop@2x.jpg 2x"
-                        alt="."
+                        alt="зал с тренажерами."
                       /><!-- desktop -->
                     </picture>
                     <button class="video__btn"></button>
@@ -203,7 +205,69 @@
             </div>
           </section>
         </div>
-        <div data-test="price" id="price">price</div>
+        <div data-test="price">
+          <section class="price" id="price">
+            <div class="container">
+              <div class="price__wrapper">
+                <h3 class="price__title section-title section-title--dark">
+                  Абонементы
+                </h3>
+                <div class="price__tabs">
+                  <div class="price-card">
+                    <div class="price-card__head">
+                      <h4>С тренером</h4>
+                      <p>12 занятий</p>
+                    </div>
+                    <div class="price-card__count">
+                      <span class="price-card__sum numbers-medium"
+                        >5000
+                        <svg>
+                          <use
+                            href="/__spritemap#sprite-icon-rubble"
+                          ></use></svg
+                      ></span>
+                      <span class="price-card__back-sum numbers-xlarge"
+                        >5000</span
+                      >
+                    </div>
+                    <button class="price-card__btn btn btn--on-light">
+                      Купить абонемент
+                    </button>
+                  </div>
+                </div>
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1199px)"
+                    srcset="
+                      img/decor-desktop.png    1x,
+                      img/decor-desktop@2x.png 2x
+                    "
+                  />
+                  <!-- desktop -->
+                  <source
+                    type="image/webp"
+                    media="(min-width: 767px)"
+                    srcset="img/decor-tablet.png 1x, img/decor-tablet@2x.png 2x"
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="img/decor-tablet.png 1x, img/decor-tablet@2x.png 2x"
+                  />
+                  <!-- tablet -->
+                  <img
+                    width="303"
+                    height="448"
+                    src="img/decor-desktop.png"
+                    srcset="img/decor-desktop@2x.png 2x"
+                    alt=""
+                  /><!-- desktop -->
+                </picture>
+              </div>
+            </div>
+          </section>
+        </div>
       </main>
       <footer class="page-footer">
         <div data-test="footer">footer</div>

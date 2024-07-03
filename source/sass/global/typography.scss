@@ -6,7 +6,7 @@ h1 {
   line-height: 110px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  @include vp-1199 {
+  @include vp-1365 {
     font-size: 72px;
     line-height: 85px;
     letter-spacing: 0.03em;
@@ -22,7 +22,7 @@ h2 {
   font-size: 82px;
   line-height: 96px;
   text-transform: uppercase;
-  @include vp-1199 {
+  @include vp-1365 {
     font-size: 48px;
     line-height: 54px;
   }
@@ -31,7 +31,7 @@ h3 {
   font-weight: 600;
   font-size: 54px;
   line-height: 54px;
-  @include vp-1199 {
+  @include vp-1365 {
     font-size: 42px;
     line-height: 42px;
   }
@@ -44,7 +44,7 @@ h4 {
   font-weight: 700;
   font-size: 26px;
   line-height: 26px;
-  @include vp-1199 {
+  @include vp-1365 {
     font-size: 24px;
     line-height: 24px;
   }
@@ -57,7 +57,7 @@ h5 {
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  @include vp-1199 {
+  @include vp-1365 {
     font-size: 22px;
     line-height: 22px;
   }
@@ -140,7 +140,7 @@ h6 {
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
-  @include vp-1199 {
+  @include vp-1365 {
     font-size: 24px;
     line-height: 24px;
   }
