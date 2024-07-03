@@ -8,7 +8,6 @@
     <link rel="icon" href="/public/favicon.ico">
     <link rel="icon" href="/public/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/public/favicon.png">
-    <link rel="stylesheet" href="sass/style.scss">
     <link rel="preload" href="/fonts/robotoregular.woff2" type="font/woff" as="font" crossorigin="anomymous">
     <link rel="preload" href="/fonts/robotobold.woff2" type="font/woff2" as="font" crossorigin="anomymous">
     <link rel="preload" href="/fonts/alumnisemibold.woff2" type="font/woff" as="font" crossorigin="anomymous">
@@ -17,19 +16,177 @@
     <link rel="preload" href="/fonts/robotobold.woff" type="font/woff2" as="font" crossorigin="anomymous">
     <link rel="preload" href="/fonts/alumnisemibold.woff" type="font/woff" as="font" crossorigin="anomymous">
     <link rel="preload" href="/fonts/alumniextrabold.woff" type="font/woff2" as="font" crossorigin="anomymous">
+    <link rel="stylesheet" href="sass/style.scss">
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
+    <!-- пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
+    </svg> -->
+    <header class="hero" data-test="hero">
+      <div class="container">
+        <div class="hero__flex-list">
+          <div class="hero__contact">
+            <picture>
+              <img class="hero__logo" src="img/header/logo.svg" width="100" height="20" alt="Логотип клуба.">
+            </picture>
+            <a class="hero__tel" href="tel:+7800555-55-55">8&#32;800&#32;555-55-55</a>
+          </div>
+          <div class="hero__banner">
+            <div class="hero__info">
+              <div class="hero__info-container">
+                <h1 class="hero__title">Фитнес центр</h1>
+                <h3 class="hero__city">Омск</h3>
+                <p class="hero__text">Тренажёрный зал Групповые занятия Кардио-зона</p>
+              </div>
+              <button class="hero__button button">Купить абонемент</button>
+            </div>
+            <div class="hero__picture">
+              <picture></picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Фитнесс глуб Fitness</h1>
+      <section class="about" data-test="about">
+        <h2 class="visually-hidden">Немного о нашем клубе</h2>
+        <div class="about__container">
+          <div class="about__title-text">
+            <h3 class="about__title">Тренажёрный зал</h3>
+            <h6 class="about__info">Просторный зал площадью 900 кв/м</h6>
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+          <div class="about__picture-container">
+            <picture>
+              <source type="image/webp" srcset="img/about/about-mob.webp 1x, img/about/about-mob@2x.webp 2x" width="320" height="280">
+              <img class="about__picture" src="img/about/about-mob.png" srcset="img/about/about-mob.png 1x, img/about/about-mob@2x.png 2x" width="320" height="280" alt="Фото зала.">
+            </picture>
+            <div class="about__video">
+              <iframe src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170" loading="lazy" title="Обзор зала клуба Fitness" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price" data-test="price">
+        <h2 class="visually-hidden">Наш прайс на фитнесс карты.</h2>
+        <h3 class="price__title">Абонементы</h3>
+        <div class="price__container">
+          <ul class="price__tab tab-list">
+            <li class="tab-list__item item item--active" data-tab="tab1">
+              <span>1 месяц</span>
+            </li>
+            <li class="tab-list__item item" data-tab="tab2">
+              <span>6 месяцев</span>
+            </li>
+            <li class="tab-list__item item" data-tab="tab3">
+              <span>12 месяцев</span>
+            </li>
+          </ul>
+          <div class="price__tab-content tab-content">
+            <div class="tab-content__pane pane pane--active" id="tab1">
+              <ul class="pane__price-month price-month">
+                <li class="price-month__item month-item">
+                  <h4 class="month-item__title">С тренером</h4>
+                  <p class="month-item__text">12 занятий</p>
+                  <p class="month-item__price">5000 ₽</p>
+                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
+                </li>
+                <li class="price-month__item month-item">
+                  <h4 class="month-item__title">Дневной</h4>
+                  <p class="month-item__text">с 8:00 до 17:00</p>
+                  <p class="month-item__price">1700 ₽</p>
+                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
+                </li>
+                <li class="price-month__item month-item">
+                  <h4 class="month-item__title">Полный день</h4>
+                  <p class="month-item__text">с 8:00 до 22:00</p>
+                  <p class="month-item__price">2700 ₽</p>
+                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content__pane pane" id="tab2">
+              <ul class="pane__price-month price-month">
+                <li class="price-month__item month-item">
+                  <h4 class="month-item__title">С тренером</h4>
+                  <p class="month-item__text">12 занятий</p>
+                  <p class="month-item__price">30 000 ₽</p>
+                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
+                </li>
+                <li class="price-month__item month-item">
+                  <h4 class="month-item__title">Дневной</h4>
+                  <p class="month-item__text">с 8:00 до 17:00</p>
+                  <p class="month-item__price">10 200 ₽</p>
+                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
+                </li>
+                <li class="price-month__item month-item">
+                  <h4 class="month-item__title">Полный день</h4>
+                  <p class="month-item__text">с 8:00 до 22:00</p>
+                  <p class="month-item__price">16 200 ₽</p>
+                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content__pane pane" id="tab3">
+              <ul class="pane__price-month price-month">
+                <li class="price-month__item month-item">
+                  <h4 class="month-item__title">С тренером</h4>
+                  <p class="month-item__text">12 занятий</p>
+                  <p class="month-item__price">60 000 ₽</p>
+                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
+                </li>
+                <li class="price-month__item month-item">
+                  <h4 class="month-item__title">Дневной</h4>
+                  <p class="month-item__text">с 8:00 до 17:00</p>
+                  <p class="month-item__price">20 400 ₽</p>
+                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
+                </li>
+                <li class="price-month__item month-item">
+                  <h4 class="month-item__title">Полный день</h4>
+                  <p class="month-item__text">с 8:00 до 22:00</p>
+                  <p class="month-item__price">32 400 ₽</p>
+                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="games" data-test="games">
+        <div class="games__container">
+          <div class="games__info info">
+            <div class="games__info-container">
+              <h2 class="games__title">Super games</h2>
+              <ul class="games__list games-list">
+                <li class="games-list__item games-item">
+                  <p class="games-item__text">Дата</p>
+                  <p class="games-item__number">7</p>
+                  <p class="games-item__month">Марта</p>
+                  <p class="games-item__year">2019</p>
+                </li>
+                <li class="games-list__item games-item">
+                  <p class="games-item__text">Время</p>
+                  <p class="games-item__number">12:00</p>
+                </li>
+              </ul>
+              <p class="games__text">Ежегодные соревнования по CrossFit</p>
+              <a class="games__button" href="https://application.ru">Заполнить заявку</a>
+            </div>
+          </div>
+          <div class="games__promo-picture">
+            <picture>
+              <source type="image/webp" srcset="img/games/games.webp 1x, img/games/games@2x.webp 2x" width="290" height="290">
+              <img class="games__picture" src="img/games/games.png" srcset="img/games/games.png 1x, img/games/games@2x.png 2x" width="290" height="290" alt="Промо фото игр.">
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
     <div data-test="juri">juri</div>
     <div data-test="features">features</div>
     <div data-test="offers">offers</div>
