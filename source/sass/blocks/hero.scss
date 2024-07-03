@@ -58,7 +58,7 @@
     grid-template-columns: auto 156px;
 
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   & .hero__item:nth-child(n + 1) {
