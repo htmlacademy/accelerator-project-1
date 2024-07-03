@@ -9,22 +9,80 @@
 
   <body class="page-body">
     <div class="wrapper">
-      <header class="page-header">
+      <div class="hero" data-test="hero">
         <div class="container">
-          <div class="page-header__logo">
-            <picture>
-              <img src="" alt="" />
-            </picture>
-          </div>
-          <div class="page-header__content">
-            <a
-              href="tel:88005555555"
-              class="page-header__link page-header__link--phone"
-              >8 800 555-55-55</a
-            >
+          <header class="page-header">
+            <div class="page-header__wrapper">
+              <div class="page-header__col page-header__col--logo logo">
+                <a
+                  ><img
+                    src="img/svg/logo.svg"
+                    width="130"
+                    height="26"
+                    alt="Логотип SUPERGYM."
+                /></a>
+              </div>
+              <div class="page-header__col page-header__col--phone">
+                <a href="tel:88005555555" class="page-header__link"
+                  >8 800 555-55-55</a
+                >
+              </div>
+            </div>
+          </header>
+          <div class="hero__content">
+            <div class="hero__col hero__col--text">
+              <div class="hero__inner">
+                <div class="hero__item"><span>Омск</span></div>
+                <div class="hero__item">
+                  <ul>
+                    <li class="small">Тренажёрный зал</li>
+                    <li class="small">Групповые занятия</li>
+                    <li class="small">Кардио-зона</li>
+                  </ul>
+                </div>
+                <div class="hero__item"><h1>ФИТНЕС ЦЕНТР</h1></div>
+              </div>
+              <a class="hero__btn btn btn--on-dark" href="#offers"
+                >Купить абонемент</a
+              >
+            </div>
+            <div class="hero__col hero__col--img">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1199px)"
+                  srcset="img/hero-desktop.jpg 1x, img/hero-desktop@2x.jpg 2x"
+                />
+                <!-- desktop -->
+                <source
+                  type="image/webp"
+                  media="(min-width: 767px)"
+                  srcset="img/hero-tablet.jpg 1x, img/hero-desktop@2x.jpg 2x"
+                />
+                <!-- tablet -->
+                <source
+                  media="(min-width: 767px)"
+                  srcset="img/hero-tablet.jpg 1x, img/hero-tablet@2x.jpg 2x"
+                />
+                <!-- tablet -->
+                <img
+                  width="500"
+                  height="524"
+                  src="img/hero-desktop.jpg"
+                  srcset="img/hero-desktop@2x.jpg 2x"
+                  alt="Мужчина, в спортивной темной майке с логотипом на груди в виде буквы S, смотрит в лево."
+                /><!-- desktop -->
+              </picture>
+            </div>
           </div>
         </div>
-      </header>
+      </div>
+      <main class="page-content">
+        <div data-test="offers" id="offers">offers</div>
+      </main>
+      <footer class="page-footer">
+        <div data-test="footer">footer</div>
+      </footer>
     </div>
     <script type="module" src="js/main.js"></script>
   </body>
