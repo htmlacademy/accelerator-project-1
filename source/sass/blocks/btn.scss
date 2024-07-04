@@ -36,7 +36,8 @@
       color: $text-action;
     }
 
-    &:active {
+    &:active,
+    &.is-active {
       border-color: $stroke-light;
       background-color: $color-white;
       color: $text-dark;
@@ -70,7 +71,8 @@
       color: $text-light;
     }
 
-    &:active {
+    &:active,
+    &.is-active {
       border: none;
       background: $fill-gradient;
       color: rgba($text-light, 0.7);
