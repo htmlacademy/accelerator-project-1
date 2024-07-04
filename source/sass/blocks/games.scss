@@ -1,0 +1,144 @@
+.games {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include vp-1365 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include vp-767 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+.games__wrapper {
+  display: flex;
+  justify-content: center;
+
+  @include vp-767 {
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+  }
+}
+.games__col {
+  &--text {
+    width: 100%;
+    background-color: $color-red;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
+    @include vp-1365 {
+      padding: 40px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &--img {
+    flex-shrink: 0;
+    @include vp-1365 {
+      width: 53.3%;
+    }
+
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+}
+.games__content {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 95px;
+  grid-template-rows: repeat(3, auto);
+  color: $color-light;
+
+  @include vp-1365 {
+    margin: 0;
+    max-width: 220px;
+  }
+}
+.games__tile {
+  margin: 0;
+  grid-area: 1 / 1 / 3 / 2;
+}
+.games__date {
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  margin-bottom: 5px;
+
+  & span:nth-child(n + 1) {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  & span:nth-child(n + 2) {
+    grid-area: 2 / 1 / 4 / 2;
+    margin-right: 5px;
+  }
+  & span:nth-child(n + 3) {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  & span:nth-child(n + 4) {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  & .large {
+    margin-bottom: 6px;
+    border-bottom: 1px solid $color-white;
+
+    @include vp-1365 {
+      padding-bottom: 2px;
+      margin-bottom: 2px;
+    }
+  }
+}
+.games__time {
+  grid-area: 2 / 2 / 3 / 3;
+  display: flex;
+  flex-direction: column;
+
+  & .large {
+    margin-bottom: 6px;
+    border-bottom: 1px solid $color-white;
+    @include vp-1365 {
+      padding-bottom: 2px;
+      margin-bottom: 2px;
+    }
+  }
+}
+.games__descr {
+  margin: 0;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 300;
+  grid-area: 3 / 1 / 4 / 3;
+  @include vp-1365 {
+    margin-bottom: 10px;
+  }
+  @include vp-767 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+.games-card__btn {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 340px;
+
+  @include vp-1365 {
+    max-width: 100%;
+  }
+}
+.games__col--img img {
+  width: 660px;
+  height: 500px;
+  @include vp-1365 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}

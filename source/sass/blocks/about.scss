@@ -1,6 +1,6 @@
 .about {
   padding-top: 120px;
-  padding-bottom: 240px;
+  padding-bottom: 236px;
   @include vp-1365 {
     padding-top: 60px;
     padding-bottom: 120px;
@@ -92,7 +92,6 @@
 }
 
 .about__content p {
-  font-family: $font-family;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -136,8 +135,8 @@
 
 .about__video {
   position: absolute;
-  top: 71%;
-  left: 37.67%;
+  top: 70.7%;
+  left: 34.5%;
   width: 360px;
   height: 230px;
   @include vp-1365 {

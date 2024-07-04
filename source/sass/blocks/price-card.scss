@@ -32,18 +32,16 @@
   }
 }
 .price-card__head {
-  margin-bottom: 72px;
+  margin-bottom: 77px;
   & h4 {
     margin: 0;
     margin-bottom: 17px;
-    font-family: $font-family;
     color: $text-dark;
     text-align: center;
   }
 
   & p {
     margin: 0;
-    font-family: $font-family;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -52,8 +50,7 @@
   }
 }
 .price-card__count {
-  margin-bottom: 22px;
-  font-family: $font-family;
+  margin-bottom: 17px;
   text-align: center;
   position: relative;
 }
