@@ -1,114 +1,99 @@
-.tabs {
-  max-width: 100%;
-
-  [data-tabs="accordion"] {
-    @media screen and (max-width: 767px) {
-      margin: 10px 2% 0;
-    }
-
-    > .tabs__control.is-active {
-      pointer-events: auto;
-      opacity: 0.5;
-    }
-
-    > .tabs__control {
-      @media screen and (max-width: 767px) {
-        width: 100%;
-        margin: 0;
-        padding: 10px;
-      }
-    }
+.tabs__controls {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  display: inline-flex;
+  justify-content: center;
+  column-gap: 50px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  @include vp-1365 {
+    margin-bottom: 45px;
+    column-gap: 43px;
   }
-
-  [data-tabs="accordion"].is-active {
-    > .tabs__control {
-      opacity: 1;
-    }
+  @include vp-767 {
+    column-gap: 46px;
+    margin-bottom: 30px;
   }
-
-  &__controls {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 40px;
-
-    @media screen and (max-width: 767px) {
-      flex-wrap: wrap;
-    }
-  }
-
-  &__control {
-    text-transform: uppercase;
+  & .tabs__control {
+    border: none;
+    padding: 0;
+    background-color: $color-transparent;
+    padding-bottom: 10px;
+    position: relative;
     cursor: pointer;
-    margin: 0 20px;
-    opacity: 0.5;
-    min-width: auto;
-    justify-content: center;
-    width: 25%;
-
-    @media screen and (max-width: 1023px) {
-      margin: 0 10px;
-      padding: 15px;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgba(16, 38, 84, 0.5);
+    @include vp-1365 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 16px;
     }
 
-    @media screen and (max-width: 767px) {
-      margin: 10px 2% 0;
-      padding: 10px;
-      width: 45%;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
     }
 
-    &.is-active {
-      opacity: 1;
-      pointer-events: none;
+    &:focus {
+      color: $text-dark;
+      outline: none;
+      &::after {
+        background-color: $text-dark;
+      }
     }
-  }
-
-  &__content {
-    margin-bottom: 40px;
-
-    transition: height 0.3s;
-  }
-
-  &__element {
-    padding: 25px;
-    width: 100%;
-
-    @media screen and (max-width: 767px) {
-      padding: 15px;
-    }
-
-    p {
-      margin: 0;
-
-      &:not(:last-child) {
-        margin: 0 0 20px 0;
+    &:hover {
+      color: rgba(16, 38, 84, 0.7);
+      &::after {
+        background-color: #787878;
       }
     }
 
-    &:nth-child(1) {
-      background-color: rgb(250, 235, 215);
+    &.is-active,
+    &:active {
+      color: $text-dark;
+      &::after {
+        background-color: $fill-tabs;
+      }
     }
 
-    &:nth-child(2) {
-      background-color: rgb(229, 250, 215);
-    }
-
-    &:nth-child(3) {
-      background-color: rgb(180, 188, 233);
-    }
-
-    &:nth-child(4) {
-      background-color: rgb(255, 187, 204);
+    &:disabled {
+      opacity: 0.3;
+      color: $text-dark;
+      pointer-events: none;
+      &::after {
+        background-color: #787878;
+      }
     }
   }
+}
+.tabs__content {
+  width: 100%;
+}
+.tabs__element {
+  display: none;
+  width: 100%;
+  justify-content: space-between;
 
-  &--unset .tabs__content {
-    height: 100px;
+  &.is-active {
+    display: flex;
   }
-
-  &--unset .tabs__element {
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
+  @include vp-1365 {
+    flex-direction: column;
+    row-gap: 40px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  @include vp-767 {
+    row-gap: 35px;
   }
 }

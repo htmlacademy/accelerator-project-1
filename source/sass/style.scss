@@ -2,11 +2,6 @@
 // ---------------------------------
 @import "vendor/normalize";
 
-// Modules
-// ---------------------------------
-@import "modules/data-tabs";
-@import "modules/tabs";
-
 // Global
 // ---------------------------------
 @import "global/variables";
@@ -16,6 +11,10 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+
+// Modules
+// ---------------------------------
+@import "modules/tabs";
 
 // Blocks
 // ---------------------------------
