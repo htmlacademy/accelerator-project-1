@@ -1,14 +1,38 @@
 .price-card {
-  background-color: $color-white;
+  flex-shrink: 0;
+  display: flex;
   min-height: 447px;
+  width: 100%;
   max-width: 360px;
-  padding: 65px;
+  padding: 7px;
+  background: $color-white;
+  @include vp-1365 {
+    min-height: 460px;
+  }
+  @include vp-767 {
+    min-height: 384px;
+    max-width: 100%;
+  }
+
+  &.is-active {
+    background: $fill-gradient;
+  }
+}
+.price-card__wrapper {
+  padding: 10px;
+  padding-top: 58px;
+  padding-bottom: 58px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  background-color: $color-white;
+  @include vp-767 {
+    padding: 35px;
+  }
 }
 .price-card__head {
-  margin-bottom: 17px;
+  margin-bottom: 72px;
   & h4 {
     margin: 0;
     margin-bottom: 17px;
@@ -28,6 +52,7 @@
   }
 }
 .price-card__count {
+  margin-bottom: 22px;
   font-family: $font-family;
   text-align: center;
   position: relative;
@@ -38,7 +63,6 @@
   z-index: 2;
 
   & svg {
-    margin-left: 14px;
     width: 30px;
     height: 42px;
   }
@@ -52,8 +76,7 @@
   z-index: 1;
 }
 .price-card__btn {
-}
-.btn {
-}
-.btn--on-light {
+  margin: 0 auto;
+  margin-top: auto;
+  max-width: 230px;
 }

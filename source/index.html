@@ -212,27 +212,252 @@
                 <h3 class="price__title section-title section-title--dark">
                   Абонементы
                 </h3>
-                <div class="price__tabs">
-                  <div class="price-card">
-                    <div class="price-card__head">
-                      <h4>С тренером</h4>
-                      <p>12 занятий</p>
-                    </div>
-                    <div class="price-card__count">
-                      <span class="price-card__sum numbers-medium"
-                        >5000
-                        <svg>
-                          <use
-                            href="/__spritemap#sprite-icon-rubble"
-                          ></use></svg
-                      ></span>
-                      <span class="price-card__back-sum numbers-xlarge"
-                        >5000</span
-                      >
-                    </div>
-                    <button class="price-card__btn btn btn--on-light">
-                      Купить абонемент
+                <div class="price__tabs" data-tabs="parent" data-delay="300">
+                  <div class="price__controls">
+                    <button
+                      class="is--active"
+                      type="button"
+                      data-tabs="control"
+                    >
+                      1 месяц
                     </button>
+                    <button type="button" data-tabs="control">6 месяцев</button>
+                    <button type="button" data-tabs="control">
+                      12 месяцев
+                    </button>
+                  </div>
+                  <div class="price__tabs-content" data-tabs="content">
+                    <div class="price__tabs-element" data-tabs="element">
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>С тренером</h4>
+                            <p>12 занятий</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >5000
+                              <svg>
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="“true“"
+                              >5000</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>Дневной</h4>
+                            <p>с 8:00 до 17:00</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >1700
+                              <svg>
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="“true“"
+                              >1700</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>Полный день</h4>
+                            <p>с 8:00 до 22:00</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >2700
+                              <svg>
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="“true“"
+                              >2700</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price__tabs-element" data-tabs="element">
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>С тренером</h4>
+                            <p>12 занятий</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >30000
+                              <svg>
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="“true“"
+                              >30000</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>Дневной</h4>
+                            <p>с 8:00 до 17:00</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >10200
+                              <svg>
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="“true“"
+                              >10200</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>Полный день</h4>
+                            <p>с 8:00 до 22:00</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >16200
+                              <svg>
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="“true“"
+                              >16200</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price__tabs-element" data-tabs="element">
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>С тренером</h4>
+                            <p>12 занятий</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >60000
+                              <svg>
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="“true“"
+                              >60000</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>Дневной</h4>
+                            <p>с 8:00 до 17:00</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >20400
+                              <svg>
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="“true“"
+                              >20400</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>Полный день</h4>
+                            <p>с 8:00 до 22:00</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >32400
+                              <svg>
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="“true“"
+                              >32400</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <picture>
