@@ -1,0 +1,67 @@
+@mixin hover {
+  @media (hover: hover) {
+    &:hover:not(.focus-visible) {
+      @content;
+    }
+  }
+}
+
+@mixin hover-focus {
+  @media (hover: hover) {
+    &:hover:not(.focus-visible) {
+      @content;
+    }
+  }
+
+  &.focus-visible:focus {
+    @content;
+  }
+}
+
+@mixin vp-1365 {
+  @media (max-width: ($vp-1366 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-1023 {
+  @media (max-width: ($vp-1024 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-767 {
+  @media (max-width: ($vp-768 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-785 {
+  @media (max-width: ($vp-786 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-399 {
+  @media (max-width: ($vp-400 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-449 {
+  @media (max-width: ($vp-450 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-319 {
+  @media (max-width: ($vp-320 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-318 {
+  @media (max-width: ($vp-319 - 1px)) {
+    @content;
+  }
+}
