@@ -40,23 +40,48 @@ const setActiveTab = () => {
         }
       });
     });
-
-    // Получаем все элементы .price-card
-    // const tabs = document.querySelectorAll(".price-card");
-
-    // Добавляем обработчик события focus для кнопки .price-card__btn
-    // tabs.forEach((tab) => {
-    //   const btn = tab.querySelector(".price-card__btn");
-    //   btn.addEventListener("focus", () => {
-    //     tab.classList.add('is-active');
-    //   });
-
-    //   // Добавляем обработчик события blur для кнопки .price-card__btn
-    //   btn.addEventListener("blur", () => {
-    //     tab.classList.remove('is-active');
-    //   });
-    // });
   }
 };
 
-export { setActiveTab };
+const setActiveSlideInfo = () => {
+  if (
+    document.querySelector('.juri__inner') &&
+    document.querySelector('.juri-slide')
+  ) {
+    // Получаем все элементы с классом .juri-slide
+    const slides = document.querySelectorAll('.juri-slide');
+
+    // Добавляем обработчик события для каждого элемента
+    slides.forEach((slide) => {
+      // Добавляем обработчик события focus для элемента
+      slide.addEventListener('focus', () => {
+        slides.forEach((slide) => { slide.classList.remove('is-active'); });
+        slide.classList.add('is-active');
+      });
+
+      // Добавляем обработчик события blur для элемента
+      slide.addEventListener('blur', () => {
+        slide.classList.remove('is-active');
+      });
+
+      slide.addEventListener('mouseenter', () => {
+        slides.forEach((slide) => { slide.classList.remove('is-active'); });
+        // Проверяем наличием класса .is-active у элемента
+        if (
+          !slide.classList.contains('is-active')
+        ) {
+          slide.classList.add('is-active'); // Добавляем класс .is-active при наведении
+        }
+      });
+
+      slide.addEventListener('mouseleave', () => {
+        // Проверяем наличием класса .is-active у элемента
+        if (slide.classList.contains('is-active')) {
+          slide.classList.remove('is-active'); // Удаляем класс .is-active при уходе курсора
+        }
+      });
+    });
+  }
+};
+
+export { setActiveTab, setActiveSlideInfo };
