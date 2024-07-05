@@ -46,19 +46,17 @@
             </div>
             <div class="hero__picture">
               <picture>
-                <picture>
-                  <source type="image/webp" media="(min-width: 1366px)" srcset="img/hero/hero-desktop.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="524">
-                  <source type="image/webp" srcset="img/hero/hero-tab.webp 1x, img/hero/hero-tab@2x.webp 2x" width="500" height="524">
-                  <source media="(min-width: 1366px)" srcset="img/hero/hero-desktop.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="524">
-                  <img class="hero__promo-img" src="img/hero/hero-tab.jpg" srcset="img/hero/hero-tab.jpg 1x, img/hero/hero-tab@2x.jpg 2x" width="324" height="390" alt="Фото тренера клуба.">
-                </picture>
+                <source type="image/webp" media="(min-width: 1366px)" srcset="img/hero/hero-desktop.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="524">
+                <source type="image/webp" srcset="img/hero/hero-tab.webp 1x, img/hero/hero-tab@2x.webp 2x" width="324" height="390">
+                <source media="(min-width: 1366px)" srcset="img/hero/hero-desktop.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="524">
+                <img class="hero__promo-img" src="img/hero/hero-tab.jpg" srcset="img/hero/hero-tab.jpg 1x, img/hero/hero-tab@2x.jpg 2x" width="324" height="390" alt="Фото тренера клуба.">
               </picture>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <mai class="main">
+    <main class="main">
       <section class="main__sections-list about" data-test="about">
         <h2 class="visually-hidden">Немного о нашем клубе</h2>
         <div class="about__container">
@@ -70,19 +68,19 @@
           </div>
           <div class="about__picture-container">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/about/about-tab.webp 1x, img/about/about-tab@2x.webp 2x" width="660" height="400">
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/about/about-tab.webp 1x, img/about/about-tab@2x.webp 2x" width="660" height="400">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/about/about-tab.webp 1x, img/about/about-tab@2x.webp 2x" width="678" height="345">
               <source type="image/webp" srcset="img/about/about-mob.webp 1x, img/about/about-mob@2x.webp 2x" width="320" height="280">
               <source media="(min-width: 1366px)" srcset="img/about/about-tab.jpg 1x, img/about/about-tab@2x.jpg 2x" width="660" height="400">
               <source media="(min-width: 768px)" srcset="img/about/about-tab.jpg 1x, img/about/about-tab@2x.jpg 2x" width="678" height="345">
               <img class="about__play" src="img/about/about-mob.jpg" srcset="img/about/about-mob.jpg 1x, img/about/about-mob@2x.jpg 2x" width="320" height="280" alt="Фото зала.">
             </picture>
-            <div class="about__video">
-              <iframe src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170" loading="lazy" title="Обзор зала клуба Fitness" allowfullscreen></iframe>
-              <button class="about__btn-play" type="button">
+            <div class="about__video video">
+              <iframe class="video__iframe" src="https://www.youtube.com/embed/9TZXsZItgdw?si=TZ0KEWYYlFsPh4yK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <button class="video__btn-play" type="button">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/about/video-play.svg" width="100" height="100">
-                  <img class="about__picture" src="img/about/video-play.svg" width="72" height="72" alt="Кнопка плей.">
+                  <img class="video__picture" src="img/about/video-play.svg" width="72" height="72" alt="Кнопка плей.">
                 </picture>
               </button>
             </div>
@@ -234,11 +232,11 @@
           </div>
           <div class="games__picture">
             <picture>
-              <source type="image/webp" media="(min-width: 1366px)" width="660" height="500">
-              <source type="image/webp" media="(min-width: 768px)" width="376" height="348">
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/games/games.webp 1x, img/games/games@2x.webp 2x" width="660" height="500">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/games/games.webp 1x, img/games/games@2x.webp 2x" width="376" height="348">
               <source type="image/webp" srcset="img/games/games.webp 1x, img/games/games@2x.webp 2x" width="290" height="290">
-              <source media="(min-width: 1366px)" width="660" height="500">
-              <source media="(min-width: 768px)" width="376" height="348">
+              <source media="(min-width: 1366px)" srcset="img/games/games.jpg 1x, img/games/games@2x.jpg 2x" width="660" height="500">
+              <source media="(min-width: 768px)" srcset="img/games/games.jpg 1x, img/games/games@2x.jpg 2x" width="376" height="348">
               <img class="games__img" src="img/games/games.jpg" srcset="img/games/games.jpg 1x, img/games/games@2x.jpg 2x" width="290" height="290" alt="Промо фото игр.">
             </picture>
           </div>
@@ -437,8 +435,12 @@
               <a class="offers__button" href="https://offers.ru">Подробнее</a>
             </div>
             <picture>
-              <source type="image/webp" srcset="img/offers/offers-girl.webp 1x, img/offers/offers-girl@2x.webp 2x" width="320" height="360">
-              <img class="offers__img" src="img/offers/offers-girl.png" srcset="img/offers/offers-girl.png 1x, img/offers/offers-girl@2x.png 2x" width="320" height="360" alt="Спортивная девушка.">
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/offers/offers-desktop.webp 1x, img/offers/offers-desktop@2x.webp 2x" width="280" height="460">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/offers/offers-tab.webp 1x, img/offers/offers-tab@2x.webp 2x" width="400" height="462">
+              <source type="image/webp" srcset="img/offers/offers-tab.webp 1x, img/offers/offers-tab@2x.webp 2x" width="320" height="360">
+              <source media="(min-width: 1366px)" srcset="img/offers/offers-desktop.jpg 1x, img/offers/offers-desktop@2x.jpg 2x" width="280" height="460">
+              <source media="(min-width: 768px)" srcset="img/offers/offers-tab.jpg 1x, img/offers/offers-tab@2x.jpg 2x" width="400" height="462">
+              <img class="offers__img" src="img/offers/offers-tab.jpg" srcset="img/offers/offers-tab.jpg 1x, img/offers/offers-tab@2x.jpg 2x" width="320" height="360" alt="Спортивная девушка.">
             </picture>
           </div>
           <ul class="offers__list offers-list">
@@ -610,16 +612,20 @@
           <ul class="reviews-slyder__list reviews-list">
             <li class="reviews-list__item reviews-item">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-user.webp 1x, img/reviews/reviews-user@2x.webp 2x" width="80" height="80">
                 <source type="image/webp" srcset="img/reviews/reviews-user.webp 1x, img/reviews/reviews-user@2x.webp 2x" width="68" height="68">
-                <img src="img/reviews/reviews-user.jpg" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="68" height="68" alt="Фото отзыва.">
+                <source media="(min-width: 768px)" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="80" height="80">
+                <img class="reviews-item__img" src="img/reviews/reviews-user.jpg" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="68" height="68" alt="Фото отзыва.">
               </picture>
               <h3>Анна Орлова</h3>
               <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
             </li>
             <li class="reviews-list__item reviews-item">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-user.webp 1x, img/reviews/reviews-user@2x.webp 2x" width="80" height="80">
                 <source type="image/webp" srcset="img/reviews/reviews-user.webp 1x, img/reviews/reviews-user@2x.webp 2x" width="68" height="68">
-                <img src="img/reviews/reviews-user.jpg" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="68" height="68" alt="Фото отзыва.">
+                <source media="(min-width: 768px)" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="80" height="80">
+                <img class="reviews-item__img" src="img/reviews/reviews-user.jpg" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="68" height="68" alt="Фото отзыва.">
               </picture>
               <h3>Анна Орлова</h3>
               <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
@@ -640,37 +646,33 @@
                 <input type="number" placeholder="Телефон" name="tel">
               </label>
             </div>
-            <button class="" type="button">
-              <span class="">Отправить</span>
-            </button>
           </fieldset>
-          <fieldset class="form__application form-contacts">
-            <label class="form-contacts__title-container">
-              <h3 class="form-contacts__title">Контакты</h3>
-            </label>
-            <label class="form-contacts__list-container">
-              <ul class="form-contacts__list contact-list contact-list--mod">
-                <li class="contact-list__item contact-item">
-                  <h4 class="contact-item__title">Адрес:</h4>
-                  <p class="contact-item__text">г. Омск, ул. 60 лет Октября, 7</p>
-                </li>
-                <li class="contact-list__item contact-item">
-                  <h4 class="contact-item__title">График работы:</h4>
-                  <p class="contact-item__text">Пн-Вс: с 8:00 до 22:00</p>
-                </li>
-              </ul>
-              <ul class="form-contacts__list contact-list">
-                <li class="contact-list__item contact-item">
-                  <h4 class="contact-item__title">Телефон:</h4>
-                  <p class="contact-item__text">8 800 555-55-55</p>
-                </li>
-                <li class="contact-list__item contact-item">
-                  <h4 class="contact-item__title">Email:</h4>
-                  <p class="contact-item__text">oмск@supergym.ru</p>
-                </li>
-              </ul>
-            </label>
-          </fieldset>
+          <button class="" type="button">
+            <span class="">Отправить</span>
+          </button>
+        </div>
+        <div class="form__application form-contacts">
+          <h3 class="title-container__title">Контакты</h3>
+          <ul class="form-contacts__list contact-list contact-list--mod">
+            <li class="contact-list__item contact-item">
+              <h4 class="contact-item__title">Адрес:</h4>
+              <p class="contact-item__text">г. Омск, ул. 60 лет Октября, 7</p>
+            </li>
+            <li class="contact-list__item contact-item">
+              <h4 class="contact-item__title">График работы:</h4>
+              <p class="contact-item__text">Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+          </ul>
+          <ul class="form-contacts__list contact-list">
+            <li class="contact-list__item contact-item">
+              <h4 class="contact-item__title">Телефон:</h4>
+              <p class="contact-item__text">8 800 555-55-55</p>
+            </li>
+            <li class="contact-list__item contact-item">
+              <h4 class="contact-item__title">Email:</h4>
+              <p class="contact-item__text">oмск@supergym.ru</p>
+            </li>
+          </ul>
         </div>
       </form>
     </main>
@@ -679,6 +681,8 @@
       <div class="footer__container">
         <div class="footer__logo footer-logo">
           <picture>
+            <source media="(min-width: 1366px)" srcset="img/header/logo.svg" width="130" height="26">
+            <source media="(min-width: 768px)" srcset="img/header/logo.svg" width="410" height="22">
             <img class="footer__logo" src="img/header/logo.svg" width="100" height="20" alt="Логотип клуба.">
           </picture>
         </div>
