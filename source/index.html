@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +7,18 @@
     <link rel="icon" href="/public/favicon.ico">
     <link rel="icon" href="/public/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/public/favicon.png">
-    <link rel="preload" href="/fonts/robotoregular.woff2" type="font/woff" as="font" crossorigin="anomymous">
-    <link rel="preload" href="/fonts/robotobold.woff2" type="font/woff2" as="font" crossorigin="anomymous">
-    <link rel="preload" href="/fonts/alumnisemibold.woff2" type="font/woff" as="font" crossorigin="anomymous">
-    <link rel="preload" href="/fonts/alumniextrabold.woff2" type="font/woff2" as="font" crossorigin="anomymous">
-    <link rel="preload" href="/fonts/robotoregular.woff" type="font/woff" as="font" crossorigin="anomymous">
-    <link rel="preload" href="/fonts/robotobold.woff" type="font/woff2" as="font" crossorigin="anomymous">
-    <link rel="preload" href="/fonts/alumnisemibold.woff" type="font/woff" as="font" crossorigin="anomymous">
-    <link rel="preload" href="/fonts/alumniextrabold.woff" type="font/woff2" as="font" crossorigin="anomymous">
+    <link rel="preload" href="/fonts/robotoregular.woff2" type="font/woff" as="font">
+    <link rel="preload" href="/fonts/robotobold.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="/fonts/alumnisemibold.woff2" type="font/woff" as="font">
+    <link rel="preload" href="/fonts/alumniextrabold.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="/fonts/robotoregular.woff" type="font/woff" as="font">
+    <link rel="preload" href="/fonts/robotobold.woff" type="font/woff2" as="font">
+    <link rel="preload" href="/fonts/alumnisemibold.woff" type="font/woff" as="font">
+    <link rel="preload" href="/fonts/alumniextrabold.woff" type="font/woff2" as="font">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
-
   <body class="page-body">
+    <h1 class="visually-hidden">Фитнесс глуб Fitness</h1>
     <!-- пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
@@ -37,11 +36,11 @@
           <div class="hero__banner">
             <div class="hero__info">
               <div class="hero__info-container">
-                <h1 class="hero__title">Фитнес центр</h1>
-                <h2 class="hero__city">Омск</h2>
+                <h2 class="hero__title">Фитнес центр</h2>
+                <h3 class="hero__city">Омск</h3>
                 <p class="hero__text">Тренажёрный зал Групповые занятия Кардио-зона</p>
               </div>
-              <button class="hero__button button">Купить абонемент</button>
+              <button class="hero__button button" type="button">Купить абонемент</button>
             </div>
             <div class="hero__picture">
               <picture></picture>
@@ -50,9 +49,8 @@
         </div>
       </div>
     </header>
-    <main>
-      <h1 class="visually-hidden">Фитнесс глуб Fitness</h1>
-      <section class="about" data-test="about">
+    <mai class="main">
+      <section class="main__sections-list about" data-test="about">
         <h2 class="visually-hidden">Немного о нашем клубе</h2>
         <div class="about__container">
           <div class="about__title-text">
@@ -68,7 +66,7 @@
             </picture>
             <div class="about__video">
               <iframe src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170" loading="lazy" title="Обзор зала клуба Fitness" allowfullscreen></iframe>
-              <button class="about__btn-play">
+              <button class="about__btn-play" type="button">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/about/video-play.svg" width="100" height="100">
                   <img class="about__picture" src="img/about/video-play.svg" width="72" height="72" alt="Кнопка плей.">
@@ -78,7 +76,7 @@
           </div>
         </div>
       </section>
-      <section class="price" data-test="price">
+      <section class="main__sections-list price" data-test="price">
         <h2 class="visually-hidden">Наш прайс на фитнесс карты.</h2>
         <h3 class="price__title">Абонементы</h3>
         <div class="price__container">
@@ -199,7 +197,7 @@
           </div>
         </div>
       </section>
-      <section class="games" data-test="games">
+      <section class="main__sections-list games" data-test="games">
         <h2 class="visually-hidden">Промо предложение</h2>
         <div class="games__container">
           <div class="games__info info">
@@ -229,7 +227,7 @@
           </div>
         </div>
       </section>
-      <section class="juri" data-test="juri">
+      <section class="main__sections-list juri" data-test="juri">
         <h2 class="visually-hidden">Нашe жюри.</h2>
         <div class="juri__container">
           <h3 class="juri__title">Жюри</h3>
@@ -250,7 +248,7 @@
                 </div>
               </div>
             </li>
-            <li class="juri__item juri-item juri-item">
+            <li class="juri__item juri-item">
               <picture>
                 <source type="image/webp" srcset="img/juri/alexei.webp 1x, img/juri/alexei@2x.webp 2x" width="260" height="300">
                 <img class="juri-item__img" src="img/juri/alexei.png" srcset="img/juri/alexei.png 1x, img/juri/alexei@2x.png 2x" width="260" height="300" alt="Алексей Лавров.">
@@ -266,7 +264,7 @@
                 </div>
               </div>
             </li>
-            <li class="juri__item juri-item juri-item">
+            <li class="juri__item juri-item">
               <picture>
                 <source type="image/webp" srcset="img/juri/alexander.webp 1x, img/juri/alexander@2x.webp 2x" width="260" height="300">
                 <img class="juri-item__img" src="img/juri/alexander.png" srcset="img/juri/alexander.png 1x, img/juri/alexander@2x.png 2x" width="260" height="300" alt="Александр Пашков.">
@@ -282,7 +280,7 @@
                 </div>
               </div>
             </li>
-            <li class="juri__item juri-item juri-item">
+            <li class="juri__item juri-item">
               <picture>
                 <source type="image/webp" srcset="img/juri/maria.webp 1x, img/juri/maria@2x.webp 2x" width="260" height="300">
                 <img class="juri-item__img" src="img/juri/maria.png" srcset="img/juri/maria.png 1x, img/juri/maria@2x.png 2x" width="260" height="300" alt="Мария Кетова.">
@@ -298,7 +296,7 @@
                 </div>
               </div>
             </li>
-            <li class="juri__item juri-item juri-item">
+            <li class="juri__item juri-item">
               <picture>
                 <source type="image/webp" srcset="img/juri/anna.webp 1x, img/juri/anna@2x.webp 2x" width="260" height="300">
                 <img class="juri-item__img" src="img/juri/anna.png" srcset="img/juri/anna.png 1x, img/juri/anna@2x.png 2x" width="260" height="300" alt="Анна Павлова.">
@@ -314,7 +312,7 @@
                 </div>
               </div>
             </li>
-            <li class="juri__item juri-item juri-item">
+            <li class="juri__item juri-item">
               <picture>
                 <source type="image/webp" srcset="img/juri/alexei.webp 1x, img/juri/alexei@2x.webp 2x" width="260" height="300">
                 <img class="juri-item__img" src="img/juri/alexei.png" srcset="img/juri/alexei.png 1x, img/juri/alexei@2x.png 2x" width="260" height="300" alt="Алексей Лавров.">
@@ -330,7 +328,7 @@
                 </div>
               </div>
             </li>
-            <li class="juri__item juri-item juri-item">
+            <li class="juri__item juri-item">
               <picture>
                 <source type="image/webp" srcset="img/juri/alexander.webp 1x, img/juri/alexander@2x.webp 2x" width="260" height="300">
                 <img class="juri-item__img" src="img/juri/alexander.png" srcset="img/juri/alexander.png 1x, img/juri/alexander@2x.png 2x" width="260" height="300" alt="Александр Пашков.">
@@ -346,7 +344,7 @@
                 </div>
               </div>
             </li>
-            <li class="juri__item juri-item juri-item">
+            <li class="juri__item juri-item">
               <picture>
                 <source type="image/webp" srcset="img/juri/maria.webp 1x, img/juri/maria@2x.webp 2x" width="260" height="300">
                 <img class="juri-item__img" src="img/juri/maria.png" srcset="img/juri/maria.png 1x, img/juri/maria@2x.png 2x" width="260" height="300" alt="Мария Кетова.">
@@ -363,11 +361,11 @@
               </div>
             </li>
           </ul>
-          <button class="juri__but but-left"></button>
-          <button class="juri__but but-right"></button>
+          <button class="juri__but but-left" type="button"></button>
+          <button class="juri__but but-right" type="button"></button>
         </div>
       </section>
-      <section class="features" data-test="features">
+      <section class="main__sections-list features" data-test="features">
         <div class="features__container">
           <h2 class="features__title">Наши преимущества</h2>
           <ul class="features__list features-list features-list--mod">
@@ -403,7 +401,7 @@
           </ul>
         </div>
       </section>
-      <section class="offers" data-test="offers">
+      <section class="main__sections-list offers" data-test="offers">
         <div class="offers__container">
           <h2 class="offers__title">Акции</h2>
           <div class="offers__limited">
@@ -432,14 +430,14 @@
           </ul>
         </div>
       </section>
-      <section data-test="faq">
+      <section class="main__sections-list faq" data-test="faq">
         <div class="faq__container">
           <h2 class="faq__title">Вопросы и ответы</h2>
           <div class="faq__tab-nav tab-nav">
-            <button class="tab-nav__btn tab-btn tab-btn--active" data-target-id="0">Центр</button>
-            <button class="tab-nav__btn tab-btn" data-target-id="1">Абонемент</button>
-            <button class="tab-nav__btn tab-btn" data-target-id="2">Услуги</button>
-            <button class="tab-nav__btn tab-btn" data-target-id="3">Правила</button>
+            <button class="tab-nav__btn tab-btn tab-btn--active" type="button" data-target-id="0">Центр</button>
+            <button class="tab-nav__btn tab-btn" type="button" data-target-id="1">Абонемент</button>
+            <button class="tab-nav__btn tab-btn" type="button" data-target-id="2">Услуги</button>
+            <button class="tab-nav__btn tab-btn" type="button" data-target-id="3">Правила</button>
           </div>
           <div class="faq__content tab-content">
             <ul class="tab-content__pane tab-pane tab-pane--show" data-id="0">
@@ -447,7 +445,7 @@
                 <h3>Как cтать членом фитнес-центра?</h3>
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="faq-btn__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
                 </picture>
                 <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
               </li>
@@ -455,7 +453,7 @@
                 <h3>Где можно посмотреть расписание?</h3>
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="faq-btn__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
                 </picture>
                 <p>На сайте или спросить бумажную копию на ресепшене.</p>
               </li>
@@ -463,7 +461,7 @@
                 <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="faq-btn__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
                 </picture>
                 <p>Полотенца предоставляются при посещении. Кулер в каждом зале.</p>
               </li>
@@ -471,23 +469,187 @@
                 <h3>Сколько тренеров работает в клубе и какова &#32;<br>их квалификация?</h3>
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="faq-btn__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
                 </picture>
                 <p>Подробнее о тренерах нашего клуба вы найдете в разделе жюри.</p>
               </li>
             </ul>
-            <ul class="tab-content__pane tab-pane" data-id="1">Содержимое 2...</ul>
-            <ul class="tab-content__pane tab-pane" data-id="2">Содержимое 3...</ul>
-            <ul class="tab-content__pane tab-pane" data-id="3">Содержимое 4...</ul>
+            <ul class="tab-content__pane tab-pane" data-id="1">
+              <li class="tab-pane__item pane-item">
+                <h3>Занятия с тренером входят в абонемент?</h3>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                </picture>
+                <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+              </li>
+              <li class="tab-pane__item pane-item">
+                <h3>Можно ли заморозить абонемент?</h3>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                </picture>
+                <p>Можно. Количество дней зависит от типа карты. Подробнее узнать наличие заморозки на своей карте можно у менеджера продаж.</p>
+              </li>
+              <li class="tab-pane__item pane-item">
+                <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                </picture>
+                <p>Часы посещения клуба регламинтируется типом карты. Подробнее узнать можно у менеджера продаж.</p>
+              </li>
+              <li class="tab-pane__item pane-item">
+                <h3>Что такое семейный доступ и доступ для друзей?</h3>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                </picture>
+                <p>Подробнее узнать можно у менеджера продаж.</p>
+              </li>
+            </ul>
+            <ul class="tab-content__pane tab-pane" data-id="2">
+              <li class="tab-pane__item pane-item">
+                <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                </picture>
+                <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели &#32;<br>и предложит программу питания.</p>
+              </li>
+              <li class="tab-pane__item pane-item">
+                <h3>Проводятся ли в клубе какие-либо мероприятия &#32;<br>или соревнования?</h3>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                </picture>
+                <p>Да. Информация по анонсам мероприятий или соревнований вы можете найти на сайте. Следите за новостями.</p>
+              </li>
+              <li class="tab-pane__item pane-item">
+                <h3>Можно ли приобрести в центре спортивное питание?</h3>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                </picture>
+                <p>Подробнее узнать можно у менеджера продаж.</p>
+              </li>
+              <li class="tab-pane__item pane-item">
+                <h3>Есть ли в центре детская комната?</h3>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                </picture>
+                <p>Подробнее узнать можно у менеджера продаж.</p>
+              </li>
+            </ul>
+            <ul class="tab-content__pane tab-pane" data-id="3">
+              <li class="tab-pane__item pane-item">
+                <h3>Есть в фитнес-центре дресс-код?</h3>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                </picture>
+                <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+              </li>
+              <li class="tab-pane__item pane-item">
+                <h3>Можно ли приводить с собой детей на тренировки?</h3>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                </picture>
+                <p>Да. Вы можете оставить детей в детской комнате. В силовом зале детям находить запрещено.</p>
+              </li>
+              <li class="tab-pane__item pane-item">
+                <h3>Какие дополнительные правила посещения центра?</h3>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                </picture>
+                <p>Не красть полотенца, не бросать их на пол. Остальное вы можете узнать у вашего менеджера.</p>
+              </li>
+              <li class="tab-pane__item pane-item">
+                <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
+                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
+                </picture>
+                <p>Нет. Однако Вам лучше проконсультироваться с врачом о наличии у Вас противопоказаний.</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
+      <section class="main__sections-list reviews" data-test="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__slyder reviews-slyder">
+          <ul class="reviews-slyder__list reviews-list">
+            <li class="reviews-list__item reviews-item">
+              <picture>
+                <source type="image/webp" srcset="img/reviews/reviews-user.webp 1x, img/reviews/reviews-user@2x.webp 2x" width="68" height="68">
+                <img src="img/reviews/reviews-user.jpg" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="68" height="68" alt="Фото отзыва.">
+              </picture>
+              <h3>Анна Орлова</h3>
+              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </li>
+            <li class="reviews-list__item reviews-item">
+              <picture>
+                <source type="image/webp" srcset="img/reviews/reviews-user.webp 1x, img/reviews/reviews-user@2x.webp 2x" width="68" height="68">
+                <img src="img/reviews/reviews-user.jpg" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="68" height="68" alt="Фото отзыва.">
+              </picture>
+              <h3>Анна Орлова</h3>
+              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <form class="main__sections-list form"  action="https://echo.htmlacademy.ru" data-test="form">
+        <h2 class="visually-hidden">Форма отправки и контакты</h2>
+        <div class="form__container">
+          <fieldset class="form__application form-application">
+            <label class="form-application__title">Бесплатное занятие</label>
+            <div class="form-application__inputs application-inputs">
+              <label class="application-inputs__input">
+                <input type="text" placeholder="Имя" name="name">
+              </label>
+              <label class="application-inputs__input">
+                <input type="number" placeholder="Телефон" name="tel">
+              </label>
+            </div>
+            <button class="" type="button">
+              <span class="">Отправить</span>
+            </button>
+          </fieldset>
+          <fieldset class="form__application form-contacts">
+            <label class="form-contacts__title-container">
+              <h3 class="form-contacts__title">Контакты</h3>
+            </label>
+            <label class="form-contacts__list-container">
+              <ul class="form-contacts__list contact-list contact-list--mod">
+                <li class="contact-list__item contact-item">
+                  <h4 class="contact-item__title">Адрес:</h4>
+                  <p class="contact-item__text">г. Омск, ул. 60 лет Октября, 7</p>
+                </li>
+                <li class="contact-list__item contact-item">
+                  <h4 class="contact-item__title">График работы:</h4>
+                  <p class="contact-item__text">Пн-Вс: с 8:00 до 22:00</p>
+                </li>
+              </ul>
+              <ul class="form-contacts__list contact-list">
+                <li class="contact-list__item contact-item">
+                  <h4 class="contact-item__title">Телефон:</h4>
+                  <p class="contact-item__text">8 800 555-55-55</p>
+                </li>
+                <li class="contact-list__item contact-item">
+                  <h4 class="contact-item__title">Email:</h4>
+                  <p class="contact-item__text">oмск@supergym.ru</p>
+                </li>
+              </ul>
+            </label>
+          </fieldset>
+        </div>
+      </form>
     </main>
-
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <div class="main__sections-list footer" data-test="footer">footer</div>
     <script type="module" src="js/main.js"></script>
   </body>
-
 </html>
