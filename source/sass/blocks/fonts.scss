@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Roboto-light";
+  src:
+    url("../fonts/robotocondensed-light.woff2") format("woff2"),
+    url("../fonts/robotocondensed-light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+  letter-spacing: 8%;
+}
+
+@font-face {
+  font-family: "Roboto-regular";
+  src:
+    url("../fonts/robotocondensed-regular.woff2") format("woff2"),
+    url("../fonts/robotocondensed-regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-bold";
+  src:
+    url("../fonts/robotocondensed-bold.woff2") format("woff2"),
+    url("../fonts/robotocondensed-bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alumni-semibold";
+  src:
+    url("../fonts/alumni-semibold.woff2") format("woff2"),
+    url("../fonts/alumni-semibold.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alumni-extrabold";
+  src:
+    url("../fonts/alumni-extrabold.woff2") format("woff2"),
+    url("../fonts/alumni-extrabold.woff") format("woff");
+  font-weight: 800;
+  font-display: swap;
+  letter-spacing: 4%;
+}
