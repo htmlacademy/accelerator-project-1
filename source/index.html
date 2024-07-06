@@ -28,11 +28,9 @@
       <div class="container">
         <div class="hero__flex-list">
           <div class="hero__contact">
-            <picture>
-              <source media="(min-width: 1366px)" srcset="img/header/logo.svg" width="130" height="26">
-              <source media="(min-width: 768px)" srcset="img/header/logo.svg" width="110" height="22">
-              <img class="hero__logo" src="img/header/logo.svg"  width="100" height="20" alt="Логотип клуба.">
-            </picture>
+            <svg class="hero__logo" width="100" height="20">
+              <use href="/__spritemap#sprite-logo"></use>
+            </svg>
             <a class="hero__tel" href="tel:+7800555-55-55">8&#32;800&#32;555-55-55</a>
           </div>
           <div class="hero__banner">
@@ -48,7 +46,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 1366px)" srcset="img/hero/hero-desktop.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="524">
                 <source type="image/webp" srcset="img/hero/hero-tab.webp 1x, img/hero/hero-tab@2x.webp 2x" width="324" height="390">
-                <source media="(min-width: 1366px)" srcset="img/hero/hero-desktop.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="524">
+                <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/hero/hero-desktop.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="524">
                 <img class="hero__promo-img" src="img/hero/hero-tab.jpg" srcset="img/hero/hero-tab.jpg 1x, img/hero/hero-tab@2x.jpg 2x" width="324" height="390" alt="Фото тренера клуба.">
               </picture>
             </div>
@@ -71,17 +69,17 @@
               <source type="image/webp" media="(min-width: 1366px)" srcset="img/about/about-tab.webp 1x, img/about/about-tab@2x.webp 2x" width="660" height="400">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/about/about-tab.webp 1x, img/about/about-tab@2x.webp 2x" width="678" height="345">
               <source type="image/webp" srcset="img/about/about-mob.webp 1x, img/about/about-mob@2x.webp 2x" width="320" height="280">
-              <source media="(min-width: 1366px)" srcset="img/about/about-tab.jpg 1x, img/about/about-tab@2x.jpg 2x" width="660" height="400">
-              <source media="(min-width: 768px)" srcset="img/about/about-tab.jpg 1x, img/about/about-tab@2x.jpg 2x" width="678" height="345">
+              <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/about/about-tab.jpg 1x, img/about/about-tab@2x.jpg 2x" width="660" height="400">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/about/about-tab.jpg 1x, img/about/about-tab@2x.jpg 2x" width="678" height="345">
               <img class="about__play" src="img/about/about-mob.jpg" srcset="img/about/about-mob.jpg 1x, img/about/about-mob@2x.jpg 2x" width="320" height="280" alt="Фото зала.">
             </picture>
             <div class="about__video video">
-              <iframe class="video__iframe" src="https://www.youtube.com/embed/9TZXsZItgdw?si=TZ0KEWYYlFsPh4yK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe class="video__iframe" src="https://www.youtube.com/embed/9TZXsZItgdw?si=TZ0KEWYYlFsPh4yK" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               <button class="video__btn-play" type="button">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/about/video-play.svg" width="100" height="100">
-                  <img class="video__picture" src="img/about/video-play.svg" width="72" height="72" alt="Кнопка плей.">
-                </picture>
+                <span   class="visually-hidden">Кнопка плей</span>
+                <svg class="video__img" width="12" height="12">
+                  <use href="/__spritemap#sprite-video-play"></use>
+                </svg>
               </button>
             </div>
           </div>
@@ -110,7 +108,7 @@
                   <p class="month-item__text">12 занятий</p>
                   <p class="month-item__price">5000</p>
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
                     <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
                   </picture>
                   <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
@@ -120,7 +118,7 @@
                   <p class="month-item__text">с 8:00 до 17:00</p>
                   <p class="month-item__price">1700</p>
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
                     <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
                   </picture>
                   <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
@@ -130,7 +128,7 @@
                   <p class="month-item__text">с 8:00 до 22:00</p>
                   <p class="month-item__price">2700</p>
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
                     <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
                   </picture>
                   <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
@@ -144,7 +142,7 @@
                   <p class="month-item__text">12 занятий</p>
                   <p class="month-item__price">30 000 ₽</p>
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
                     <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
                   </picture>
                   <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
@@ -154,7 +152,7 @@
                   <p class="month-item__text">с 8:00 до 17:00</p>
                   <p class="month-item__price">10 200</p>
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
                     <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
                   </picture>
                   <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
@@ -164,7 +162,7 @@
                   <p class="month-item__text">с 8:00 до 22:00</p>
                   <p class="month-item__price">16 200</p>
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
                     <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
                   </picture>
                   <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
@@ -178,7 +176,7 @@
                   <p class="month-item__text">12 занятий</p>
                   <p class="month-item__price">60 000</p>
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
                     <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
                   </picture>
                   <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
@@ -188,7 +186,7 @@
                   <p class="month-item__text">с 8:00 до 17:00</p>
                   <p class="month-item__price">20 400</p>
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
                     <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
                   </picture>
                   <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
@@ -198,7 +196,7 @@
                   <p class="month-item__text">с 8:00 до 22:00</p>
                   <p class="month-item__price">32 400</p>
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
                     <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
                   </picture>
                   <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
@@ -232,11 +230,11 @@
           </div>
           <div class="games__picture">
             <picture>
-              <source type="image/webp" media="(min-width: 1366px)" srcset="img/games/games.webp 1x, img/games/games@2x.webp 2x" width="660" height="500">
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/games/games-desk.webp 1x, img/games/games-desk@2x.webp 2x" width="660" height="500">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/games/games.webp 1x, img/games/games@2x.webp 2x" width="376" height="348">
               <source type="image/webp" srcset="img/games/games.webp 1x, img/games/games@2x.webp 2x" width="290" height="290">
-              <source media="(min-width: 1366px)" srcset="img/games/games.jpg 1x, img/games/games@2x.jpg 2x" width="660" height="500">
-              <source media="(min-width: 768px)" srcset="img/games/games.jpg 1x, img/games/games@2x.jpg 2x" width="376" height="348">
+              <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/games/games-desk.jpg 1x, img/games/games-desk@2x.jpg 2x" width="660" height="500">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/games/games.jpg 1x, img/games/games@2x.jpg 2x" width="376" height="348">
               <img class="games__img" src="img/games/games.jpg" srcset="img/games/games.jpg 1x, img/games/games@2x.jpg 2x" width="290" height="290" alt="Промо фото игр.">
             </picture>
           </div>
@@ -377,14 +375,16 @@
             </li>
           </ul>
           <button class="juri__btn btn-left" type="button">
-            <picture>
-              <img class="btn-left__img left-img" src="/__spritemap#sprite-left" width="16" height="32" alt="Нажимаем ктопку влево.">
-            </picture>
+            <span class="visually-hidden">Кнопка влево</span>
+            <svg class="btn-left__img left-img" width="12" height="12">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
           </button>
           <button class="juri__btn btn-right" type="button">
-            <picture>
-              <img class="btn-right__img right-btn" src="/__spritemap#sprite-left" width="16" height="32" alt="Нажимаем ктопку влево.">
-            </picture>
+            <span class="visually-hidden">Кнопка вправо</span>
+            <svg class="btn-right__img right-img" width="12" height="12">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
           </button>
         </div>
       </section>
@@ -438,8 +438,8 @@
               <source type="image/webp" media="(min-width: 1366px)" srcset="img/offers/offers-desktop.webp 1x, img/offers/offers-desktop@2x.webp 2x" width="280" height="460">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/offers/offers-tab.webp 1x, img/offers/offers-tab@2x.webp 2x" width="400" height="462">
               <source type="image/webp" srcset="img/offers/offers-tab.webp 1x, img/offers/offers-tab@2x.webp 2x" width="320" height="360">
-              <source media="(min-width: 1366px)" srcset="img/offers/offers-desktop.jpg 1x, img/offers/offers-desktop@2x.jpg 2x" width="280" height="460">
-              <source media="(min-width: 768px)" srcset="img/offers/offers-tab.jpg 1x, img/offers/offers-tab@2x.jpg 2x" width="400" height="462">
+              <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/offers/offers-desktop.jpg 1x, img/offers/offers-desktop@2x.jpg 2x" width="280" height="460">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/offers/offers-tab.jpg 1x, img/offers/offers-tab@2x.jpg 2x" width="400" height="462">
               <img class="offers__img" src="img/offers/offers-tab.jpg" srcset="img/offers/offers-tab.jpg 1x, img/offers/offers-tab@2x.jpg 2x" width="320" height="360" alt="Спортивная девушка.">
             </picture>
           </div>
@@ -470,136 +470,168 @@
             <ul class="tab-content__pane tab-pane tab-pane--show" data-id="0">
               <li class="tab-pane__item pane-item">
                 <h3>Как cтать членом фитнес-центра?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
                 <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
               </li>
               <li class="tab-pane__item pane-item">
                 <h3>Где можно посмотреть расписание?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
                 <p>На сайте или спросить бумажную копию на ресепшене.</p>
               </li>
               <li class="tab-pane__item pane-item">
                 <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
                 <p>Полотенца предоставляются при посещении. Кулер в каждом зале.</p>
               </li>
               <li class="tab-pane__item pane-item">
                 <h3>Сколько тренеров работает в клубе и какова &#32;<br>их квалификация?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
                 <p>Подробнее о тренерах нашего клуба вы найдете в разделе жюри.</p>
               </li>
             </ul>
             <ul class="tab-content__pane tab-pane" data-id="1">
               <li class="tab-pane__item pane-item">
                 <h3>Занятия с тренером входят в абонемент?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
                 <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
               </li>
               <li class="tab-pane__item pane-item">
                 <h3>Можно ли заморозить абонемент?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
                 <p>Можно. Количество дней зависит от типа карты. Подробнее узнать наличие заморозки на своей карте можно у менеджера продаж.</p>
               </li>
               <li class="tab-pane__item pane-item">
                 <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
                 <p>Часы посещения клуба регламинтируется типом карты. Подробнее узнать можно у менеджера продаж.</p>
               </li>
               <li class="tab-pane__item pane-item">
                 <h3>Что такое семейный доступ и доступ для друзей?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
                 <p>Подробнее узнать можно у менеджера продаж.</p>
               </li>
             </ul>
             <ul class="tab-content__pane tab-pane" data-id="2">
               <li class="tab-pane__item pane-item">
                 <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
                 <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели &#32;<br>и предложит программу питания.</p>
               </li>
               <li class="tab-pane__item pane-item">
                 <h3>Проводятся ли в клубе какие-либо мероприятия &#32;<br>или соревнования?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
                 <p>Да. Информация по анонсам мероприятий или соревнований вы можете найти на сайте. Следите за новостями.</p>
               </li>
               <li class="tab-pane__item pane-item">
                 <h3>Можно ли приобрести в центре спортивное питание?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
                 <p>Подробнее узнать можно у менеджера продаж.</p>
               </li>
               <li class="tab-pane__item pane-item">
                 <h3>Есть ли в центре детская комната?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
                 <p>Подробнее узнать можно у менеджера продаж.</p>
               </li>
             </ul>
             <ul class="tab-content__pane tab-pane" data-id="3">
               <li class="tab-pane__item pane-item">
                 <h3>Есть в фитнес-центре дресс-код?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
-                <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
+                <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
               </li>
               <li class="tab-pane__item pane-item">
                 <h3>Можно ли приводить с собой детей на тренировки?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
                 <p>Да. Вы можете оставить детей в детской комнате. В силовом зале детям находить запрещено.</p>
               </li>
               <li class="tab-pane__item pane-item">
                 <h3>Какие дополнительные правила посещения центра?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
                 <p>Не красть полотенца, не бросать их на пол. Остальное вы можете узнать у вашего менеджера.</p>
               </li>
               <li class="tab-pane__item pane-item">
                 <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/faq/faq-plus.svg" width="40" height="40">
-                  <img class="pane-item__img btn-img btn-img--close" src="img/faq/faq-plus.svg" width="30" height="30" alt="Открыть ответ.">
-                </picture>
+                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
+                  <use href="/__spritemap#sprite-plus"></use>
+                </svg>
+                <svg class="pane-item__img btn-minus" width="30" height="30">
+                  <use href="/__spritemap#sprite-minus"></use>
+                </svg>
                 <p>Нет. Однако Вам лучше проконсультироваться с врачом о наличии у Вас противопоказаний.</p>
               </li>
             </ul>
@@ -614,7 +646,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-user.webp 1x, img/reviews/reviews-user@2x.webp 2x" width="80" height="80">
                 <source type="image/webp" srcset="img/reviews/reviews-user.webp 1x, img/reviews/reviews-user@2x.webp 2x" width="68" height="68">
-                <source media="(min-width: 768px)" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="80" height="80">
+                <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="80" height="80">
                 <img class="reviews-item__img" src="img/reviews/reviews-user.jpg" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="68" height="68" alt="Фото отзыва.">
               </picture>
               <h3>Анна Орлова</h3>
@@ -624,7 +656,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-user.webp 1x, img/reviews/reviews-user@2x.webp 2x" width="80" height="80">
                 <source type="image/webp" srcset="img/reviews/reviews-user.webp 1x, img/reviews/reviews-user@2x.webp 2x" width="68" height="68">
-                <source media="(min-width: 768px)" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="80" height="80">
+                <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="80" height="80">
                 <img class="reviews-item__img" src="img/reviews/reviews-user.jpg" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="68" height="68" alt="Фото отзыва.">
               </picture>
               <h3>Анна Орлова</h3>
@@ -633,27 +665,28 @@
           </ul>
         </div>
       </section>
-      <form class="main__sections-list form"  action="https://echo.htmlacademy.ru" data-test="form">
-        <h2 class="visually-hidden">Форма отправки и контакты</h2>
-        <div class="form__container">
+      <section class="main__sections-list form-contacts" data-test="form">
+        <h2 class="visually-hidden">Блок формы и контактов</h2>
+        <form class="form-contacts__sections-list form"  action="https://echo.htmlacademy.ru">
+          <h3 class="visually-hidden">Форма отправки и контакты</h3>
           <fieldset class="form__application form-application">
-            <label class="form-application__title">Бесплатное занятие</label>
-            <div class="form-application__inputs application-inputs">
-              <label class="application-inputs__input">
-                <input type="text" placeholder="Имя" name="name">
-              </label>
-              <label class="application-inputs__input">
-                <input type="number" placeholder="Телефон" name="tel">
-              </label>
-            </div>
+            <legend class="form-application__title">Бесплатное занятие</legend>
+            <label class="form-application__input">
+              <span class="visually-hidden">Поле ввода имени</span>
+              <input type="text" placeholder="Имя" name="name">
+            </label>
+            <label class="form-application__input">
+              <span class="visually-hidden">Поле ввода телефона</span>
+              <input type="number" placeholder="Телефон" name="tel">
+            </label>
           </fieldset>
-          <button class="" type="button">
-            <span class="">Отправить</span>
+          <button class="form__btn form-btn" type="submit">
+            <span class="form-btn__text">Отправить</span>
           </button>
-        </div>
-        <div class="form__application form-contacts">
-          <h3 class="title-container__title">Контакты</h3>
-          <ul class="form-contacts__list contact-list contact-list--mod">
+        </form>
+        <div class="form-contacts__contacts contacts">
+          <h3 class="contacts__title">Контакты</h3>
+          <ul class="contacts__list contact-list contact-list--mod">
             <li class="contact-list__item contact-item">
               <h4 class="contact-item__title">Адрес:</h4>
               <p class="contact-item__text">г. Омск, ул. 60 лет Октября, 7</p>
@@ -674,17 +707,15 @@
             </li>
           </ul>
         </div>
-      </form>
+      </section>
     </main>
-    <footer class="main__sections-list footer" data-test="footer">
+    <footer class="footer" data-test="footer">
       <h2 class="visually-hidden">Навигация и контакты социальных сетей</h2>
       <div class="footer__container">
         <div class="footer__logo footer-logo">
-          <picture>
-            <source media="(min-width: 1366px)" srcset="img/header/logo.svg" width="130" height="26">
-            <source media="(min-width: 768px)" srcset="img/header/logo.svg" width="410" height="22">
-            <img class="footer__logo" src="img/header/logo.svg" width="100" height="20" alt="Логотип клуба.">
-          </picture>
+          <svg class="footer__logo" width="100" height="20">
+            <use href="/__spritemap#sprite-logo"></use>
+          </svg>
         </div>
         <div class="footer__nav">
           <h3 class="visually-hidden">Блок навигации.</h3>
@@ -710,22 +741,22 @@
         </div>
         <ul class="footer__list social-list">
           <li class="social-list__item social-item">
-            <a class="social-item__link social-link" href="#">
-              <svg class="social-link__img" aria-label="Ссылка на Вконтакте" width="25" height="25">
-                <use xlink:href="/__spritemap#sprite-vk"></use>
+            <a class="social-item__link social-link" href="https://vk.com" aria-label="Переход в Вконтакте">
+              <svg class="social-link__img" width="25" height="25">
+                <use href="/__spritemap#sprite-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item social-item">
-            <a class="social-item__link social-link" href="#">
-              <svg class="social-link__img" aria-label="Ссылка на одноклассники" width="25" height="25">
-                <use xlink:href="/__spritemap#sprite-ok"></use>
+            <a class="social-item__link social-link" href="https://ok.com" aria-label="Переход в Одноклассники">
+              <svg class="social-link__img" width="25" height="25">
+                <use href="/__spritemap#sprite-ok"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item social-item">
-            <a class="social-item__link social-link" href="#">
-              <svg class="social-link__img" aria-label="Ссылка на реддит" width="25" height="25">
+            <a class="social-item__link social-link" href="https://reddit.com" aria-label="Переход в Reddit">
+              <svg class="social-link__img" width="25" height="25">
                 <use href="/__spritemap#sprite-reddit"></use>
               </svg>
             </a>
