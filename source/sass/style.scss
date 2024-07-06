@@ -1,4 +1,37 @@
 // Vendor
 // ---------------------------------
-
 @import "vendor/normalize";
+@import "vendor/swiper.css";
+
+// Global
+// ---------------------------------
+@import "global/variables";
+@import "global/mixins.scss";
+@import "global/fonts";
+@import "global/typography";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Modules
+// ---------------------------------
+@import "modules/tabs";
+
+// Blocks
+// ---------------------------------
+@import "blocks/wrapper";
+@import "blocks/btn";
+@import "blocks/section-title";
+@import "blocks/hero";
+@import "blocks/page-header";
+@import "blocks/logo";
+@import "blocks/about";
+@import "blocks/video";
+@import "blocks/price";
+@import "blocks/price-card";
+@import "blocks/games";
+@import "blocks/juri";
+@import "blocks/juri-slide";
+@import "blocks/features";
+@import "blocks/feature-card";
+@import "blocks/page-footer";

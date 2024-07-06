@@ -1,0 +1,94 @@
+.juri {
+  padding-top: 100px;
+  padding-bottom: 76px;
+  @include vp-1365 {
+    padding-top: 29px;
+    padding-bottom: 38px;
+  }
+  @include vp-767 {
+    padding-top: 41px;
+    padding-bottom: 17px;
+  }
+}
+.juri__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 47px;
+  @include vp-1365 {
+    font-size: 54px;
+    line-height: 54px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 19px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+.juri__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 103px;
+
+  @include vp-1365 {
+    max-width: 560px;
+    padding: 0;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+.juri__arrow {
+  position: absolute;
+  z-index: 2;
+  top: 37.1%;
+  background-color: $color-transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: $color-dark;
+
+  @include vp-1365 {
+    top: 38.5%;
+  }
+
+  &--prev {
+    left: 33px;
+    @include vp-1365 {
+      left: -68px;
+    }
+  }
+  &--next {
+    right: 33px;
+    @include vp-1365 {
+      right: -68px;
+    }
+
+    & svg {
+      transform: rotate(180deg);
+    }
+  }
+  &:focus {
+    outline: none;
+    border: 1px solid $color-dark;
+    background-color: $text-dark-alternative;
+  }
+  &:hover {
+    border: 1px solid $color-dark;
+  }
+  &:active {
+    border: 1px solid $color-dark;
+    background-color: $text-dark;
+    color: $color-light;
+  }
+}
