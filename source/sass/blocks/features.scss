@@ -30,6 +30,27 @@
   justify-content: space-between;
   align-items: start;
   justify-items: end;
+  @include vp-1366 {
+    position: relative;
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      width: 360px;
+      height: 2px;
+      top: 50%;
+      background-color: rgba(209, 10, 66, 0.2);
+    }
+
+    &::after {
+      left: 0;
+    }
+
+    &::before {
+      right: 0;
+    }
+  }
 
   @include vp-1365 {
     grid-template-columns: repeat(2, 1fr);
