@@ -21,3 +21,10 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .hero-btn {
+    bottom: 172px;
+    left: 365px;
+    width: 264px;
+  }
+}

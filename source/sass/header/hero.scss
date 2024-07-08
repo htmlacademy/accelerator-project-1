@@ -13,3 +13,11 @@
     padding-bottom: 100px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero {
+    position: relative;
+    width: $desktop-width;
+    padding-bottom: 120px;
+  }
+}

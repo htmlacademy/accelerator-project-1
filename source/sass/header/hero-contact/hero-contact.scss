@@ -9,3 +9,9 @@
     padding: 30px 45px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero-contact {
+    padding: 30px 103px;
+  }
+}

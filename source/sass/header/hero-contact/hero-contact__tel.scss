@@ -14,3 +14,10 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero-contact__tel {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}

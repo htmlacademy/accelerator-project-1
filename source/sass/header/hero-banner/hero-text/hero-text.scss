@@ -11,3 +11,9 @@
     align-content: baseline;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero-text {
+    margin-top: 229px;
+  }
+}

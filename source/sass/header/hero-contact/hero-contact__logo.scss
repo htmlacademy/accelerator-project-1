@@ -4,3 +4,10 @@
     height: 22px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero-contact__logo {
+    width: 130px;
+    height: 26px;
+  }
+}

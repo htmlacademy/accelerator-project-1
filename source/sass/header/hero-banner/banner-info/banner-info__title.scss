@@ -6,11 +6,20 @@
   font-size: 62px;
   line-height: 62px;
   color: #ffffff;
+  letter-spacing: 4%;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
   .banner-info__title {
     font-size: 72px;
     line-height: 85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner-info__title {
+    font-size: 92px;
+    line-height: 110px;
   }
 }
