@@ -19,7 +19,8 @@ const juriSliderInit = () => {
       },
       breakpoints: {
         320: {
-          slidesPerView: 1
+          slidesPerView: 1,
+          activeIndex: 1,
         },
 
         768: {

@@ -60,7 +60,8 @@
       color: $text-light;
     }
 
-    &:hover {
+    &:hover,
+    &.is-hover {
       border: none;
       background: $fill-gradient;
       color: $text-light;

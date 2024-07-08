@@ -9,6 +9,6 @@ window.addEventListener('DOMContentLoaded', () => {
     setActiveTab();
     juriSliderInit();
     setActiveSlideInfo();
-    // juriSliderInit();
+    juriSliderInit();
   });
 });
