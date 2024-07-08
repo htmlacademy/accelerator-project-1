@@ -1,32 +1,1004 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
+    <link rel="stylesheet" href="sass/style.scss" />
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <div class="wrapper">
+      <div class="hero" data-test="hero">
+        <div class="container">
+          <header class="page-header">
+            <div class="page-header__wrapper">
+              <div class="page-header__col page-header__col--logo logo">
+                <a
+                  ><img
+                    src="img/svg/logo.svg"
+                    width="130"
+                    height="26"
+                    alt="Логотип SUPERGYM."
+                /></a>
+              </div>
+              <div class="page-header__col page-header__col--phone">
+                <a href="tel:88005555555" class="page-header__link"
+                  >8 800 555-55-55</a
+                >
+              </div>
+            </div>
+          </header>
+          <div class="hero__content">
+            <div class="hero__col hero__col--text">
+              <div class="hero__inner">
+                <div class="hero__item"><span>Омск</span></div>
+                <div class="hero__item">
+                  <ul>
+                    <li class="small">Тренажёрный зал</li>
+                    <li class="small">Групповые занятия</li>
+                    <li class="small">Кардио-зона</li>
+                  </ul>
+                </div>
+                <div class="hero__item"><h1>ФИТНЕС ЦЕНТР</h1></div>
+              </div>
+              <a class="hero__btn btn btn--on-dark" href="#price"
+                >Купить абонемент</a
+              >
+            </div>
+            <div class="hero__col hero__col--img">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1365px)"
+                  srcset="img/hero-desktop.jpg 1x, img/hero-desktop@2x.jpg 2x"
+                />
+                <!-- desktop -->
+                <source
+                  type="image/webp"
+                  media="(min-width: 767px)"
+                  srcset="img/hero-tablet.jpg 1x, img/hero-desktop@2x.jpg 2x"
+                />
+                <!-- tablet -->
+                <source
+                  media="(min-width: 767px)"
+                  srcset="img/hero-tablet.jpg 1x, img/hero-tablet@2x.jpg 2x"
+                />
+                <!-- tablet -->
+                <img
+                  width="500"
+                  height="524"
+                  src="img/hero-desktop.jpg"
+                  srcset="img/hero-desktop@2x.jpg 2x"
+                  alt="Мужчина, в спортивной темной майке с логотипом на груди в виде буквы S, смотрит в лево."
+                /><!-- desktop -->
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="page-content">
+        <div data-test="about">
+          <section class="about">
+            <div class="container">
+              <div class="about__wrapper">
+                <div class="about__col about__col--content">
+                  <div class="about__head">
+                    <h3 class="about__title section-title section-title--dark">
+                      Тренажёрный зал
+                    </h3>
+                    <p class="about__descr">Просторный зал площадью 900 кв/м</p>
+                  </div>
+
+                  <div class="about__content">
+                    <p>
+                      Supergym – самый большой фитнес центр за Уралом
+                      и идеальное место для укрепления тела и здоровья.
+                      Тренажёрный зал оснащён всем необходимым современным
+                      оборудованием для всех спортсменов.
+                    </p>
+                    <p>
+                      В зале расположены отдельная зона для Crossfit
+                      и кардио-зона с 40 тренажёрами. Также в фитнес центре
+                      есть несколько оборудованных залов для различных видов
+                      групповых занятий.
+                    </p>
+                  </div>
+                </div>
+                <div class="about__col about__col--img">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1365px)"
+                      srcset="img/gym-desktop.jpg 1x, img/gym-desktop@2x.jpg 2x"
+                    />
+                    <!-- desktop -->
+                    <source
+                      type="image/webp"
+                      media="(min-width: 767px)"
+                      srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x"
+                    />
+                    <!-- tablet -->
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x"
+                    />
+                    <!-- mobile -->
+                    <source
+                      media="(min-width: 767px)"
+                      srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x"
+                    />
+                    <!-- tablet -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x"
+                    />
+                    <!-- mobile -->
+                    <img
+                      width="660"
+                      height="400"
+                      src="img/gym-desktop.jpg"
+                      srcset="img/gym-desktop@2x.jpg 2x"
+                      alt="зал с тренажерами на светлом фоне."
+                    /><!-- desktop -->
+                  </picture>
+                </div>
+                <div class="about__video">
+                  <div class="video">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1365px)"
+                        srcset="
+                          img/video-preview-desktop.jpg    1x,
+                          img/video-preview-desktop@2x.jpg 2x
+                        "
+                      />
+                      <!-- desktop -->
+                      <source
+                        type="image/webp"
+                        media="(min-width: 767px)"
+                        srcset="
+                          img/video-preview-tablet.jpg    1x,
+                          img/video-preview-tablet@2x.jpg 2x
+                        "
+                      />
+                      <!-- tablet -->
+                      <source
+                        type="image/webp"
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/video-preview-mobile.jpg    1x,
+                          img/video-preview-mobile@2x.jpg 2x
+                        "
+                      />
+                      <!-- mobile -->
+                      <source
+                        media="(min-width: 767px)"
+                        srcset="
+                          img/video-preview-tablet.jpg    1x,
+                          img/video-preview-tablet@2x.jpg 2x
+                        "
+                      />
+                      <!-- tablet -->
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/video-preview-mobile.jpg    1x,
+                          img/video-preview-mobile@2x.jpg 2x
+                        "
+                      />
+                      <!-- mobile -->
+                      <img
+                        width="360"
+                        height="230"
+                        src="img/video-preview-desktop.jpg"
+                        srcset="img/video-preview-desktop@2x.jpg 2x"
+                        alt="зал с тренажерами."
+                      /><!-- desktop -->
+                    </picture>
+                    <button class="video__btn"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div data-test="price">
+          <section class="price" id="price">
+            <div class="container">
+              <div class="price__wrapper">
+                <h3 class="price__title section-title section-title--dark">
+                  Абонементы
+                </h3>
+                <div
+                  class="price__tabs tabs"
+                  data-tabs="parent"
+                  data-delay="300"
+                >
+                  <div class="tabs__controls">
+                    <button
+                      class="is-active tabs__control"
+                      type="button"
+                      data-tab="tab1"
+                    >
+                      1 месяц
+                    </button>
+                    <button class="tabs__control" type="button" data-tab="tab2">
+                      6 месяцев
+                    </button>
+                    <button class="tabs__control" type="button" data-tab="tab3">
+                      12 месяцев
+                    </button>
+                  </div>
+                  <div class="tabs__content" data-tabs="content">
+                    <div
+                      class="tabs__element is-active"
+                      data-tab-content="tab1"
+                      data-tabs="element"
+                    >
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>С тренером</h4>
+                            <p>12 занятий</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >5000
+                              <svg width="30" height="42">
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="true"
+                              >5000</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>Дневной</h4>
+                            <p>с 8:00 до 17:00</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >1700
+                              <svg width="30" height="42">
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="true"
+                              >1700</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>Полный день</h4>
+                            <p>с 8:00 до 22:00</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >2700
+                              <svg width="30" height="42">
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="true"
+                              >2700</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tabs__element"
+                      data-tab-content="tab2"
+                      data-tabs="element"
+                    >
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>С тренером</h4>
+                            <p>12 занятий</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >30000
+                              <svg width="30" height="42">
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="true"
+                              >30000</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>Дневной</h4>
+                            <p>с 8:00 до 17:00</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >10200
+                              <svg width="30" height="42">
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="true"
+                              >10200</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>Полный день</h4>
+                            <p>с 8:00 до 22:00</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >16200
+                              <svg width="30" height="42">
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="true"
+                              >16200</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tabs__element"
+                      data-tab-content="tab3"
+                      data-tabs="element"
+                    >
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>С тренером</h4>
+                            <p>12 занятий</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >60000
+                              <svg width="30" height="42">
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="true"
+                              >60000</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>Дневной</h4>
+                            <p>с 8:00 до 17:00</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >20400
+                              <svg width="30" height="42">
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="true"
+                              >20400</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                      <div class="price-card">
+                        <div class="price-card__wrapper">
+                          <div class="price-card__head">
+                            <h4>Полный день</h4>
+                            <p>с 8:00 до 22:00</p>
+                          </div>
+                          <div class="price-card__count">
+                            <span class="price-card__sum numbers-medium"
+                              >32400
+                              <svg width="30" height="42">
+                                <use
+                                  href="/__spritemap#sprite-icon-rubble"
+                                ></use></svg
+                            ></span>
+                            <span
+                              class="price-card__back-sum numbers-xlarge"
+                              aria-hidden="true"
+                              >32400</span
+                            >
+                          </div>
+                          <button class="price-card__btn btn btn--on-light">
+                            Купить абонемент
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1365px)"
+                    srcset="
+                      img/decor-desktop.png    1x,
+                      img/decor-desktop@2x.png 2x
+                    "
+                  />
+                  <!-- desktop -->
+                  <source
+                    type="image/webp"
+                    media="(min-width: 767px)"
+                    srcset="img/decor-tablet.png 1x, img/decor-tablet@2x.png 2x"
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="img/decor-tablet.png 1x, img/decor-tablet@2x.png 2x"
+                  />
+                  <!-- tablet -->
+                  <img
+                    width="303"
+                    height="448"
+                    src="img/decor-desktop.png"
+                    srcset="img/decor-desktop@2x.png 2x"
+                    alt=""
+                  /><!-- desktop -->
+                </picture>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div data-test="games">
+          <section class="games">
+            <div class="container">
+              <div class="games__wrapper">
+                <div class="games__col games__col--text">
+                  <div class="games__content">
+                    <h2 class="games__tile section-title section-title--light">
+                      SUPER GAMES
+                    </h2>
+                    <div class="games__date">
+                      <div class="games__date-row games__date-row--top">
+                        <span class="large">Дата</span>
+                      </div>
+                      <div class="games__date-row games__date-row--bottom">
+                        <span class="numbers-regular">7</span>
+                        <span class="small">Марта</span>
+                        <span class="small">2019</span>
+                      </div>
+                    </div>
+                    <div class="games__time">
+                      <div class="games__time-row games__time-row--top">
+                        <span class="large">Время</span>
+                      </div>
+                      <div class="games__time-row games__time-row--bottom">
+                        <span class="numbers-regular">12:00</span>
+                      </div>
+                    </div>
+                    <p class="games__descr">
+                      Ежегодные соревнования по CrossFit
+                    </p>
+                  </div>
+                  <button class="games-card__btn btn btn--on-dark">
+                    заполнить заявку
+                  </button>
+                </div>
+                <div class="games__col games__col--img">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1365px)"
+                      srcset="
+                        img/games-desktop.jpg    1x,
+                        img/games-desktop@2x.jpg 2x
+                      "
+                    />
+                    <!-- desktop -->
+                    <source
+                      type="image/webp"
+                      media="(min-width: 767px)"
+                      srcset="
+                        img/games-tablet.jpg    1x,
+                        img/games-tablet@2x.jpg 2x
+                      "
+                    />
+                    <!-- tablet -->
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        img/games-mobile.jpg    1x,
+                        img/games-mobile@2x.jpg 2x
+                      "
+                    />
+                    <!-- mobile -->
+                    <source
+                      media="(min-width: 767px)"
+                      srcset="
+                        img/games-mobile.jpg    1x,
+                        img/games-mobile@2x.jpg 2x
+                      "
+                    />
+                    <!-- tablet -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        img/games-tablet.jpg    1x,
+                        img/games-tablet@2x.jpg 2x
+                      "
+                    />
+                    <!-- mobile -->
+                    <img
+                      width="660"
+                      height="500"
+                      src="img/games-desktop.jpg"
+                      srcset="img/games-desktop@2x.jpg 2x"
+                      alt="зал с тренажерами на светлом фоне."
+                    /><!-- desktop -->
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div data-test="juri">
+          <section class="juri">
+            <div class="container">
+              <h3 class="juri__title section-title section-title--dark">
+                Жюри
+              </h3>
+            </div>
+            <div class="juri__wrapper">
+              <button
+                class="juri__arrow juri__arrow--prev swiper-arrow swiper-button-prev"
+                type="button"
+                aria-label="Предыдущий слайд."
+              >
+                <svg width="16" height="32">
+                  <use href="/__spritemap#sprite-icon-arrow"></use>
+                </svg>
+              </button>
+              <div class="juri__slider swiper">
+                <div class="juri__inner swiper-wrapper">
+                  <div class="juri__slide juri-slide swiper-slide" tabindex="0">
+                    <div class="juri-slide__img-container">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/juri/juri-1.webp    1x,
+                            img/juri/juri-1@2x.webp 2x
+                          "
+                        />
+                        <img
+                          width="260"
+                          height="300"
+                          src="img/juri/juri-1.jpg"
+                          srcset="img/juri/juri-1@2x.jpg 2x"
+                          alt="Анна Павлова"
+                        />
+                      </picture>
+                    </div>
+                    <h6 class="juri-slide__name">Анна Павлова</h6>
+                    <div class="juri-slide__info">
+                      <h6 class="juri-slide__info-name">Анна Павлова</h6>
+                      <span class="juri-slide__info-descr">CrossFit</span>
+                      <ul class="juri-slide__info-list">
+                        <li class="juri-slide__info-item">
+                          Certified Level 3 Trainer
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Победитель чемпионата России по&nbsp;CrossFit
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Опыт&nbsp;&mdash; 6&nbsp;лет
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="juri__slide juri-slide swiper-slide" tabindex="0">
+                    <div class="juri-slide__img-container">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/juri/juri-2.webp    1x,
+                            img/juri/juri-2@2x.webp 2x
+                          "
+                        />
+                        <img
+                          width="260"
+                          height="300"
+                          src="img/juri/juri-2.jpg"
+                          srcset="img/juri/juri-2@2x.jpg 2x"
+                          alt="Алексей Лавров"
+                        />
+                      </picture>
+                    </div>
+                    <h6 class="juri-slide__name">Алексей Лавров</h6>
+                    <div class="juri-slide__info">
+                      <h6 class="juri-slide__info-name">Алексей Лавров</h6>
+                      <span class="juri-slide__info-descr">CrossFit</span>
+                      <ul class="juri-slide__info-list">
+                        <li class="juri-slide__info-item">
+                          Certified Level 3 Trainer
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Победитель чемпионата России по&nbsp;CrossFit
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Опыт&nbsp;&mdash; 6&nbsp;лет
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="juri__slide juri-slide swiper-slide is-active"
+                    tabindex="0"
+                  >
+                    <div class="juri-slide__img-container">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/juri/juri-3.webp    1x,
+                            img/juri/juri-3@2x.webp 2x
+                          "
+                        />
+                        <img
+                          width="260"
+                          height="300"
+                          src="img/juri/juri-3.jpg"
+                          srcset="img/juri/juri-3@2x.jpg 2x"
+                          alt="Александр Пашков"
+                        />
+                      </picture>
+                    </div>
+                    <h6 class="juri-slide__name">Александр Пашков</h6>
+                    <div class="juri-slide__info">
+                      <h6 class="juri-slide__info-name">Александр Пашков</h6>
+                      <span class="juri-slide__info-descr">CrossFit</span>
+                      <ul class="juri-slide__info-list">
+                        <li class="juri-slide__info-item">
+                          Certified Level 3 Trainer
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Победитель чемпионата России по&nbsp;CrossFit
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Опыт&nbsp;&mdash; 6&nbsp;лет
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="juri__slide juri-slide swiper-slide" tabindex="0">
+                    <div class="juri-slide__img-container">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/juri/juri-4.webp    1x,
+                            img/juri/juri-4@2x.webp 2x
+                          "
+                        />
+                        <img
+                          width="260"
+                          height="300"
+                          src="img/juri/juri-4.jpg"
+                          srcset="img/juri/juri-4@2x.jpg 2x"
+                          alt="Мария Кетова"
+                        />
+                      </picture>
+                    </div>
+                    <h6 class="juri-slide__name">Мария Кетова</h6>
+                    <div class="juri-slide__info">
+                      <h6 class="juri-slide__info-name">Мария Кетова</h6>
+                      <span class="juri-slide__info-descr">CrossFit</span>
+                      <ul class="juri-slide__info-list">
+                        <li class="juri-slide__info-item">
+                          Certified Level 3 Trainer
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Победитель чемпионата России по&nbsp;CrossFit
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Опыт&nbsp;&mdash; 6&nbsp;лет
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="juri__slide juri-slide swiper-slide" tabindex="0">
+                    <div class="juri-slide__img-container">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/juri/juri-1.webp    1x,
+                            img/juri/juri-1@2x.webp 2x
+                          "
+                        />
+                        <img
+                          width="260"
+                          height="300"
+                          src="img/juri/juri-1.jpg"
+                          srcset="img/juri/juri-1@2x.jpg 2x"
+                          alt="Анна Павлова"
+                        />
+                      </picture>
+                    </div>
+                    <h6 class="juri-slide__name">Анна Павлова</h6>
+                    <div class="juri-slide__info">
+                      <h6 class="juri-slide__info-name">Анна Павлова</h6>
+                      <span class="juri-slide__info-descr">CrossFit</span>
+                      <ul class="juri-slide__info-list">
+                        <li class="juri-slide__info-item">
+                          Certified Level 3 Trainer
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Победитель чемпионата России по&nbsp;CrossFit
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Опыт&nbsp;&mdash; 6&nbsp;лет
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="juri__slide juri-slide swiper-slide" tabindex="0">
+                    <div class="juri-slide__img-container">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/juri/juri-2.webp    1x,
+                            img/juri/juri-2@2x.webp 2x
+                          "
+                        />
+                        <img
+                          width="260"
+                          height="300"
+                          src="img/juri/juri-2.jpg"
+                          srcset="img/juri/juri-2@2x.jpg 2x"
+                          alt="Алексей Лавров"
+                        />
+                      </picture>
+                    </div>
+                    <h6 class="juri-slide__name">Алексей Лавров</h6>
+                    <div class="juri-slide__info">
+                      <h6 class="juri-slide__info-name">Алексей Лавров</h6>
+                      <span class="juri-slide__info-descr">CrossFit</span>
+                      <ul class="juri-slide__info-list">
+                        <li class="juri-slide__info-item">
+                          Certified Level 3 Trainer
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Победитель чемпионата России по&nbsp;CrossFit
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Опыт&nbsp;&mdash; 6&nbsp;лет
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="juri__slide juri-slide swiper-slide" tabindex="0">
+                    <div class="juri-slide__img-container">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/juri/juri-3.webp    1x,
+                            img/juri/juri-3@2x.webp 2x
+                          "
+                        />
+                        <img
+                          width="260"
+                          height="300"
+                          src="img/juri/juri-3.jpg"
+                          srcset="img/juri/juri-3@2x.jpg 2x"
+                          alt="Александр Пашков"
+                        />
+                      </picture>
+                    </div>
+                    <h6 class="juri-slide__name">Александр Пашков</h6>
+                    <div class="juri-slide__info">
+                      <h6 class="juri-slide__info-name">Александр Пашков</h6>
+                      <span class="juri-slide__info-descr">CrossFit</span>
+                      <ul class="juri-slide__info-list">
+                        <li class="juri-slide__info-item">
+                          Certified Level 3 Trainer
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Победитель чемпионата России по&nbsp;CrossFit
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Опыт&nbsp;&mdash; 6&nbsp;лет
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="juri__slide juri-slide swiper-slide" tabindex="0">
+                    <div class="juri-slide__img-container">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/juri/juri-4.webp    1x,
+                            img/juri/juri-4@2x.webp 2x
+                          "
+                        />
+                        <img
+                          width="260"
+                          height="300"
+                          src="img/juri/juri-4.jpg"
+                          srcset="img/juri/juri-4@2x.jpg 2x"
+                          alt="Мария Кетова"
+                        />
+                      </picture>
+                    </div>
+                    <h6 class="juri-slide__name">Мария Кетова</h6>
+                    <div class="juri-slide__info">
+                      <h6 class="juri-slide__info-name">Мария Кетова</h6>
+                      <span class="juri-slide__info-descr">CrossFit</span>
+                      <ul class="juri-slide__info-list">
+                        <li class="juri-slide__info-item">
+                          Certified Level 3 Trainer
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Победитель чемпионата России по&nbsp;CrossFit
+                        </li>
+                        <li class="juri-slide__info-item">
+                          Опыт&nbsp;&mdash; 6&nbsp;лет
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="juri__arrow juri__arrow--next swiper-arrow swiper-button-next"
+                type="button"
+                aria-label="Следующий слайд."
+              >
+                <svg width="16" height="32">
+                  <use href="/__spritemap#sprite-icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </section>
+        </div>
+        <div data-test="features">
+          <section class="features">
+            <div class="container">
+              <div class="features__wrapper">
+                <h3 class="features__title section-title section-title--dark">
+                  Наши преимущества
+                </h3>
+                <div class="features__inner">
+                  <div class="features__item feature-card">
+                    <div class="feature-card__number">
+                      <b>900</b>
+                      <small>кв/м</small>
+                    </div>
+                    <div class="feature-card__text">
+                      <h6>Площадь</h6>
+                      <p>Занимайтесь без очередей и толкучки</p>
+                    </div>
+                  </div>
+                  <div class="features__item feature-card">
+                    <div class="feature-card__number">
+                      <b>70</b>
+                      <small>машин</small>
+                    </div>
+                    <div class="feature-card__text">
+                      <h6>Собственная парковка</h6>
+                      <p>
+                        Вы всегда найдёте место для своей машины на нашей
+                        парковке
+                      </p>
+                    </div>
+                  </div>
+                  <div class="features__item feature-card">
+                    <div class="feature-card__number">
+                      <b>350</b>
+                      <small>мест</small>
+                    </div>
+                    <div class="feature-card__text">
+                      <h6>Комфорт</h6>
+                      <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+                    </div>
+                  </div>
+                  <div class="features__item feature-card">
+                    <div class="feature-card__number">
+                      <b>5+</b>
+                      <small>лет</small>
+                    </div>
+                    <div class="feature-card__text">
+                      <h6>Тренерский опыт</h6>
+                      <p>
+                        Добивайтесь своих целей быстрее с профессиональным
+                        тренером
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="features__main-item feature-card feature-card--main"
+                  >
+                    <b>100</b>
+                    <small>Тренажёров</small>
+                    <p>Современные тренажёры на все группы мышц</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="page-footer">
+        <div data-test="footer">footer</div>
+      </footer>
+    </div>
     <script type="module" src="js/main.js"></script>
   </body>
-
 </html>
