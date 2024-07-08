@@ -1,0 +1,353 @@
+.offers {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include vp-1365 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include vp-767 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    & .container {
+      padding: 0;
+      width: 100%;
+    }
+  }
+}
+
+.offers__title {
+  margin: 0;
+  margin-bottom: 70px;
+  text-align: center;
+
+  @include vp-1365 {
+    margin-bottom: 35px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 39px;
+  }
+}
+
+.offers__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr auto;
+  column-gap: 40px;
+  row-gap: 30px;
+  align-items: end;
+
+  @include vp-1365 {
+    column-gap: 30px;
+    row-gap: 35px;
+    grid-template-rows: auto auto;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 0;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+}
+
+.offers__main-item {
+  grid-row: span 2;
+  display: flex;
+  align-self: stretch;
+
+  @include vp-1365 {
+    grid-column: span 2;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    margin-bottom: 40px;
+  }
+}
+
+.offers__main-item-col {
+  &--text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 280px;
+    background-color: $color-red;
+    color: $text-light;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    padding-left: 45px;
+    padding-right: 45px;
+    @include vp-1365 {
+      width: 41%;
+      max-width: none;
+      flex-shrink: 0;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    @include vp-767 {
+      padding: 30px;
+      padding-bottom: 25px;
+      width: 100%;
+      align-items: center;
+      min-height: 270px;
+      text-align: center;
+    }
+
+    & h4 {
+      margin: 0;
+      margin-bottom: 20px;
+
+      @include vp-767 {
+        margin-bottom: 8px;
+      }
+    }
+
+    & b {
+      display: inline-block;
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 70px;
+      @include vp-767 {
+        font-size: 64px;
+        line-height: 64px;
+        margin-bottom: 29px;
+      }
+    }
+
+    & p {
+      margin: 0;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+      @include vp-767 {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    & a {
+      margin-top: auto;
+      margin-left: -10px;
+      position: relative;
+      font-family: $font-family;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 14px;
+      text-transform: uppercase;
+      color: inherit;
+      padding: 10px;
+      border: 1px solid $color-transparent;
+      transition: opacity $trans-default, background-color $trans-default,
+        color $trans-default;
+
+      @include vp-767 {
+        margin-left: 0;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 78.5%;
+        height: 1px;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $text-light;
+      }
+
+      &:focus {
+        outline: none;
+        border: 1px solid $text-light;
+
+        &::after {
+          display: none;
+        }
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+      &:active {
+        border: 1px solid $color-transparent;
+        color: $text-light;
+        &::after {
+          display: block;
+        }
+      }
+      &:disabled,
+      &.disabled {
+        border: 1px solid $color-transparent;
+        opacity: 0.3;
+        pointer-events: none;
+        &::after {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &--img {
+    @include vp-1365 {
+      width: 59%;
+    }
+    @include vp-767 {
+      width: 100%;
+      min-height: 360px;
+    }
+    & img {
+      width: 280px;
+      height: 460px;
+
+      @include vp-1365 {
+        width: 100%;
+        min-width: 400px;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      @include vp-767 {
+        min-width: auto;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.offers__item {
+  color: $text-action-alternative;
+  padding: 7px;
+  background: linear-gradient(135deg, #d10a42 0%, #0041ca 100%);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  @include vp-767 {
+    margin: 0 auto;
+    width: 90.6%;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.offers__item-content {
+  background-color: $color-white;
+  height: 100%;
+  min-height: calc(174px - 14px);
+  padding: 20px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include vp-1365 {
+    min-height: calc(188px - 14px);
+  }
+
+  @include vp-767 {
+    align-items: center;
+    text-align: center;
+    min-height: calc(158px - 14px);
+  }
+
+  & h4 {
+    margin: 0;
+    margin-bottom: 10px;
+    @include vp-1365 {
+      font-size: 26px;
+      line-height: 26px;
+    }
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 22px;
+    }
+  }
+
+  & p {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 8px;
+    }
+  }
+
+  & a {
+    margin-top: auto;
+    margin-left: -10px;
+    position: relative;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: inherit;
+    padding: 10px;
+    border: 1px solid $color-transparent;
+    transition: opacity $trans-default, background-color $trans-default,
+      color $trans-default;
+
+    @include vp-767 {
+      margin-left: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 78.5%;
+      height: 1px;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #74819c;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $text-action-alternative;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &:hover {
+      opacity: 0.8;
+      &::after {
+        background-color: $text-action-alternative;
+      }
+    }
+
+    &:active {
+      border: 1px solid $color-transparent;
+      color: $text-action-alternative;
+      &::after {
+        display: block;
+        background-color: $text-action-alternative;
+      }
+    }
+    &:disabled,
+    &.disabled {
+      border: 1px solid $color-transparent;
+      color: $text-action-alternative;
+      opacity: 0.3;
+      pointer-events: none;
+      &::after {
+        display: block;
+        background-color: $text-action-alternative;
+      }
+    }
+  }
+}
