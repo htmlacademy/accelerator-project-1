@@ -1,24 +1,28 @@
 .hero-btn {
-  width: 100%;
-  padding: 22px;
-  font-family: "Roboto-bold",sans-serif;
+  display: block;
+  padding: 22px 0;
+  font-family: "Roboto-bold", sans-serif;
   font-size: 12px;
   line-height: 12px;
+  width: 286px;
   color: #ffffff;
   background: transparent;
   border: #ffffff 2px solid;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
 
 
   &:hover {
     background-color: #ffffff;
-    color: #103AAE;
+    color: #103aae;
   }
 
   &:focus {
     background: rgb(255, 255, 255, 0.2);
     border-color: #000000;
-    color: #103AAE;
+    color: #103aae;
   }
 
   &:active {
