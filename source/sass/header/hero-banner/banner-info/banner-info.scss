@@ -4,7 +4,7 @@
 
 @media (min-width: $tablet-width) {
   .banner-info {
-    margin-top: 31px;
+    margin: 31px 4px 0 -4px;
     grid-column: 2;
     grid-row: 1;
     width: 185px;
@@ -14,7 +14,7 @@
 
 @media (min-width: $desktop-width) {
   .banner-info  {
-    margin-top: 52px;
+    margin: 52px 56px 0 -56px;
     width: 270px;
   }
 }

@@ -5,7 +5,7 @@
 
 @media (min-width: $tablet-width) {
   .hero-text {
-    margin-top: 162px;
+    margin: 162px -4px 0 4px;
     grid-column: 1;
     grid-row: 1;
     align-content: baseline;
@@ -14,6 +14,6 @@
 
 @media (min-width: $desktop-width) {
   .hero-text {
-    margin-top: 229px;
+    margin: 229px 23px 0 -23px;
   }
 }

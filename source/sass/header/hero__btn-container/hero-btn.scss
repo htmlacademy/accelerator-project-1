@@ -8,6 +8,31 @@
   background: transparent;
   border: #ffffff 2px solid;
   text-transform: uppercase;
+
+
+  &:hover {
+    background-color: #ffffff;
+    color: #103AAE;
+  }
+
+  &:focus {
+    background: rgb(255, 255, 255, 0.2);
+    border-color: #000000;
+    color: #103AAE;
+  }
+
+  &:active {
+    background: #ffffff;
+    background-color: #ffffff;
+    color: #102654;
+  }
+
+  &:disabled {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+    opacity: 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -15,7 +40,7 @@
     position: absolute;
     bottom: 131px;
     left: 184px;
-    width: 181px;
+    width: 185px;
     font-size: 12px;
     line-height: 12px;
   }
@@ -25,6 +50,6 @@
   .hero-btn {
     bottom: 172px;
     left: 365px;
-    width: 264px;
+    width: 270px;
   }
 }

@@ -10,7 +10,7 @@
     padding: 0 45px;
     display: grid;
     grid-template-columns: 113px 185px 324px;
-    column-gap: 26px 30px;
+    column-gap: 26px;
     justify-content: end;
     width: 678px;
   }
@@ -20,5 +20,7 @@
   .hero-banner {
     padding: 30px 175px 0 250px;
     grid-template-columns: 115px 270px 500px;
+    width: 941px;
+    gap: 0;
   }
 }
