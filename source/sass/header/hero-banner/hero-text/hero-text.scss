@@ -1,0 +1,13 @@
+.hero-text {
+  align-content: end;
+  width: 113px;
+}
+
+@media (min-width: $tablet-width) {
+  .hero-text {
+    margin-top: 162px;
+    grid-column: 1;
+    grid-row: 1;
+    align-content: baseline;
+  }
+}

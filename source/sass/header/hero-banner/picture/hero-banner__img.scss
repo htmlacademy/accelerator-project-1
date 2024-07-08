@@ -1,0 +1,11 @@
+.hero-banner__img {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .hero-banner__img {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+  }
+}

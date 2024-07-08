@@ -1,0 +1,16 @@
+.banner-info__title {
+  margin: 0;
+  padding: 0;
+  text-align: end;
+  font-family: "Alumni-extrabold", sans-serif;
+  font-size: 62px;
+  line-height: 62px;
+  color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .banner-info__title {
+    font-size: 72px;
+    line-height: 85px;
+  }
+}

@@ -1,6 +1,15 @@
 .hero {
-  display: flex;
-  flex-direction: column;
+  width: $mobile-width;
+  margin: 0 auto;
+  padding-bottom: 32px;
   align-items: center;
   background: linear-gradient(to right, #003D85,#B80027);
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    position: relative;
+    width: $tablet-width;
+    padding-bottom: 100px;
+  }
 }

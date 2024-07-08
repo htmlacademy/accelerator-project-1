@@ -1,0 +1,15 @@
+.hero-banner {
+  padding: 48px 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .hero-banner {
+    padding: 0 45px;
+    display: grid;
+    grid-template-columns: 113px 185px 324px;
+    grid-template-rows: 390px;
+  }
+}

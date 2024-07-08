@@ -1,6 +1,11 @@
 .hero-contact {
+  padding: 16px 15px;
   display: flex;
   justify-content: space-between;
-  width: 290px;
-  padding: 16px 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .hero-contact {
+    padding: 30px 45px;
+  }
 }

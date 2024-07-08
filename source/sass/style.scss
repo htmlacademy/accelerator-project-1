@@ -6,5 +6,14 @@
 @import "blocks/img";
 @import "header/hero.scss";
 @import "header/hero-contact/hero-contact.scss";
+@import "header/hero-contact/hero-contact__logo.scss";
 @import "header/hero-contact/hero-contact__tel.scss";
-@import "header/hero-picture/hero__picture.scss";
+@import "header/hero-banner/hero-banner.scss";
+@import "header/hero-banner/banner-info/banner-info.scss";
+@import "header/hero-banner/banner-info/banner-info__city.scss";
+@import "header/hero-banner/banner-info/banner-info__title.scss";
+@import "header/hero-banner/hero-text/hero-text.scss";
+@import "header/hero-banner/hero-text/hero-text__text.scss";
+@import "header/hero-banner/picture/hero-banner__img.scss";
+@import "header/hero__btn-container/hero__btn-container.scss";
+@import "header/hero__btn-container/hero-btn.scss";

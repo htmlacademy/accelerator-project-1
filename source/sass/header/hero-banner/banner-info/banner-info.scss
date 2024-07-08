@@ -1,0 +1,13 @@
+.banner-info {
+  width: 156px;
+}
+
+@media (min-width: $tablet-width) {
+  .banner-info {
+    margin-top: 31px;
+    grid-column: 2;
+    grid-row: 1;
+    width: 185px;
+    align-content: baseline;
+  }
+}

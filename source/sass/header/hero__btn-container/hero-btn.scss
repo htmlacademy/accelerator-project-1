@@ -1,0 +1,23 @@
+.hero-btn {
+  width: 100%;
+  padding: 22px;
+  font-family: "Roboto-bold",sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+  background: transparent;
+  border: #ffffff 2px solid;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .hero-btn {
+    position: absolute;
+    bottom: 131px;
+    left: 184px;
+    width: 181px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
