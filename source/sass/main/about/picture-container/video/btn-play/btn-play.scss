@@ -1,4 +1,5 @@
 .btn-play {
+  z-index: 1;
   position: relative;
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@
     right: 8px;
     bottom: 8px;
     left: 8px;
-    z-index: 1;
+    z-index: 0;
     position: absolute;
     content: "";
     width: 52px;

@@ -1,3 +1,24 @@
 .btn-play__img {
+  top: 30px;
+  left: 27px;
+  bottom: 30px;
+  position: absolute;
+  z-index: 2;
   fill: #ffffff;
+
+  &:hover {
+    fill: rgba(16, 38, 84, 60%);
+  }
+
+  &:focus {
+    fill: #102654;
+  }
+
+  &:active {
+    fill: #102654;
+  }
+
+  &:disabled {
+    fill: #102654;
+  }
 }
