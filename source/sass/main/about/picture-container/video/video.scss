@@ -1,0 +1,38 @@
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 170px;
+  background: url("../img/about/video-mob.jpg") no-repeat;
+  background-size: cover;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/about/video-mob@2x.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    width: 270px;
+    height: 170px;
+    background: url("../img/about/video-tab.jpg") no-repeat;
+    background-size: cover;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/about/video-tab@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 360px;
+    height: 230px;
+    background: url("../img/about/video-desk.jpg") no-repeat;
+    background-size: cover;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/about/video-desk@2x.jpg");
+    }
+  }
+}

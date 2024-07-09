@@ -1,0 +1,37 @@
+.title-text {
+  margin: 0 auto;
+  padding: 40px  15px 36px;
+}
+
+.title-text span {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .title-text {
+    width: 430px;
+    padding: 60px 45px 36px;
+    text-align: center;
+  }
+
+  .title-text br {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title-text {
+    margin: 0;
+    width: 355px;
+    padding: 0;
+    text-align: start;
+  }
+  .title-text p {
+    width: 307px;
+  }
+
+  .title-text span {
+    display: block;
+    width: 287px;
+  }
+}

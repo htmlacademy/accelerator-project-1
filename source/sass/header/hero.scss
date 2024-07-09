@@ -2,8 +2,7 @@
   width: $mobile-width;
   margin: 0 auto;
   padding-bottom: 32px;
-  align-items: center;
-  background: linear-gradient(to right, #003d85, #b80027);
+  background: linear-gradient(to right, #003d85 35%, #b80027);
 }
 
 @media (min-width: $tablet-width) {

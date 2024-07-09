@@ -1,0 +1,16 @@
+.about {
+  padding-bottom: 40px;
+  background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    padding-bottom: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding-bottom: 125px;
+  }
+}

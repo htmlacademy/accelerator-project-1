@@ -1,0 +1,10 @@
+.picture-container__play {
+  display: block;
+  margin-bottom: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .picture-container__play {
+    margin-bottom: 0;
+  }
+}

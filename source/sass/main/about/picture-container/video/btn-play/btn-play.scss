@@ -1,0 +1,40 @@
+.btn-play {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 72px;
+  height: 72px;
+  border: rgba(237, 2, 51, 20%) 2px solid;
+  border-radius: 50%;
+  background-color: transparent;
+
+  &::before {
+    top: 8px;
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    z-index: 1;
+    position: absolute;
+    content: "";
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #ED0233 35%, #003EB7);
+  }
+
+  &:hover {
+    border-color: rgba(16, 38, 84, 60%);
+  }
+
+  &:focus {
+    border-color: none;
+  }
+
+  &:active {
+    border-color: #102654;
+  }
+
+  &:disabled {
+    border-color: #102654;
+  }
+}
