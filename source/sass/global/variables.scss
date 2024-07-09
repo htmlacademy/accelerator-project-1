@@ -10,35 +10,14 @@ $retina-dppx: 1.5dppx;
 
 // Colors
 // ---------------------------------
-// Text
-$text-dark: #102654;
-$text-dark-alternative: #e8e8e8;
-$text-light: #ffffff;
-$text-action: #103aae;
-$text-action-alternative: #1c3374;
-$text-action-gradient: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
-
-// form
-$text-form: #ffffff;
-$text-error: #ff121f;
-
-// Buttons/Links
-$stroke-light: #ffffff;
-$stroke-dark: #102654;
-$stroke-black: #000000;
-$stroke-dark-alternative: #1c3374;
-$fill-tabs: #d10a42;
-$fill-gradient: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-
-// Icons
-$icon-light: #ffffff;
-$icon-dark: #102654;
-
-// Default
 $color-white: #ffffff;
 $color-light: #f8f9fc;
-$color-black: #030a1a;
+$color-grey: #e8e8e8;
 $color-red: #ed0233;
+$color-red-alternative: #d10a42;
+$color-error: #ff121f;
+$color-action: #103aae;
+$color-black: #000000;
 $color-dark: #102654;
 $color-dark-alternative: #1c3374;
 $color-transparent: rgba(255, 255, 255, 0);
@@ -50,6 +29,7 @@ $color-gradient: linear-gradient(
   #73184b 75.5%,
   #b4022a 100%
 );
+$fill-gradient: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
 
 $fz-default: 16px;
 $font-family: "RobotoCondensed", "Arial", sans-serif;

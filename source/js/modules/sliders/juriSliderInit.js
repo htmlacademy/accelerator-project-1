@@ -20,16 +20,14 @@ const juriSliderInit = () => {
       breakpoints: {
         320: {
           slidesPerView: 1,
-          activeIndex: 1,
+          initialSlide: 0,
         },
 
         768: {
           slidesPerView: 2,
           spaceBetween: 40,
-          initialSlide: 2,
           simulateTouch: false,
         },
-
         1366: {
           slidesPerView: 4,
           spaceBetween: 40,

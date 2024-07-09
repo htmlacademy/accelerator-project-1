@@ -1,6 +1,6 @@
 .tabs__controls {
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   display: inline-flex;
   justify-content: center;
   column-gap: 50px;
@@ -24,7 +24,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
-    color: rgba(16, 38, 84, 0.5);
+    color: rgba($color-dark, 0.5);
     @include vp-1365 {
       font-size: 18px;
       line-height: 18px;
@@ -45,10 +45,10 @@
     }
 
     &:focus {
-      color: $text-dark;
+      color: $color-dark;
       outline: none;
       &::after {
-        background-color: $text-dark;
+        background-color: $color-dark;
       }
     }
     &:hover {
@@ -60,15 +60,15 @@
 
     &.is-active,
     &:active {
-      color: $text-dark;
+      color: $color-dark;
       &::after {
-        background-color: $fill-tabs;
+        background-color: $color-red-alternative;
       }
     }
 
     &:disabled {
       opacity: 0.3;
-      color: $text-dark;
+      color: $color-dark;
       pointer-events: none;
       &::after {
         background-color: #787878;

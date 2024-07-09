@@ -16,26 +16,26 @@
 
   &--on-dark {
     background-color: $color-transparent;
-    border: 2px solid $stroke-light;
-    color: $text-light;
+    border: 2px solid $color-white;
+    color: $color-white;
 
     &:focus {
       outline: none;
-      border-color: $stroke-black;
+      border-color: $color-black;
       background-color: rgba($color-transparent, 0.8);
-      color: $text-action;
+      color: $color-action;
     }
 
     &:hover {
       background-color: $color-white;
-      color: $text-action;
+      color: $color-action;
     }
 
     &:active,
     &.is-active {
-      border-color: $stroke-light;
+      border-color: $color-white;
       background-color: $color-white;
-      color: $text-dark;
+      color: $color-dark;
     }
 
     &:disabled,
@@ -46,32 +46,32 @@
   }
   &--on-light {
     background-color: $color-transparent;
-    border: 2px solid $stroke-dark;
-    color: $text-dark;
+    border: 2px solid $color-dark;
+    color: $color-dark;
 
     &:focus {
       outline: none;
-      border-color: $stroke-black;
+      border-color: $color-black;
       background: linear-gradient(
         151deg,
         rgba(237, 2, 51, 0.8) 0%,
         rgba(0, 62, 183, 0.8) 100%
       );
-      color: $text-light;
+      color: $color-white;
     }
 
     &:hover,
     &.is-hover {
       border: none;
       background: $fill-gradient;
-      color: $text-light;
+      color: $color-white;
     }
 
     &:active,
     &.is-active {
       border: none;
       background: $fill-gradient;
-      color: rgba($text-light, 0.7);
+      color: rgba($color-white, 0.7);
     }
 
     &:disabled,

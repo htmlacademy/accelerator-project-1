@@ -4,7 +4,7 @@
   padding-bottom: 100px;
   @include vp-1365 {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 59px;
   }
   @include vp-767 {
     padding-top: 40px;
@@ -33,7 +33,10 @@
 
   @include vp-1365 {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: minmax(92px, auto) minmax(262px, auto) minmax(
+        92px,
+        auto
+      );
     grid-column-gap: 30px;
     grid-row-gap: 40px;
     justify-content: stretch;

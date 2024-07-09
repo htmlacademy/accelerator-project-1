@@ -45,7 +45,7 @@
   & h4 {
     margin: 0;
     margin-bottom: 17px;
-    color: $text-dark;
+    color: $color-dark;
     text-align: center;
     @include vp-1365 {
       margin-bottom: 21px;
@@ -61,7 +61,7 @@
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: $text-dark;
+    color: $color-dark;
 
     @include vp-767 {
       font-size: 14px;
@@ -83,7 +83,7 @@
   }
 }
 .price-card__sum {
-  color: $text-action;
+  color: $color-action;
   position: relative;
   z-index: 2;
 
@@ -97,7 +97,7 @@
   }
 }
 .price-card__back-sum {
-  color: rgba($text-dark-alternative, 0.48);
+  color: rgba($color-grey, 0.48);
   position: absolute;
   top: -68%;
   left: 50%;

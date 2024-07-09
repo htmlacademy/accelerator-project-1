@@ -33,13 +33,17 @@
   }
 
   & b {
+    margin-bottom: 2px;
     font-weight: 700;
     font-size: 70px;
     line-height: 70px;
-    background: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+    background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @include vp-1365 {
+      margin-bottom: 0;
+    }
     @include vp-767 {
       font-size: 64px;
       line-height: 64px;
@@ -96,7 +100,7 @@
   padding-top: 42px;
   text-align: center;
   background-color: $color-dark-alternative;
-  color: $text-light;
+  color: $color-white;
 
   @include vp-1365 {
     padding: 35px;

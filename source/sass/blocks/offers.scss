@@ -3,12 +3,12 @@
   padding-bottom: 100px;
 
   @include vp-1365 {
-    padding-top: 60px;
+    padding-top: 61px;
     padding-bottom: 60px;
   }
   @include vp-767 {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 41px;
+    padding-bottom: 38px;
 
     & .container {
       padding: 0;
@@ -23,7 +23,7 @@
   text-align: center;
 
   @include vp-1365 {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 
   @include vp-767 {
@@ -68,7 +68,7 @@
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
   }
 }
 
@@ -80,7 +80,7 @@
     width: 100%;
     max-width: 280px;
     background-color: $color-red;
-    color: $text-light;
+    color: $color-white;
     padding-top: 40px;
     padding-bottom: 35px;
     padding-left: 45px;
@@ -89,12 +89,14 @@
       width: 41%;
       max-width: none;
       flex-shrink: 0;
+      padding-top: 40px;
+      padding-bottom: 34px;
       padding-left: 25px;
       padding-right: 25px;
     }
     @include vp-767 {
       padding: 30px;
-      padding-bottom: 25px;
+      padding-bottom: 24px;
       width: 100%;
       align-items: center;
       min-height: 270px;
@@ -116,6 +118,9 @@
       font-weight: 700;
       font-size: 70px;
       line-height: 70px;
+      @include vp-1365 {
+        margin-bottom: 41px;
+      }
       @include vp-767 {
         font-size: 64px;
         line-height: 64px;
@@ -136,7 +141,7 @@
 
     & a {
       margin-top: auto;
-      margin-left: -10px;
+      margin-left: -11px;
       position: relative;
       font-family: $font-family;
       font-weight: 700;
@@ -161,12 +166,12 @@
         bottom: 5px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: $text-light;
+        background-color: $color-white;
       }
 
       &:focus {
         outline: none;
-        border: 1px solid $text-light;
+        border: 1px solid $color-white;
 
         &::after {
           display: none;
@@ -177,7 +182,7 @@
       }
       &:active {
         border: 1px solid $color-transparent;
-        color: $text-light;
+        color: $color-white;
         &::after {
           display: block;
         }
@@ -223,10 +228,9 @@
 }
 
 .offers__item {
-  color: $text-action-alternative;
+  color: $color-dark-alternative;
   padding: 7px;
-  background: linear-gradient(135deg, #d10a42 0%, #0041ca 100%);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
 
   @include vp-767 {
     margin: 0 auto;
@@ -267,7 +271,7 @@
     @include vp-767 {
       font-size: 22px;
       line-height: 22px;
-      margin-bottom: 22px;
+      margin-bottom: 21px;
     }
   }
 
@@ -287,7 +291,7 @@
 
   & a {
     margin-top: auto;
-    margin-left: -10px;
+    margin-left: -11px;
     position: relative;
     font-weight: 700;
     font-size: 14px;
@@ -316,7 +320,7 @@
 
     &:focus {
       outline: none;
-      border: 1px solid $text-action-alternative;
+      border: 1px solid $color-dark-alternative;
 
       &::after {
         display: none;
@@ -326,27 +330,27 @@
     &:hover {
       opacity: 0.8;
       &::after {
-        background-color: $text-action-alternative;
+        background-color: $color-dark-alternative;
       }
     }
 
     &:active {
       border: 1px solid $color-transparent;
-      color: $text-action-alternative;
+      color: $color-dark-alternative;
       &::after {
         display: block;
-        background-color: $text-action-alternative;
+        background-color: $color-dark-alternative;
       }
     }
     &:disabled,
     &.disabled {
       border: 1px solid $color-transparent;
-      color: $text-action-alternative;
+      color: $color-dark-alternative;
       opacity: 0.3;
       pointer-events: none;
       &::after {
         display: block;
-        background-color: $text-action-alternative;
+        background-color: $color-dark-alternative;
       }
     }
   }

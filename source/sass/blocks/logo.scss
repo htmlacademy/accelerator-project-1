@@ -3,6 +3,9 @@
     display: block;
     line-height: 0;
     font-size: 0;
+    @include vp-1365 {
+      padding-top: 2px;
+    }
   }
   & img {
     width: 130px;
