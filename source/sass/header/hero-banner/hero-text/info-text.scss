@@ -1,0 +1,19 @@
+.info-text {
+  margin: 110px 0 0;
+  width: 113px;
+}
+
+@media (min-width: $tablet-width) {
+  .info-text {
+    margin: 162px 0 0 -4px;
+    grid-column: 1;
+    grid-row: 1;
+    align-content: baseline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info-text {
+    margin: 229px 23px 0 -23px;
+  }
+}

@@ -1,19 +1,16 @@
 .hero-text {
-  margin: 110px 0 0;
-  width: 113px;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  font-family: "Roboto-regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
   .hero-text {
-    margin: 162px -4px 0 4px;
-    grid-column: 1;
-    grid-row: 1;
-    align-content: baseline;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .hero-text {
-    margin: 229px 23px 0 -23px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }

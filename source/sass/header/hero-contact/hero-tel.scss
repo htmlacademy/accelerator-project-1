@@ -1,7 +1,6 @@
-.hero-contact__tel {
-  margin: 0;
+.hero-tel {
+  margin: -1px 0 1px 1px;
   font-family: "Roboto-bold", sans-serif;
-  font-weight: 500;
   font-size: 22px;
   line-height: 22px;
   color: #ffffff;
@@ -10,14 +9,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .hero-contact__tel {
+  .hero-tel {
+    margin: 0;
     font-size: 24px;
     line-height: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .hero-contact__tel {
+  .hero-tel {
     font-size: 26px;
     line-height: 26px;
   }

@@ -1,9 +1,9 @@
-.hero-banner__img {
+.banner-picture {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .hero-banner__img {
+  .banner-picture {
     display: block;
     grid-column: 3;
     grid-row: 1;

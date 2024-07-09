@@ -42,18 +42,18 @@
 @media (min-width: $tablet-width) {
   .hero-btn {
     position: absolute;
-    bottom: 131px;
+    bottom: 138px;
     left: 184px;
-    width: 185px;
-    font-size: 12px;
-    line-height: 12px;
+    width: 181px;
+    padding: 20px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .hero-btn {
-    bottom: 172px;
+    bottom: 180px;
     left: 365px;
-    width: 270px;
+    width: 266px;
+    padding: 25px 0;
   }
 }

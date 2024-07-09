@@ -11,8 +11,6 @@
 
   &::before {
     top: 8px;
-    right: 8px;
-    bottom: 8px;
     left: 8px;
     z-index: 0;
     position: absolute;
@@ -20,22 +18,70 @@
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background: linear-gradient(to right, #ED0233 35%, #003EB7);
+    background: linear-gradient(to right, #ed0233 35%, #003eb7);
   }
 
   &:hover {
     border-color: rgba(16, 38, 84, 60%);
+
+    svg {
+      fill: rgba(16, 38, 84, 60%);
+    }
+
+    &::before {
+      background: #ffffff;
+    }
   }
 
   &:focus {
     border-color: none;
+
+    svg {
+      fill: #102654;
+    }
+
+    &::before {
+      background: #c8c9cc;
+    }
   }
 
   &:active {
     border-color: #102654;
+
+    svg {
+      fill: #102654;
+    }
+
+    &::before {
+      background: #ffffff;
+    }
   }
 
   &:disabled {
     border-color: #102654;
+    opacity: 60%;
+
+    svg {
+      fill: #102654;
+    }
+
+    &::before {
+      background: #ffffff;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .btn-play {
+    width: 100px;
+    height: 100px;
+
+    &::before {
+      top: 12px;
+      left: 12px;
+      width: 72px;
+      height: 72px;
+    }
   }
 }
