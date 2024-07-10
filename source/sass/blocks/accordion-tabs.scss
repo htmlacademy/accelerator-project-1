@@ -15,6 +15,10 @@
   transition: opacity $trans-default, background-color $trans-default,
     color $trans-default;
 
+  @include vp-1365 {
+    padding-top: 0;
+  }
+
   &:focus {
     outline: none;
     border: 1px solid $color-dark;
