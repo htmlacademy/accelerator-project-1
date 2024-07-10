@@ -9,3 +9,21 @@
   grid-row-end: 3;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .games-item-number {
+    margin: 10px 0 -10px;
+
+    &--mod {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .games-item-number {
+    margin: 2px 0 -2px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}

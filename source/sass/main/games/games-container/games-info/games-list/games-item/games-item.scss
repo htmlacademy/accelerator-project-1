@@ -3,3 +3,21 @@
   row-gap: 3px;
   grid-template-rows: 23px 12px 12px;
 }
+
+@media (min-width: $tablet-width) {
+  .games-item {
+    row-gap: 2px;
+    column-gap: 5px;
+    grid-template-columns: 13px 22px;
+    grid-template-rows: 25px 22px 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .games-item {
+    row-gap: 6px;
+    column-gap: 5px;
+    grid-template-columns: 21px 37px;
+    grid-template-rows: 30px 22px 22px;
+  }
+}

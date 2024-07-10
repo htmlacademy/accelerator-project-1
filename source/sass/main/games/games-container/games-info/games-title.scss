@@ -12,9 +12,16 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .games-title  {
+    width: 100px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .games-title  {
     font-size: 82px;
     line-height: 96px;
+    width: 168px;
   }
 }
