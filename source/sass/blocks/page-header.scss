@@ -14,6 +14,7 @@
     padding-bottom: 16px;
   }
 }
+
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -21,14 +22,17 @@
   @include vp-767 {
   }
 }
+
 .page-header__col {
   &--logo {
     flex-shrink: 0;
   }
+
   &--phone {
     max-width: 70%;
   }
 }
+
 .page-header__link {
   font-weight: 700;
   font-size: 26px;
@@ -36,6 +40,7 @@
   text-align: right;
   color: $color-white;
   cursor: pointer;
+
   &:focus {
     outline: none;
     color: $color-dark-alternative;
@@ -56,10 +61,12 @@
     pointer-events: none;
     color: rgba(#f8f9fc, 0.5);
   }
+
   @include vp-1365 {
     font-size: 24px;
     line-height: 24px;
   }
+
   @include vp-767 {
     font-size: 22px;
     line-height: 22px;

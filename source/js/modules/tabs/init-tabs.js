@@ -30,6 +30,6 @@ const initTabs = () => {
       });
     });
   }
-}
+};
 
 export { initTabs };

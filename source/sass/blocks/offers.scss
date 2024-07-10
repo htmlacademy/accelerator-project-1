@@ -6,6 +6,7 @@
     padding-top: 61px;
     padding-bottom: 60px;
   }
+
   @include vp-767 {
     padding-top: 41px;
     padding-bottom: 40px;
@@ -85,6 +86,7 @@
     padding-bottom: 35px;
     padding-left: 45px;
     padding-right: 45px;
+
     @include vp-1365 {
       width: 41%;
       max-width: none;
@@ -94,6 +96,7 @@
       padding-left: 25px;
       padding-right: 25px;
     }
+
     @include vp-767 {
       padding: 30px;
       padding-bottom: 24px;
@@ -103,12 +106,22 @@
       text-align: center;
     }
 
-    & h4 {
+    & h3 {
       margin: 0;
       margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 26px;
+
+      @include vp-1365 {
+        font-size: 24px;
+        line-height: 24px;
+      }
 
       @include vp-767 {
         margin-bottom: 8px;
+        font-size: 22px;
+        line-height: 22px;
       }
     }
 
@@ -118,9 +131,11 @@
       font-weight: 700;
       font-size: 70px;
       line-height: 70px;
+
       @include vp-1365 {
         margin-bottom: 41px;
       }
+
       @include vp-767 {
         font-size: 64px;
         line-height: 64px;
@@ -133,6 +148,7 @@
       font-weight: 300;
       font-size: 18px;
       line-height: 24px;
+
       @include vp-767 {
         font-size: 16px;
         line-height: 20px;
@@ -151,7 +167,9 @@
       color: inherit;
       padding: 10px;
       border: 1px solid $color-transparent;
-      transition: opacity $trans-default, background-color $trans-default,
+      transition:
+        opacity $trans-default,
+ background-color $trans-default,
         color $trans-default;
 
       @include vp-767 {
@@ -177,21 +195,26 @@
           display: none;
         }
       }
+
       &:hover {
         opacity: 0.8;
       }
+
       &:active {
         border: 1px solid $color-transparent;
         color: $color-white;
+
         &::after {
           display: block;
         }
       }
+
       &:disabled,
       &.disabled {
         border: 1px solid $color-transparent;
         opacity: 0.3;
         pointer-events: none;
+
         &::after {
           display: block;
         }
@@ -203,10 +226,12 @@
     @include vp-1365 {
       width: 59%;
     }
+
     @include vp-767 {
       width: 100%;
       min-height: 360px;
     }
+
     & img {
       width: 280px;
       height: 460px;
@@ -241,6 +266,7 @@
     }
   }
 }
+
 .offers__item-content {
   background-color: $color-white;
   height: 100%;
@@ -261,17 +287,22 @@
     min-height: calc(158px - 14px);
   }
 
-  & h4 {
+  & h3 {
     margin: 0;
     margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+
     @include vp-1365 {
       font-size: 26px;
       line-height: 26px;
     }
+
     @include vp-767 {
+      margin-bottom: 21px;
       font-size: 22px;
       line-height: 22px;
-      margin-bottom: 21px;
     }
   }
 
@@ -300,7 +331,9 @@
     color: inherit;
     padding: 10px;
     border: 1px solid $color-transparent;
-    transition: opacity $trans-default, background-color $trans-default,
+    transition:
+      opacity $trans-default,
+ background-color $trans-default,
       color $trans-default;
 
     @include vp-767 {
@@ -329,6 +362,7 @@
 
     &:hover {
       opacity: 0.8;
+
       &::after {
         background-color: $color-dark-alternative;
       }
@@ -337,17 +371,20 @@
     &:active {
       border: 1px solid $color-transparent;
       color: $color-dark-alternative;
+
       &::after {
         display: block;
         background-color: $color-dark-alternative;
       }
     }
+
     &:disabled,
     &.disabled {
       border: 1px solid $color-transparent;
       color: $color-dark-alternative;
       opacity: 0.3;
       pointer-events: none;
+
       &::after {
         display: block;
         background-color: $color-dark-alternative;

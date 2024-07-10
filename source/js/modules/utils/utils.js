@@ -55,7 +55,9 @@ const setActiveSlideInfo = () => {
     slides.forEach((slide) => {
       // Добавляем обработчик события focus для элемента
       slide.addEventListener('focus', () => {
-        slides.forEach((slide) => { slide.classList.remove('is-active'); });
+        slides.forEach((slideItem) => {
+          slideItem.classList.remove('is-active');
+        });
         slide.classList.add('is-active');
       });
 
@@ -65,7 +67,9 @@ const setActiveSlideInfo = () => {
       });
 
       slide.addEventListener('mouseenter', () => {
-        slides.forEach((slide) => { slide.classList.remove('is-active'); });
+        slides.forEach((slideItem) => {
+          slideItem.classList.remove('is-active');
+        });
         // Проверяем наличием класса .is-active у элемента
         if (
           !slide.classList.contains('is-active')

@@ -1,12 +1,12 @@
 // https://swiperjs.com/get-started#installation
-import Swiper from "swiper";
-import { Navigation } from "swiper/modules";
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 // import Swiper and modules styles
 import 'swiper/css';
 const juriSliderInit = () => {
   if (document.querySelector('[data-slider="juri-slider"]')) {
     const juriSlider = document.querySelector('[data-slider="juri-slider"]');
-    const swiper = new Swiper(juriSlider, {
+    new Swiper(juriSlider, {
       // Install modules
       modules: [Navigation],
       grabCursor: false,

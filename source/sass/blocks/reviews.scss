@@ -1,6 +1,7 @@
 .reviews {
   padding-top: 100px;
   padding-bottom: 100px;
+
   @include vp-1365 {
     padding-top: 60px;
     padding-bottom: 58px;
@@ -11,10 +12,11 @@
     padding-bottom: 40px;
   }
 }
+
 .reviews__title {
-  text-align: center;
   margin: 0;
   margin-bottom: 75px;
+  text-align: center;
 
   @include vp-1365 {
     margin-bottom: 35px;
@@ -28,14 +30,17 @@
     line-height: 32px;
   }
 }
+
 .reviews__inner {
   position: relative;
   max-width: 802px;
   margin: 0 auto;
+
   @include vp-1365 {
     max-width: 100%;
   }
 }
+
 .reviews__arrow {
   position: absolute;
   top: 104px;
@@ -52,17 +57,21 @@
 
   &--prev {
     left: 0;
+
     @include vp-1365 {
       left: -17px;
     }
   }
+
   &--next {
     right: 0;
+
     @include vp-1365 {
       right: -17px;
     }
   }
 }
+
 .reviews__slider {
   max-width: 560px;
   min-height: 258px;

@@ -1,12 +1,12 @@
 // https://swiperjs.com/get-started#installation
-import Swiper from "swiper";
-import { Navigation } from "swiper/modules";
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 // import Swiper and modules styles
 import 'swiper/css';
 const reviewsSliderInit = () => {
   if (document.querySelector('[data-slider="reviews-slider"]')) {
     const reviewsSlider = document.querySelector('[data-slider="reviews-slider"]');
-    const swiper = new Swiper(reviewsSlider, {
+    new Swiper(reviewsSlider, {
       // Install modules
       modules: [Navigation],
       simulateTouch: false,
