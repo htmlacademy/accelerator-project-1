@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // padding: 10px 20px;
   padding: 0;
+  padding-top: 6px;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
@@ -11,7 +11,7 @@
   color: $color-dark;
   cursor: pointer;
   background-color: $color-transparent;
-  border: 1px solid rgba(16, 38, 84, 0.2);
+  border: 1px solid rgba($color-dark, 0.2);
   transition: opacity $trans-default, background-color $trans-default,
     color $trans-default;
 
@@ -27,7 +27,7 @@
 
   &:active,
   &.is-active {
-    background: $fill-gradient;
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     border: 1px solid $color-transparent;
     color: $color-white;
   }
@@ -35,7 +35,7 @@
   &:disabled,
   &.disabled {
     color: #c8c9cc;
-    border: 1px solid rgba(16, 38, 84, 0.2);
+    border: 1px solid rgba($color-dark, 0.2);
     pointer-events: none;
   }
 }

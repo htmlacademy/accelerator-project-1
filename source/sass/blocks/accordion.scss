@@ -12,6 +12,8 @@
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  margin-top: 1px;
+
   @include vp-1365 {
     max-width: 100%;
     column-gap: 10px;
@@ -35,13 +37,11 @@
     max-width: 140px;
     min-height: 46px;
   }
-  &.is-active {
-  }
 }
 .accordion__wrapper {
   max-width: 860px;
-  display: none;
   border-top: 1px solid #74819c;
+  display: none;
 
   &.is-active {
     display: block;
@@ -77,7 +77,7 @@
     font-size: 18px;
     font-weight: 300;
     width: 100%;
-    max-width: 660px;
+    max-width: 640px;
 
     @include vp-1365 {
       max-width: 560px;
