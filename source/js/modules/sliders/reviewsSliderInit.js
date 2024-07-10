@@ -4,8 +4,8 @@ import { Navigation } from "swiper/modules";
 // import Swiper and modules styles
 import 'swiper/css';
 const reviewsSliderInit = () => {
-  if (document.querySelector('.reviews__slider')) {
-    const reviewsSlider = document.querySelector('.reviews__slider');
+  if (document.querySelector('[data-slider="reviews-slider"]')) {
+    const reviewsSlider = document.querySelector('[data-slider="reviews-slider"]');
     const swiper = new Swiper(reviewsSlider, {
       // Install modules
       modules: [Navigation],
@@ -13,12 +13,13 @@ const reviewsSliderInit = () => {
       grabCursor: false,
       watchOverflow: true,
       speed: 500,
-      loop: true,
+      loop: false,
       autoHeight: true,
       slidesPerView: 1,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.reviews__arrow--next',
+        prevEl: '.reviews__arrow--prev',
+        lockClass: 'disabled',
       },
     });
   }

@@ -4,8 +4,8 @@ import { Navigation } from "swiper/modules";
 // import Swiper and modules styles
 import 'swiper/css';
 const juriSliderInit = () => {
-  if (document.querySelector('.juri__slider')) {
-    const juriSlider = document.querySelector('.juri__slider');
+  if (document.querySelector('[data-slider="juri-slider"]')) {
+    const juriSlider = document.querySelector('[data-slider="juri-slider"]');
     const swiper = new Swiper(juriSlider, {
       // Install modules
       modules: [Navigation],

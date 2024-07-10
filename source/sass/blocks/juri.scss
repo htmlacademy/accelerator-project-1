@@ -10,6 +10,7 @@
     padding-bottom: 17px;
   }
 }
+
 .juri__title {
   text-align: center;
   margin: 0;
@@ -26,6 +27,7 @@
     line-height: 32px;
   }
 }
+
 .juri__wrapper {
   position: relative;
   width: 100%;
@@ -43,21 +45,13 @@
     padding: 0 30px;
   }
 }
+
 .juri__arrow {
   position: absolute;
   z-index: 2;
   top: 122px;
-  background-color: $color-transparent;
-  padding: 0;
-  border: none;
-  cursor: pointer;
   width: 50px;
   height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  color: $color-dark;
 
   @include vp-1365 {
     top: 126px;
@@ -69,33 +63,17 @@
 
   &--prev {
     left: 34px;
+
     @include vp-1365 {
       left: -71px;
     }
   }
+
   &--next {
     right: 34px;
+
     @include vp-1365 {
       right: -71px;
     }
-
-    & svg {
-      width: 16px;
-      height: 32px;
-      transform: rotate(180deg);
-    }
-  }
-  &:focus {
-    outline: none;
-    border: 1px solid $color-dark;
-    background-color: $color-dark-alternative;
-  }
-  &:hover {
-    border: 1px solid $color-dark;
-  }
-  &:active {
-    border: 1px solid $color-dark;
-    background-color: $color-dark;
-    color: $color-light;
   }
 }
