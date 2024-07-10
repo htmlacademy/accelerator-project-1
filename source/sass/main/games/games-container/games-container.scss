@@ -1,7 +1,19 @@
 .games-container {
-  display: flex;
-  flex-direction: column;
   padding: 40px 40px 41px;
   color: #ffffff;
   background-color: #ED0233;
+}
+
+@media (min-width: $tablet-width) {
+  .games-container {
+    width: 220px;
+    padding: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .games-container {
+    width: 340px;
+    padding: 60px 80px 98px;
+  }
 }

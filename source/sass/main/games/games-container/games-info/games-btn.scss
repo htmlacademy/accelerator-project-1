@@ -17,3 +17,15 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .games-btn  {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .games-btn {
+    width: 100%;
+  }
+}

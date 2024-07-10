@@ -1,3 +1,18 @@
 .games {
+  display: flex;
+  flex-direction: column;
   padding: 25px 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .games {
+    flex-direction: row;
+    padding: 60px 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .games {
+    padding: 100px 103px;
+  }
 }
