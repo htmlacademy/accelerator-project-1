@@ -203,36 +203,34 @@
       </section>
       <section class="main__sections-list games" data-test="games">
         <h2 class="visually-hidden">Промо предложение</h2>
-        <div class="games__container">
-          <div class="games__info info">
-            <div class="games__info-container">
-              <h3 class="games__title">Super games</h3>
-              <ul class="games__list games-list">
-                <li class="games-list__item games-item">
-                  <p class="games-item__text">Дата</p>
-                  <p class="games-item__number">7</p>
-                  <p class="games-item__month">Марта</p>
-                  <p class="games-item__year">2019</p>
-                </li>
-                <li class="games-list__item games-item">
-                  <p class="games-item__text">Время</p>
-                  <p class="games-item__number">12:00</p>
-                </li>
-              </ul>
-              <p class="games__text">Ежегодные соревнования по CrossFit</p>
-              <a class="games__button" href="https://application.ru">Заполнить заявку</a>
-            </div>
+        <div class="games__container games-container">
+          <div class="games-container__info games-info">
+            <h3 class="games-info__title games-title">Super games</h3>
+            <ul class="games-info__list games-list">
+              <li class="games-list__item games-item">
+                <p class="games-item__text games-text games-text--mod"><span class="games-text__text games-item-text">Дата</span></p>
+                <p class="games-item__number games-item-number">7</p>
+                <p class="games-item__month games-item-month">Марта</p>
+                <p class="games-item__year games-item-year">2019</p>
+              </li>
+              <li class="games-list__item games-item">
+                <p class="games-item__text games-text games-text--mod"><span class="games-text__text games-item-text">Время</span></p>
+                <p class="games-item__number games-item-number">12:00</p>
+              </li>
+            </ul>
+            <p class="games-info__text games-info-text">Ежегодные соревнования по CrossFit</p>
+            <a class="games-info__btn games-btn" href="https://application.ru">Заполнить заявку</a>
           </div>
-          <div class="games__picture">
-            <picture>
-              <source type="image/webp" media="(min-width: 1366px)" srcset="img/games/games-desk.webp 1x, img/games/games-desk@2x.webp 2x" width="660" height="500">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/games/games.webp 1x, img/games/games@2x.webp 2x" width="376" height="348">
-              <source type="image/webp" srcset="img/games/games.webp 1x, img/games/games@2x.webp 2x" width="290" height="290">
-              <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/games/games-desk.jpg 1x, img/games/games-desk@2x.jpg 2x" width="660" height="500">
-              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/games/games.jpg 1x, img/games/games@2x.jpg 2x" width="376" height="348">
-              <img class="games__img" src="img/games/games.jpg" srcset="img/games/games.jpg 1x, img/games/games@2x.jpg 2x" width="290" height="290" alt="Промо фото игр.">
-            </picture>
-          </div>
+        </div>
+        <div class="games-container__picture games-picture">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)" srcset="img/games/games-desk.webp 1x, img/games/games-desk@2x.webp 2x" width="660" height="500">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/games/games-tab.webp 1x, img/games/games-tab@2x.webp 2x" width="378" height="348">
+            <source type="image/webp" srcset="img/games/games.webp 1x, img/games/games@2x.webp 2x" width="290" height="290">
+            <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/games/games-desk.jpg 1x, img/games/games-desk@2x.jpg 2x" width="660" height="500">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="img/games/games-tab.jpg 1x, img/games/games-tab@2x.jpg 2x" width="378" height="348">
+            <img class="games-picture__img" src="img/games/games.jpg" srcset="img/games/games.jpg 1x, img/games/games@2x.jpg 2x" width="290" height="290" alt="Промо фото игр.">
+          </picture>
         </div>
       </section>
       <section class="main__sections-list juri" data-test="juri">

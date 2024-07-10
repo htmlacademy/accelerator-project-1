@@ -1,0 +1,19 @@
+.games-btn {
+  display: block;
+  margin: 1px 0 -1px;
+  padding: 22px 0;
+  font-family: "Roboto-bold", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  width: 206px;
+  color: #ffffff;
+  border: #ffffff 2px solid;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
