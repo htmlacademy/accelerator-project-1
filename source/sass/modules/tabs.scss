@@ -15,75 +15,92 @@
     column-gap: 46px;
     margin-bottom: 28px;
   }
+}
 
-  & .tabs__control {
-    border: none;
-    padding: 0;
-    background-color: $color-transparent;
-    padding-bottom: 10px;
-    position: relative;
-    cursor: pointer;
-    font-family: $font-family;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    color: rgba($color-dark, 0.5);
+.tabs__control {
+  border: none;
+  padding: 0;
+  background-color: $color-transparent;
+  padding-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba($color-dark, 0.5);
 
-    @include vp-1365 {
-      font-size: 18px;
-      line-height: 18px;
-    }
+  @include vp-1365 {
+    font-size: 18px;
+    line-height: 18px;
+  }
 
-    @include vp-767 {
-      font-size: 16px;
-      line-height: 16px;
-    }
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+  }
+
+  &:focus {
+    color: $color-dark;
+    outline: none;
 
     &::after {
-      position: absolute;
-      content: "";
-      bottom: -2px;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 2px;
+      background-color: $color-dark;
     }
+  }
 
-    &:focus {
-      color: $color-dark;
-      outline: none;
+  &:hover {
+    color: rgba(16, 38, 84, 0.7);
 
-      &::after {
-        background-color: $color-dark;
-      }
+    &::after {
+      background-color: #787878;
     }
+  }
 
-    &:hover {
-      color: rgba(16, 38, 84, 0.7);
+  &:active {
+    color: $color-dark;
 
-      &::after {
-        background-color: #787878;
-      }
+    &::after {
+      background-color: $color-red-alternative;
     }
+  }
 
-    &.is-active,
-    &:active {
-      color: $color-dark;
+  &:disabled {
+    opacity: 0.3;
+    color: $color-dark;
+    pointer-events: none;
 
-      &::after {
-        background-color: $color-red-alternative;
-      }
+    &::after {
+      background-color: #787878;
     }
+  }
+}
 
-    &:disabled {
-      opacity: 0.3;
-      color: $color-dark;
-      pointer-events: none;
+.tabs__control.is-active {
+  color: $color-dark;
 
-      &::after {
-        background-color: #787878;
-      }
-    }
+  &::after {
+    background-color: $color-red-alternative;
+  }
+}
+
+.tabs__control.disabled {
+  opacity: 0.3;
+  color: $color-dark;
+  pointer-events: none;
+
+  &::after {
+    background-color: #787878;
   }
 }
 
@@ -96,10 +113,6 @@
   width: 100%;
   justify-content: space-between;
 
-  &.is-active {
-    display: flex;
-  }
-
   @include vp-1365 {
     flex-direction: column;
     row-gap: 40px;
@@ -110,4 +123,8 @@
   @include vp-767 {
     row-gap: 35px;
   }
+}
+
+.tabs__element.is-active {
+  display: flex;
 }

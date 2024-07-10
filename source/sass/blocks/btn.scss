@@ -33,15 +33,13 @@
       color: $color-action;
     }
 
-    &:active,
-    &.is-active {
+    &:active {
       border-color: $color-white;
       background-color: $color-white;
       color: $color-dark;
     }
 
-    &:disabled,
-    &.disabled {
+    &:disabled {
       opacity: 0.5;
       pointer-events: none;
     }
@@ -64,24 +62,49 @@
       color: $color-white;
     }
 
-    &:hover,
-    &.is-hover {
+    &:hover {
       border: none;
       background: $fill-gradient;
       color: $color-white;
     }
 
-    &:active,
-    &.is-active {
+    &:active {
       border: none;
       background: $fill-gradient;
       color: rgba($color-white, 0.7);
     }
 
-    &:disabled,
-    &.disabled {
+    &:disabled {
       pointer-events: none;
       opacity: 0.3;
     }
   }
+}
+
+.btn--on-dark.is-active {
+  border-color: $color-white;
+  background-color: $color-white;
+  color: $color-dark;
+}
+
+.btn--on-dark.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.btn--on-light.is-hover {
+  border: none;
+  background: $fill-gradient;
+  color: $color-white;
+}
+
+.btn--on-light.is-active {
+  border: none;
+  background: $fill-gradient;
+  color: rgba($color-white, 0.7);
+}
+
+.btn--on-light.disabled {
+  pointer-events: none;
+  opacity: 0.3;
 }
