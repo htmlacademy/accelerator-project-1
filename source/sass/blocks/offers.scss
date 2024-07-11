@@ -182,9 +182,7 @@
   color: inherit;
   padding: 10px;
   border: 1px solid $color-transparent;
-  transition:
-    opacity $trans-default,
-    background-color $trans-default,
+  transition: opacity $trans-default, background-color $trans-default,
     color $trans-default;
 
   @include vp-767 {
@@ -204,6 +202,10 @@
 
   &:focus {
     outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
     border: 1px solid $color-white;
 
     &::after {
@@ -211,7 +213,7 @@
     }
   }
 
-  &:hover {
+  &:hover:not(:disabled):not(:focus-visible) {
     opacity: 0.8;
   }
 
@@ -343,9 +345,7 @@
   color: inherit;
   padding: 10px;
   border: 1px solid $color-transparent;
-  transition:
-    opacity $trans-default,
-    background-color $trans-default,
+  transition: opacity $trans-default, background-color $trans-default,
     color $trans-default;
 
   @include vp-767 {

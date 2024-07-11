@@ -11,9 +11,7 @@
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  transition:
-    opacity $trans-default,
-    background-color $trans-default,
+  transition: opacity $trans-default, background-color $trans-default,
     color $trans-default;
 
   &--on-dark {
@@ -23,12 +21,16 @@
 
     &:focus {
       outline: none;
+    }
+
+    &:focus-visible {
+      outline: none;
       border-color: $color-black;
       background-color: rgba($color-transparent, 0.8);
       color: $color-action;
     }
 
-    &:hover {
+    &:hover:not(:disabled):not(:focus-visible) {
       background-color: $color-white;
       color: $color-action;
     }
@@ -52,17 +54,20 @@
 
     &:focus {
       outline: none;
+    }
+
+    &:focus-visible {
+      outline: none;
       border-color: $color-black;
-      background:
-        linear-gradient(
-          151deg,
-          rgba(237, 2, 51, 0.8) 0%,
-          rgba(0, 62, 183, 0.8) 100%
-        );
+      background: linear-gradient(
+        151deg,
+        rgba(237, 2, 51, 0.8) 0%,
+        rgba(0, 62, 183, 0.8) 100%
+      );
       color: $color-white;
     }
 
-    &:hover {
+    &:hover:not(:disabled):not(:focus-visible) {
       border: none;
       background: $fill-gradient;
       color: $color-white;

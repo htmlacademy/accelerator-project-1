@@ -216,13 +216,16 @@
 
   &:focus {
     outline: none;
+  }
 
+  &:focus-visible {
+    outline: none;
     &::before {
       background-image: url("../../img/svg/video-btn-focus.svg");
     }
   }
 
-  &:hover {
+  &:hover:not(:disabled):not(:focus-visible) {
     &::before {
       background-image: url("../../img/svg/video-btn-hover.svg");
     }

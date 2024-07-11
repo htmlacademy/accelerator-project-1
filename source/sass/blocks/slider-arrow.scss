@@ -11,11 +11,15 @@
 
   &:focus {
     outline: none;
-    border: 1px solid $color-dark;
-    background-color: $color-dark-alternative;
   }
 
-  &:hover {
+  &:focus-visible {
+    outline: none;
+    border: 1px solid $color-dark;
+    background-color: $color-grey;
+  }
+
+  &:hover:not(:disabled):not(:focus-visible) {
     border: 1px solid $color-dark;
   }
 

@@ -50,10 +50,14 @@
 
   &:focus {
     outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
     color: $color-dark-alternative;
   }
 
-  &:hover {
+  &:hover:not(:disabled):not(:focus-visible) {
     color: rgba(28, 51, 116, 0.5);
   }
 

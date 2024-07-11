@@ -12,9 +12,7 @@
   cursor: pointer;
   background-color: $color-transparent;
   border: 1px solid rgba($color-dark, 0.2);
-  transition:
-    opacity $trans-default,
-    background-color $trans-default,
+  transition: opacity $trans-default, background-color $trans-default,
     color $trans-default;
 
   @include vp-1365 {
@@ -23,25 +21,39 @@
 
   &:focus {
     outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
     border: 1px solid $color-dark;
     background-color: $color-white;
   }
 
-  &:hover {
+  &:hover:not(:disabled):not(:focus-visible) {
     border: 1px solid $color-dark;
   }
 
-  &:active,
-  &.is-active {
+  &:active {
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     border: 1px solid $color-transparent;
     color: $color-white;
   }
 
-  &:disabled,
-  &.disabled {
+  &:disabled {
     color: #c8c9cc;
     border: 1px solid rgba($color-dark, 0.2);
     pointer-events: none;
   }
+}
+
+.accordion-tabs.is-active {
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: 1px solid $color-transparent;
+  color: $color-white;
+}
+
+.accordion-tabs.disabled {
+  color: #c8c9cc;
+  border: 1px solid rgba($color-dark, 0.2);
+  pointer-events: none;
 }

@@ -148,21 +148,29 @@
 
   &:focus {
     outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
     border: 1px solid $color-dark-alternative;
     background-color: #74819c;
     color: $color-white;
   }
 
-  &:hover {
+  &:hover:not(:disabled):not(:focus-visible) {
     background-color: $color-dark-alternative;
     color: $color-white;
   }
 
-  &:disabled,
-  &.disabled {
+  &:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
+}
+
+.accordion__item-btn.disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .accordion__item-btn svg {

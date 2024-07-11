@@ -51,15 +51,19 @@
   }
 
   &:focus {
-    color: $color-dark;
     outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: $color-dark;
 
     &::after {
       background-color: $color-dark;
     }
   }
 
-  &:hover {
+  &:hover:not(:disabled):not(:focus-visible) {
     color: rgba(16, 38, 84, 0.7);
 
     &::after {
