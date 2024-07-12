@@ -1,0 +1,27 @@
+.month-item-btn {
+  display: block;
+  padding: 25px 0;
+  font-family: "Roboto-bold", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  width: 202px;
+  color: #102654;
+  border: #102654 2px solid;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .month-item-btn {
+    padding: 24px 0 26px;
+    width: 246px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .month-item-btn {
+    width: 226px;
+  }
+}

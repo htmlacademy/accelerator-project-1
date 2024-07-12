@@ -29,6 +29,20 @@
 @import "main/about/picture-container/video/video-iframe";
 @import "main/about/picture-container/video/btn-play/btn-play";
 @import "main/about/picture-container/video/btn-play/play-img";
+@import "main/price/price.scss";
+@import "main/price/price-title.scss";
+@import "main/price/tab-list/tab-list";
+@import "main/price/tab-list/tab-item-btn";
+@import "main/price/tab-content/pane.scss";
+@import "main/price/tab-content/price-month/price-month";
+@import "main/price/tab-content/price-month/month-item/month-item";
+@import "main/price/tab-content/price-month/month-item/month-item-title";
+@import "main/price/tab-content/price-month/month-item/month-item-text";
+@import "main/price/tab-content/price-month/month-item/month-item-container/month-item-container";
+@import "main/price/tab-content/price-month/month-item/month-item-container/month-item-price";
+@import "main/price/tab-content/price-month/month-item/month-item-container/pane-rub";
+@import "main/price/tab-content/price-month/month-item/month-item-container/month-item-btn";
+
 @import "main/games/games";
 @import "main/games/games-container/games-container";
 @import "main/games/games-container/games-info/games-info";

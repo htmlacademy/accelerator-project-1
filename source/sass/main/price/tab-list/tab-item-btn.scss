@@ -1,0 +1,53 @@
+.tab-item-btn {
+  margin: 2px 0 -2px;
+  font-family: "Roboto-regular", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: transparent;
+  color: #102654;
+  border: none;
+  border-bottom: transparent 2px solid;
+  padding: 4px 0;
+  opacity: 20%;
+
+  &:hover {
+    opacity: 100%;
+    color: rgba(16, 38, 84, 70%);
+    border-color: #787878;
+  }
+
+  &:focus {
+    opacity: 100%;
+    border-color: #102654;
+  }
+
+  &:active {
+    opacity: 100%;
+    border-color: #D10A42;
+  }
+
+  &:disabled {
+    opacity: 30%;
+    border-color: #102654;
+  }
+
+  &--active {
+    opacity: 100%;
+    border-color: #D10A42;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tab-item-btn {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 0 0 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tab-item-btn {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

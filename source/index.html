@@ -81,124 +81,128 @@
         </div>
       </section>
       <section class="main__sections-list price" id="anchor" data-test="price">
-        <h2 class="visually-hidden">Наш прайс на фитнесс карты.</h2>
-        <h3 class="price__title">Абонементы</h3>
-        <div class="price__container">
-          <ul class="price__tab tab-list">
-            <li class="tab-list__item item item--active" data-tab="tab1">
-              <span>1 месяц</span>
+        <h2 class="price__title price-title">Абонементы</h2>
+        <ul class="price__tab tab-list">
+          <li class="tab-list__item" data-tab="tab1">
+            <button class="tab-list__btn tab-item-btn tab-item-btn--active">1 месяц</button>
+          </li>
+          <li class="tab-list__item tab-item" data-tab="tab2">
+            <button class="tab-item__btn tab-item-btn">6 месяцев</button>
+          </li>
+          <li class="tab-list__item tab-item" data-tab="tab3">
+            <button class="tab-item__btn tab-item-btn">12 месяцев</button>
+          </li>
+        </ul>
+        <div class="tab-content__pane pane pane--active" id="tab1">
+          <ul class="pane__price-month price-month">
+            <li class="price-month__item month-item">
+              <h3 class="month-item__title month-item-title">С тренером</h3>
+              <p class="month-item__text month-item-text">12 занятий</p>
+              <div class="month-item__container month-item-container">
+                <p class="month-item-container__price month-item-price"  data-parent="5000">5000</p>
+                <svg class="month-item-container__logo pane-rub" width="24" height="33">
+                  <use href="/__spritemap#sprite-rub"></use>
+                </svg>
+              </div>
+              <a class="month-item__button month-item-btn" href="https://buy.ru">Купить абонемент</a>
             </li>
-            <li class="tab-list__item item" data-tab="tab2">
-              <span>6 месяцев</span>
+            <li class="price-month__item month-item">
+              <h3 class="month-item__title month-item-title">Дневной</h3>
+              <p class="month-item__text month-item-text">с 8:00 до 17:00</p>
+              <div class="month-item__container month-item-container">
+                <p class="month-item-container__price month-item-price" data-parent="1700">1700</p>
+                <svg class="month-item-container__logo pane-rub" width="24" height="33">
+                  <use href="/__spritemap#sprite-rub"></use>
+                </svg>
+              </div>
+              <a class="month-item__button month-item-btn" href="https://buy.ru">Купить абонемент</a>
             </li>
-            <li class="tab-list__item item" data-tab="tab3">
-              <span>12 месяцев</span>
+            <li class="price-month__item month-item">
+              <h3 class="month-item__title month-item-title">Полный день</h3>
+              <p class="month-item__text month-item-text">с 8:00 до 22:00</p>
+              <div class="month-item__container month-item-container">
+                <p class="month-item-container__price month-item-price" data-parent="2700">2700</p>
+                <svg class="month-item-container__logo pane-rub" width="24" height="33">
+                  <use href="/__spritemap#sprite-rub"></use>
+                </svg>
+              </div>
+              <a class="month-item__button month-item-btn" href="https://buy.ru">Купить абонемент</a>
             </li>
           </ul>
-          <div class="price__tab-content tab-content">
-            <div class="tab-content__pane pane pane--active" id="tab1">
-              <ul class="pane__price-month price-month">
-                <li class="price-month__item month-item">
-                  <h4 class="month-item__title">С тренером</h4>
-                  <p class="month-item__text">12 занятий</p>
-                  <p class="month-item__price">5000</p>
-                  <picture>
-                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
-                    <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
-                  </picture>
-                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
-                </li>
-                <li class="price-month__item month-item">
-                  <h4 class="month-item__title">Дневной</h4>
-                  <p class="month-item__text">с 8:00 до 17:00</p>
-                  <p class="month-item__price">1700</p>
-                  <picture>
-                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
-                    <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
-                  </picture>
-                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
-                </li>
-                <li class="price-month__item month-item">
-                  <h4 class="month-item__title">Полный день</h4>
-                  <p class="month-item__text">с 8:00 до 22:00</p>
-                  <p class="month-item__price">2700</p>
-                  <picture>
-                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
-                    <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
-                  </picture>
-                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
-                </li>
-              </ul>
-            </div>
-            <div class="tab-content__pane pane" id="tab2">
-              <ul class="pane__price-month price-month">
-                <li class="price-month__item month-item">
-                  <h4 class="month-item__title">С тренером</h4>
-                  <p class="month-item__text">12 занятий</p>
-                  <p class="month-item__price">30 000 ₽</p>
-                  <picture>
-                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
-                    <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
-                  </picture>
-                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
-                </li>
-                <li class="price-month__item month-item">
-                  <h4 class="month-item__title">Дневной</h4>
-                  <p class="month-item__text">с 8:00 до 17:00</p>
-                  <p class="month-item__price">10 200</p>
-                  <picture>
-                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
-                    <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
-                  </picture>
-                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
-                </li>
-                <li class="price-month__item month-item">
-                  <h4 class="month-item__title">Полный день</h4>
-                  <p class="month-item__text">с 8:00 до 22:00</p>
-                  <p class="month-item__price">16 200</p>
-                  <picture>
-                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
-                    <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
-                  </picture>
-                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
-                </li>
-              </ul>
-            </div>
-            <div class="tab-content__pane pane" id="tab3">
-              <ul class="pane__price-month price-month">
-                <li class="price-month__item month-item">
-                  <h4 class="month-item__title">С тренером</h4>
-                  <p class="month-item__text">12 занятий</p>
-                  <p class="month-item__price">60 000</p>
-                  <picture>
-                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
-                    <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
-                  </picture>
-                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
-                </li>
-                <li class="price-month__item month-item">
-                  <h4 class="month-item__title">Дневной</h4>
-                  <p class="month-item__text">с 8:00 до 17:00</p>
-                  <p class="month-item__price">20 400</p>
-                  <picture>
-                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
-                    <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
-                  </picture>
-                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
-                </li>
-                <li class="price-month__item month-item">
-                  <h4 class="month-item__title">Полный день</h4>
-                  <p class="month-item__text">с 8:00 до 22:00</p>
-                  <p class="month-item__price">32 400</p>
-                  <picture>
-                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/price/rub.svg" width="30" height="42">
-                    <img class="month-item__svg" src="img/price/rub.svg" width="24" height="33" alt="Значок рубля.">
-                  </picture>
-                  <a class="month-item__button" href="https://buy.ru">Купить абонемент</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        </div>
+        <div class="tab-content__pane pane" id="tab2">
+          <ul class="pane__price-month price-month">
+            <li class="price-month__item month-item">
+              <h3 class="month-item__title month-item-title">С тренером</h3>
+              <p class="month-item__text month-item-text">12 занятий</p>
+              <div class="month-item__container month-item-container">
+                <p class="month-item-container__price month-item-price" data-parent="30 000">30 000</p>
+                <svg class="month-item-container__logo pane-rub" width="24" height="33">
+                  <use href="/__spritemap#sprite-rub"></use>
+                </svg>
+              </div>
+              <a class="month-item__button month-item-btn" href="https://buy.ru">Купить абонемент</a>
+            </li>
+            <li class="price-month__item month-item">
+              <h3 class="month-item__title month-item-title">Дневной</h3>
+              <p class="month-item__text month-item-text">с 8:00 до 17:00</p>
+              <div class="month-item__container month-item-container">
+                <p class="month-item-container__price month-item-price" data-parent="10 200">10 200</p>
+                <svg class="month-item-container__logo pane-rub" width="24" height="33">
+                  <use href="/__spritemap#sprite-rub"></use>
+                </svg>
+              </div>
+              <a class="month-item__button month-item-btn" href="https://buy.ru">Купить абонемент</a>
+            </li>
+            <li class="price-month__item month-item">
+              <h3 class="month-item__title month-item-title">Полный день</h3>
+              <p class="month-item__text month-item-text">с 8:00 до 22:00</p>
+              <div class="month-item__container month-item-container">
+                <p class="month-item-container__price month-item-price" data-parent="16 200">16 200</p>
+                <svg class="month-item-container__logo pane-rub" width="24" height="33">
+                  <use href="/__spritemap#sprite-rub"></use>
+                </svg>
+              </div>
+              <a class="month-item__button month-item-btn" href="https://buy.ru">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content__pane pane" id="tab3">
+          <ul class="pane__price-month price-month">
+            <li class="price-month__item month-item">
+              <h3 class="month-item__title month-item-title">С тренером</h3>
+              <p class="month-item__text month-item-text">12 занятий</p>
+              <div class="month-item__container month-item-container">
+                <p class="month-item-container__price month-item-price" data-parent="60 000">60 000</p>
+                <svg class="month-item-container__logo pane-rub" width="24" height="33">
+                  <use href="/__spritemap#sprite-rub"></use>
+                </svg>
+              </div>
+              <a class="month-item__button month-item-btn" href="https://buy.ru">Купить абонемент</a>
+            </li>
+            <li class="price-month__item month-item">
+              <h3 class="month-item__title month-item-title">Дневной</h3>
+              <p class="month-item__text month-item-text">с 8:00 до 17:00</p>
+              <div class="month-item__container month-item-container">
+                <p class="month-item-container__price month-item-price" data-parent="20 400">20 400</p>
+                <svg class="month-item-container__logo pane-rub" width="24" height="33">
+                  <use href="/__spritemap#sprite-rub"></use>
+                </svg>
+              </div>
+              <a class="month-item__button month-item-btn" href="https://buy.ru">Купить абонемент</a>
+            </li>
+            <li class="price-month__item month-item">
+              <h3 class="month-item__title month-item-title">Полный день</h3>
+              <p class="month-item__text month-item-text">с 8:00 до 22:00</p>
+              <div class="month-item__container month-item-container">
+                <p class="month-item-container__price month-item-price" data-parent="32 400">32 400</p>
+                <svg class="month-item-container__logo pane-rub" width="24" height="33">
+                  <use href="/__spritemap#sprite-rub"></use>
+                </svg>
+              </div>
+              <a class="month-item__button month-item-btn" href="https://buy.ru">Купить абонемент</a>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="main__sections-list games" data-test="games">
