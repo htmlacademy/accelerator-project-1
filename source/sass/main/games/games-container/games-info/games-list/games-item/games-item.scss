@@ -2,6 +2,10 @@
   display: grid;
   row-gap: 3px;
   grid-template-rows: 23px 12px 12px;
+
+  &--mod {
+    grid-template-rows: 24px 24px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -9,7 +13,7 @@
     row-gap: 2px;
     column-gap: 5px;
     grid-template-columns: 13px 22px;
-    grid-template-rows: 25px 22px 22px;
+    grid-template-rows: 26px 22px 22px;
   }
 }
 

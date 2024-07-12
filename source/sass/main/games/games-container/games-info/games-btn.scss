@@ -1,6 +1,6 @@
 .games-btn {
   display: block;
-  margin: 1px 0 -1px;
+  margin: 2px 0 -2px;
   padding: 22px 0;
   font-family: "Roboto-bold", sans-serif;
   font-size: 12px;
@@ -20,7 +20,8 @@
 
 @media (min-width: $tablet-width) {
   .games-btn {
-    margin: -1px 0 1px;
+    margin: 0;
+    padding: 25px 0 19px;
     width: 216px;
   }
 }

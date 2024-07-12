@@ -1,5 +1,5 @@
 .games-item-year {
-  margin: -3px 0 3px;
+  margin: -4px 0 4px;
   font-family: "Roboto-regular", sans-serif;
   font-size: 12px;
   line-height: 100%;
@@ -12,6 +12,7 @@
 
 @media (min-width: $tablet-width) {
   .games-item-year {
+    margin: -1px 0 1px;
     font-size: 14px;
     line-height: 22px;
   }
