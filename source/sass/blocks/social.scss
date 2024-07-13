@@ -1,0 +1,42 @@
+.social {
+  font-size: 0;
+  line-height: 0;
+}
+
+.social__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include vp-1365 {
+    row-gap: 15px;
+    column-gap: 15px;
+  }
+
+  @include vp-767 {
+    justify-content: flex-start;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+
+
+.social__list a {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $color-white;
+  display: inline-block;
+  color: #030a1a;
+}
+
+.social__list svg {
+  width: 25px;
+  height: 25px;
+}

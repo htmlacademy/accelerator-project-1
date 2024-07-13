@@ -23,6 +23,10 @@
 .page-header__col {
   &--logo {
     flex-shrink: 0;
+
+    @include vp-1365 {
+      padding-top: 2px;
+    }
   }
 
   &--phone {
