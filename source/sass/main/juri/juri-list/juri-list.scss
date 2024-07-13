@@ -1,17 +1,9 @@
 .juri-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  width: 260px;
 }
 
 @media (min-width: $tablet-width) {
   .juri-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 560px;
   }
 }
@@ -21,3 +13,26 @@
     width: 1160px;
   }
 }
+// .juri-list {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 40px;
+//   margin: 0;
+//   padding: 0;
+//   list-style-type: none;
+// }
+
+// @media (min-width: $tablet-width) {
+//   .juri-list {
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     width: 560px;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .juri-list {
+//     width: 1160px;
+//   }
+// }

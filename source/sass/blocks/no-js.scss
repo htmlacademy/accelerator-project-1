@@ -1,0 +1,33 @@
+.no-js .juri {
+  .swiper {
+    display: block;
+    overflow: visible;
+    .swiper-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      .swiper-slide{
+        width: 260px;
+      }
+    }
+    @media (min-width: $tablet-width) {
+      .swiper-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 560px;
+      }
+    }
+    @media (min-width: $desktop-width) {
+      .swiper-wrapper {
+        width: 1160px;
+      }
+    }
+  }
+  .juri-btn {
+    display: none;
+  }
+}

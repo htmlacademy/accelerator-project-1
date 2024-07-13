@@ -1,7 +1,8 @@
 @import "vendor/normalize";
+@import "blocks/variables";
 @import "blocks/body";
 @import "blocks/fonts";
-@import "blocks/variables";
+@import "blocks/no-js";
 @import "blocks/visually-hidden";
 @import "blocks/img";
 @import "header/hero";
@@ -67,3 +68,5 @@
 @import "main/juri/juri-list/juri-hover/juri-hover-list/juri-hover-list";
 @import "main/juri/juri-list/juri-hover/juri-hover-direction";
 @import "main/juri/juri-list/juri-hover/juri-hover-list/juri-progress-item";
+@import 'swiper/css';
+
