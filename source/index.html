@@ -1207,19 +1207,17 @@
               Бесплатное занятие
             </h2>
             <form action="https://echo.htmlacademy.ru" method="GET">
-              <p class="form__input">
-                <label class="visually-hidden">
-                  Имя
-                </label>
-                <input type="text" name="user" placeholder="Имя" required>
-              </p>
-              <p class="form__input">
-                <label class="visually-hidden">
-                  Телефон
-                </label>
-                <input type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone"
-                  placeholder="Телефон" required>
-              </p>
+              <div class="form__inputs">
+                <div class="form__input">
+                  <label class="visually-hidden" for="name">Имя</label>
+                  <input type="text" id="name" name="name" placeholder="Имя" required>
+                </div>
+                <div class="form__input">
+                  <label class="visually-hidden" for="phone">Телефон</label>
+                  <input type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="phone" name="phone"
+                    placeholder="Телефон" required>
+                </div>
+              </div>
               <button type="submit">Отправить</button>
             </form>
           </div>
@@ -1230,21 +1228,25 @@
               Контакты
             </h2>
             <div class="contacts__content">
-              <div class="contacts__item">
-                <h3 class="contacts__item-title">Адрес:</h3>
-                <p class="contacts__item-descr">г. Омск, ул. 60 лет Октября, 7</p>
+              <div class="contacts__col">
+                <div class="contacts__item">
+                  <h3 class="contacts__item-title">Адрес:</h3>
+                  <p class="contacts__item-descr">г. Омск, ул. 60 лет Октября, 7</p>
+                </div>
+                <div class="contacts__item">
+                  <h3 class="contacts__item-title">График работы:</h3>
+                  <p class="contacts__item-descr">Пн-Вс: с 8:00 до 22:00</p>
+                </div>
               </div>
-              <div class="contacts__item">
-                <h3 class="contacts__item-title">График работы:</h3>
-                <p class="contacts__item-descr">Пн-Вс: с 8:00 до 22:00</p>
-              </div>
-              <div class="contacts__item">
-                <h3 class="contacts__item-title">Телефон:</h3>
-                <a href="tel:88005555555" class="contacts__item-descr">8 800 555-55-55</a>
-              </div>
-              <div class="contacts__item">
-                <h3 class="contacts__item-title">Email:</h3>
-                <a href="tel:88005555555" class="contacts__item-descr">oмск@supergym.ru</a>
+              <div class="contacts__col">
+                <div class="contacts__item">
+                  <h3 class="contacts__item-title">Телефон:</h3>
+                  <a href="tel:88005555555" class="contacts__item-descr">8 800 555-55-55</a>
+                </div>
+                <div class="contacts__item">
+                  <h3 class="contacts__item-title">Email:</h3>
+                  <a href="tel:88005555555" class="contacts__item-descr">oмск@supergym.ru</a>
+                </div>
               </div>
             </div>
           </div>

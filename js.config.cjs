@@ -47,16 +47,16 @@ module.exports = {
       requireSameDimensions: true,
       delay: 500
     },
-/*    {
-      "label": "faq-tab-2",
-      "url": "http://localhost:3000/index.html",
-      "referenceUrl": "./figma/index.html",
-      selectors: [`[data-test="faq"]`],
-      misMatchThreshold: 1.0,
-      "onReadyScript": "faq-tab-2.cjs",
-      requireSameDimensions: true,
-      delay: 1000
-    },*/
+    /*    {
+          "label": "faq-tab-2",
+          "url": "http://localhost:3000/index.html",
+          "referenceUrl": "./figma/index.html",
+          selectors: [`[data-test="faq"]`],
+          misMatchThreshold: 1.0,
+          "onReadyScript": "faq-tab-2.cjs",
+          requireSameDimensions: true,
+          delay: 1000
+        },*/
     {
       "label": "reviews-prev",
       "url": "http://localhost:3000/index.html",
@@ -117,7 +117,7 @@ module.exports = {
   "engine": "puppeteer",
   "engineOptions": {
     "args": ["--no-sandbox"],
-    "gotoParameters": {"waitUntil": ["load", "networkidle0"], timeout: 10000},
+    "gotoParameters": { "waitUntil": ["load", "networkidle0"], timeout: 10000 },
   },
   "asyncCaptureLimit": 10,
   "asyncCompareLimit": 50,

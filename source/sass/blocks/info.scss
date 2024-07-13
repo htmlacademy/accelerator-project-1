@@ -1,8 +1,15 @@
 .info {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  ///
+  font-size: 0;
+  line-height: 0;
+  ///
 
   @include vp-1365 {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
   }
 }
