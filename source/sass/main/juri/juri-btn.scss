@@ -1,32 +1,61 @@
 .juri-btn {
+  margin: 0;
   position: absolute;
   display: none;
+  padding: 0;
+  width: 50px;
+  height: 50px;
   border: none;
+  border-radius: 50%;
   background-color: transparent;
+  stroke: #102654;
+
+  &:hover {
+    border: #102654 1px solid;
+  }
+
+  &:focus {
+    background-color: #E8E8E8;
+    border: #102654 1px solid;
+  }
+
+  &:active {
+    background-color: #102654;
+    border: #102654 1px solid;
+    stroke: #ffffff;
+  }
+
+  &:disabled {
+    opacity: 30%;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .juri-btn {
-    display: block;
     display: flex;
     align-items: center;
-    height: 100%;
+    justify-content: center;
     &--left {
-      top: 0;
-      left: 0;
-      transform: rotate(180deq);
+      top:50%;
+      left: 32px;
     }
 
     &--right {
-      top: 0;
-      right: 0;
+      top: 50%;
+      right: 32px;
+      transform: rotate(180deg);
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .juri-btn {
-    border: none;
-    background-color: transparent;
+    &--left {
+      left: 31px;
+    }
+
+    &--right {
+      right: 31px;
+    }
   }
 }
