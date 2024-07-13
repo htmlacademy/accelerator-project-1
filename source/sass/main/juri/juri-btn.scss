@@ -1,0 +1,32 @@
+.juri-btn {
+  position: absolute;
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .juri-btn {
+    display: block;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    &--left {
+      top: 0;
+      left: 0;
+      transform: rotate(180deq);
+    }
+
+    &--right {
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .juri-btn {
+    border: none;
+    background-color: transparent;
+  }
+}
