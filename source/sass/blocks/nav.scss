@@ -6,6 +6,7 @@
 .nav__list {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 30px;
   list-style: none;
@@ -14,21 +15,8 @@
   font-size: 14px;
   line-height: 22px;
 
-  //test
-  column-gap: 0;
-  justify-content: flex-start;
-  padding-top: 1px;
-
-  //
-
   @include vp-1365 {
-    column-gap: 30px;
-
-    //test
-    padding-top: 0;
-    justify-content: space-between;
-
-    //
+    column-gap: 10px;
   }
 
   @include vp-767 {
@@ -40,40 +28,6 @@
 }
 
 .nav__list li {
-  //test
-  &:nth-child(1) {
-    @include vp-1366 {
-      margin-right: 83px;
-
-      // margin-right: 82.5px;
-    }
-  }
-
-  &:nth-child(2) {
-    @include vp-1366 {
-      margin-right: 82px;
-
-      // margin-right: 82.5px;
-    }
-  }
-
-  &:nth-child(3) {
-    @include vp-1366 {
-      margin-right: 83px;
-
-      // margin-right: 82.5px;
-    }
-  }
-
-  &:nth-child(4) {
-    @include vp-1366 {
-      margin-right: 83px;
-
-      // margin-right: 82.5px;
-    }
-  }
-
-  //
 
   @include vp-767 {
     margin-bottom: 20px;
@@ -82,4 +36,59 @@
 
 .nav__list a {
   color: inherit;
+  position: relative;
+  padding: 4px 9px;
+  border: 1px solid $color-transparent;
+  transition:
+    border-color $trans-default;
+
+  @include vp-767 {
+    padding: 0;
+    border: none;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 18px);
+    height: 1px;
+    bottom: 0;
+    left: 10px;
+    transition: background-color $trans-default;
+
+    // @include vp-767 {
+    //   display: none;
+    // }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid $color-white;
+  }
+
+  &:hover:not(:disabled):not(:focus-visible):not(:active):not(.disabled) {
+    border: 1px solid $color-transparent;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &:active {
+    color: $color-white;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+}
+
+.nav__list a.disabled {
+  pointer-events: none;
+  opacity: 0.4;
 }

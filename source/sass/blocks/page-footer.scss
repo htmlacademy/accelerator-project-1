@@ -51,12 +51,12 @@
 
   &--nav {
     width: 100%;
-    max-width: 600px;
+    max-width: 620px; //600
 
     @include vp-1365 {
       max-width: 100%;
-      padding-left: 36px;
-      padding-right: 36px;
+      padding-left: 25.5px;
+      padding-right: 25.5px;
     }
 
     @include vp-767 {
