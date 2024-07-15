@@ -20,8 +20,9 @@
   align-items: flex-start;
 
   //
-  padding-top: 61px;
-  min-height: 338px;
+  padding-top: 60px;
+  min-height: 339px;
+
   //
 
   @include vp-1365 {
@@ -33,6 +34,7 @@
     //
     padding-top: 60px;
     min-height: 338px;
+
     //
   }
 
@@ -43,6 +45,7 @@
 
     //
     min-height: 394px;
+
     //
   }
 }
@@ -51,7 +54,8 @@
   margin: 0;
 
   //
-  margin-bottom: 35px;
+  margin-bottom: 36px;
+
   //
 
   @include vp-1365 {
@@ -84,6 +88,7 @@
 
   //
   margin-bottom: 35px;
+
   //
 
   @include vp-1365 {
@@ -174,7 +179,9 @@
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  transition: opacity $trans-default, background-color $trans-default,
+  transition:
+    opacity $trans-default,
+    background-color $trans-default,
     color $trans-default;
   background-color: $color-transparent;
   border: 2px solid $color-white;

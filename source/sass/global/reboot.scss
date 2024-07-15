@@ -18,6 +18,12 @@ html {
   line-height: 24px;
   font-family: $ff-placeholder;
   color: $color-dark;
+
+  //test
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // оптимизация выравнивания шрифта относительно центра строки
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -37,6 +43,7 @@ video {
   max-width: 100%;
   height: auto;
 }
+
 picture {
   font-size: 0;
   line-height: 0;
@@ -44,4 +51,17 @@ picture {
 
 textarea {
   resize: none;
+}
+
+input,
+textarea {
+  border-radius: 0;
+
+  &::placeholder {
+    opacity: 1;
+  }
+
+  &:invalid {
+    box-shadow: none;
+  }
 }

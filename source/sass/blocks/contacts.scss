@@ -19,8 +19,9 @@
   padding-left: 103px;
 
   //
-  padding-top: 59px;
-  min-height: 337px;
+  padding-top: 60px;
+  min-height: 338px;
+
   //
 
   @include vp-1365 {
@@ -31,6 +32,7 @@
     //
     padding-top: 60px;
     min-height: 327px;
+
     //
   }
 
@@ -40,6 +42,7 @@
 
     //
     min-height: 438px;
+
     //
   }
 }
@@ -49,6 +52,7 @@
 
   //
   margin-bottom: 36px;
+
   //
 
   @include vp-1365 {
@@ -58,6 +62,7 @@
 
     //
     margin-bottom: 36px;
+
     //
   }
 
@@ -125,13 +130,16 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+
   //
   margin-bottom: 6px;
+
   //
 
   @include vp-1365 {
     //
     margin-bottom: 5px;
+
     //
   }
 

@@ -182,7 +182,9 @@
   color: inherit;
   padding: 10px;
   border: 1px solid $color-transparent;
-  transition: opacity $trans-default, background-color $trans-default,
+  transition:
+    opacity $trans-default,
+    background-color $trans-default,
     color $trans-default;
 
   @include vp-767 {
@@ -345,7 +347,9 @@
   color: inherit;
   padding: 10px;
   border: 1px solid $color-transparent;
-  transition: opacity $trans-default, background-color $trans-default,
+  transition:
+    opacity $trans-default,
+    background-color $trans-default,
     color $trans-default;
 
   @include vp-767 {
