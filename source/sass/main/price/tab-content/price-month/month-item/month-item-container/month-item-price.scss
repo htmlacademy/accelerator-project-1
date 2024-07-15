@@ -5,7 +5,7 @@
   font-family: "Roboto-bold", sans-serif;
   font-size: 48px;
   line-height: 150%;
-  color: #103AAE;
+  color: #103aae;
   padding: 0;
 
   &::before {
@@ -14,7 +14,7 @@
     bottom: 0;
     z-index: -1;
     content: attr(data-parent);
-    color: #E8E8E8;
+    color: #e8e8e8;
     font-size: 80px;
     line-height: 150%;
   }

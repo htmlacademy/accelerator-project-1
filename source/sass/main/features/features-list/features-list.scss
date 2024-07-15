@@ -10,11 +10,12 @@
 @media (min-width: $tablet-width) {
   .features-list {
     margin-bottom: 39px;
-    flex-direction: row ;
+    flex-direction: row;
     justify-content: space-between;
     width: 678px;
     padding: 0;
     text-align: start;
+
     &--mod {
       margin: 0;
     }
@@ -24,8 +25,8 @@
 @media (min-width: $desktop-width) {
   .features-list {
     position: relative;
-    margin: 0 auto ;
-    width:1160px;
+    margin: 0 auto;
+    width: 1160px;
     padding: 0 0 49px;
 
     &::before {
@@ -35,7 +36,7 @@
       content: "";
       opacity: 20%;
       width: 360px;
-      border-bottom: #D10A42 2px solid;
+      border-bottom: #d10a42 2px solid;
     }
 
     &::after {
@@ -45,14 +46,14 @@
       content: "";
       opacity: 20%;
       width: 360px;
-      border-bottom: #D10A42 2px solid;
+      border-bottom: #d10a42 2px solid;
     }
   }
 
   .features-list--mod {
     padding: 38px 0 0;
 
-    &::before{
+    &::before {
       display: none;
     }
 
@@ -60,5 +61,4 @@
       display: none;
     }
   }
-
 }

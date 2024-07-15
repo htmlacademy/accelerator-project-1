@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   padding: 40px 15px;
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
 }
 
 @media (min-width: $tablet-width) {
@@ -13,7 +13,7 @@
     background: url("../img/price/price-bg.png") no-repeat;
     background-size: 330px 383px;
     background-position: right 0 bottom 0;
-    background-color: #F8F9FC;
+    background-color: #f8f9fc;
 
     @media (resolution >= 2dppx) {
       background-image: url("../img/price/price-bg@2x.png");
