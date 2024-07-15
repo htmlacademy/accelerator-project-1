@@ -9,7 +9,9 @@
 
 @media (min-width: $tablet-width) {
   .features-item {
+    margin: 0;
     flex-direction: row ;
+    justify-content: space-between;
     width: 324px;
   }
 }

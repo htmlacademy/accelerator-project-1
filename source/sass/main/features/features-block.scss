@@ -1,5 +1,5 @@
 .features-block {
-  margin: 40px 0;
+  margin: 0 0 40px;
   font-family: "Roboto-bold", sans-serif;
   text-align: center;
   color: #ffffff;
@@ -29,4 +29,53 @@
   line-height: 22px;
   padding: 0;
   width: 170px;
+}
+
+@media (min-width: $tablet-width) {
+  .features-block {
+    padding: 35px 0;
+    width: 320px;
+  }
+
+  .features-block h3 {
+    margin: 0 0 25px;
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .features-block h4 {
+    margin: 0 0 25px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .features-block p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 170px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features-block {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 58px 0;
+    width: 360px;
+  }
+
+  .features-block h3 {
+    margin: 0 0 10px;
+  }
+
+  .features-block h4 {
+    margin: 0 0 30px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .features-block p {
+    width: 280px;
+  }
 }
