@@ -1,7 +1,7 @@
-const initTabs = () => {
-  if (document.querySelectorAll('.tabs__control') && document.querySelectorAll('.tabs__element')) {
-    const tabsControls = document.querySelectorAll('.tabs__control');
-    const tabsElements = document.querySelectorAll('.tabs__element');
+const initFaqTabs = () => {
+  if (document.querySelectorAll('[data-faq="tabs-control"]') && document.querySelectorAll('[data-faq="tabs-content"]')) {
+    const tabsControls = document.querySelectorAll('[data-faq="tabs-control"]');
+    const tabsElements = document.querySelectorAll('[data-faq="tabs-content"]');
     // Обработчик события клика для вкладок
     tabsControls.forEach((tabsControl) => {
       tabsControl.addEventListener('click', (e) => {
@@ -32,4 +32,4 @@ const initTabs = () => {
   }
 };
 
-export { initTabs };
+export { initFaqTabs };

@@ -226,7 +226,7 @@
     }
   }
 
-  &:hover:not(:disabled):not(:focus-visible) {
+  &:hover:not(:disabled):not(:active):not(:focus-visible) {
     &::before {
       background-image: url("../../img/svg/video-btn-hover.svg");
     }

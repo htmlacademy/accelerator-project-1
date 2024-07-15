@@ -61,19 +61,13 @@
     color: $color-dark-alternative;
   }
 
-  &:hover:not(:disabled):not(:focus-visible) {
+  &:hover:not(:focus-visible):not(:active):not(.disabled) {
     color: rgba(28, 51, 116, 0.5);
   }
 
   &:active {
     color: $color-dark;
     border-bottom: 1px solid $color-dark;
-  }
-
-  &:disabled {
-    opacity: 0.5;
-    pointer-events: none;
-    color: rgba(#f8f9fc, 0.5);
   }
 }
 

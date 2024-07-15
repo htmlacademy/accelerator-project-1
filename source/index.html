@@ -68,7 +68,6 @@
                 </h2>
                 <p class="about__descr">Просторный зал площадью 900 кв/м</p>
               </div>
-
               <div class="about__content">
                 <p>
                   Supergym – самый большой фитнес центр за Уралом
@@ -106,7 +105,7 @@
               </picture>
             </div>
             <div class="about__video">
-              <div class="video">
+              <div class="video" data-id="video" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
                 <picture>
                   <source type="image/webp" media="(min-width: 1365px)" srcset="
                                 img/video-preview-desktop.jpg    1x,
@@ -147,21 +146,21 @@
           <h2 class="price__title section-title section-title--dark">
             Абонементы
           </h2>
-          <div class="price__tabs tabs" data-tabs="parent" data-delay="300">
-            <div class="tabs__controls">
-              <button class="is-active tabs__control" type="button" data-tab="tab1">
+          <div class="price__tabs price-tabs">
+            <div class="price-tabs__controls">
+              <button class="is-active price-tabs__control" type="button" data-price="tabs-control" data-tab="tab1">
                 1 месяц
               </button>
-              <button class="tabs__control" type="button" data-tab="tab2">
+              <button class="price-tabs__control" type="button" data-price="tabs-control" data-tab="tab2">
                 6 месяцев
               </button>
-              <button class="tabs__control" type="button" data-tab="tab3">
+              <button class="price-tabs__control" type="button" data-price="tabs-control" data-tab="tab3">
                 12 месяцев
               </button>
             </div>
-            <div class="tabs__content" data-tabs="content">
-              <div class="tabs__element is-active" data-tab-content="tab1" data-tabs="element">
-                <div class="price-card">
+            <div class="price-tabs__content">
+              <div class="price-tabs__element is-active" data-tab-content="tab1" data-price="tabs-content">
+                <div class="price-card" data-price="card">
                   <div class="price-card__wrapper">
                     <div class="price-card__head">
                       <h3>С тренером</h3>
@@ -174,12 +173,12 @@
                         </svg></span>
                       <span class="price-card__back-sum numbers-xlarge" aria-hidden="true">5000</span>
                     </div>
-                    <button class="price-card__btn btn btn--on-light tabs" type="button">
+                    <a class="price-card__btn btn btn--on-light tabs" data-price="card-btn" href="#">
                       Купить абонемент
-                    </button>
+                    </a>
                   </div>
                 </div>
-                <div class="price-card">
+                <div class="price-card" data-price="card">
                   <div class="price-card__wrapper">
                     <div class="price-card__head">
                       <h3>Дневной</h3>
@@ -192,12 +191,12 @@
                         </svg></span>
                       <span class="price-card__back-sum numbers-xlarge" aria-hidden="true">1700</span>
                     </div>
-                    <button class="price-card__btn btn btn--on-light tabs" type="button">
+                    <a class="price-card__btn btn btn--on-light tabs" data-price="card-btn" href="#">
                       Купить абонемент
-                    </button>
+                    </a>
                   </div>
                 </div>
-                <div class="price-card">
+                <div class="price-card" data-price="card">
                   <div class="price-card__wrapper">
                     <div class="price-card__head">
                       <h3>Полный день</h3>
@@ -210,14 +209,14 @@
                         </svg></span>
                       <span class="price-card__back-sum numbers-xlarge" aria-hidden="true">2700</span>
                     </div>
-                    <button class="price-card__btn btn btn--on-light tabs" type="button">
+                    <a class="price-card__btn btn btn--on-light tabs" data-price="card-btn" href="#">
                       Купить абонемент
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="tabs__element" data-tab-content="tab2" data-tabs="element">
-                <div class="price-card">
+              <div class="price-tabs__element" data-tab-content="tab2" data-price="tabs-content">
+                <div class="price-card" data-price="card">
                   <div class="price-card__wrapper">
                     <div class="price-card__head">
                       <h3>С тренером</h3>
@@ -230,12 +229,12 @@
                         </svg></span>
                       <span class="price-card__back-sum numbers-xlarge" aria-hidden="true">30000</span>
                     </div>
-                    <button class="price-card__btn btn btn--on-light tabs" type="button">
+                    <a class="price-card__btn btn btn--on-light tabs" data-price="card-btn" href="#">
                       Купить абонемент
-                    </button>
+                    </a>
                   </div>
                 </div>
-                <div class="price-card">
+                <div class="price-card" data-price="card">
                   <div class="price-card__wrapper">
                     <div class="price-card__head">
                       <h3>Дневной</h3>
@@ -248,12 +247,12 @@
                         </svg></span>
                       <span class="price-card__back-sum numbers-xlarge" aria-hidden="true">10200</span>
                     </div>
-                    <button class="price-card__btn btn btn--on-light tabs" type="button">
+                    <a class="price-card__btn btn btn--on-light tabs" data-price="card-btn" href="#">
                       Купить абонемент
-                    </button>
+                    </a>
                   </div>
                 </div>
-                <div class="price-card">
+                <div class="price-card" data-price="card">
                   <div class="price-card__wrapper">
                     <div class="price-card__head">
                       <h3>Полный день</h3>
@@ -266,14 +265,14 @@
                         </svg></span>
                       <span class="price-card__back-sum numbers-xlarge" aria-hidden="true">16200</span>
                     </div>
-                    <button class="price-card__btn btn btn--on-light tabs" type="button">
+                    <a class="price-card__btn btn btn--on-light tabs" data-price="card-btn" href="#">
                       Купить абонемент
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="tabs__element" data-tab-content="tab3" data-tabs="element">
-                <div class="price-card">
+              <div class="price-tabs__element" data-tab-content="tab3" data-price="tabs-content">
+                <div class="price-card" data-price="card">
                   <div class="price-card__wrapper">
                     <div class="price-card__head">
                       <h3>С тренером</h3>
@@ -286,12 +285,12 @@
                         </svg></span>
                       <span class="price-card__back-sum numbers-xlarge" aria-hidden="true">60000</span>
                     </div>
-                    <button class="price-card__btn btn btn--on-light tabs" type="button">
+                    <a class="price-card__btn btn btn--on-light tabs" data-price="card-btn" href="#">
                       Купить абонемент
-                    </button>
+                    </a>
                   </div>
                 </div>
-                <div class="price-card">
+                <div class="price-card" data-price="card">
                   <div class="price-card__wrapper">
                     <div class="price-card__head">
                       <h3>Дневной</h3>
@@ -304,12 +303,12 @@
                         </svg></span>
                       <span class="price-card__back-sum numbers-xlarge" aria-hidden="true">20400</span>
                     </div>
-                    <button class="price-card__btn btn btn--on-light tabs" type="button">
+                    <a class="price-card__btn btn btn--on-light tabs" data-price="card-btn" href="#">
                       Купить абонемент
-                    </button>
+                    </a>
                   </div>
                 </div>
-                <div class="price-card">
+                <div class="price-card" data-price="card">
                   <div class="price-card__wrapper">
                     <div class="price-card__head">
                       <h3>Полный день</h3>
@@ -322,9 +321,9 @@
                         </svg></span>
                       <span class="price-card__back-sum numbers-xlarge" aria-hidden="true">32400</span>
                     </div>
-                    <button class="price-card__btn btn btn--on-light tabs" type="button">
+                    <a class="price-card__btn btn btn--on-light tabs" data-price="card-btn" href="#">
                       Купить абонемент
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -377,9 +376,9 @@
                   Ежегодные соревнования по CrossFit
                 </p>
               </div>
-              <button class="games__btn btn btn--on-dark" type="button">
+              <a class="games__btn btn btn--on-dark" href="#">
                 заполнить заявку
-              </button>
+              </a>
             </div>
             <div class="games__col games__col--img">
               <picture>
@@ -800,30 +799,30 @@
           <h2 class="faq__title section-title section-title--dark">
             Вопросы и ответы
           </h2>
-          <div class="faq__inner accordion">
-            <div class="accordion__controls">
-              <button class="accordion__control accordion-tabs is-active" type="button">
+          <div class="faq__inner">
+            <div class="faq__controls">
+              <button class="faq__control faq-tabs is-active" type="button" data-tab="tab1" data-faq="tabs-control">
                 Центр
               </button>
-              <button class="accordion__control accordion-tabs" type="button">
+              <button class="faq__control faq-tabs" type="button" data-tab="tab2" data-faq="tabs-control">
                 Абонемент
               </button>
-              <button class="accordion__control accordion-tabs" type="button">
+              <button class="faq__control faq-tabs" type="button" data-tab="tab3" data-faq="tabs-control">
                 Услуги
               </button>
-              <button class="accordion__control accordion-tabs" type="button">
+              <button class="faq__control faq-tabs" type="button" data-tab="tab4" data-faq="tabs-control">
                 Правила
               </button>
             </div>
-            <div class="accordion__wrapper is-active">
-              <div class="accordion__item is-active">
+            <div class="faq__wrapper is-active" data-faq="tabs-content" data-tab-content="tab1">
+              <div class="faq__item is-active" data-faq="accordion-item">
                 <h3>Как стать членом <br>фитнес-центра?</h3>
-                <button class="accordion__item-btn is-active" type="button">
+                <button class="faq__item-btn is-active" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -834,14 +833,14 @@
                   и договор придёт вам на почту.
                 </p>
               </div>
-              <div class="accordion__item">
+              <div class="faq__item" data-faq="accordion-item">
                 <h3>Где можно посмотреть расписание?</h3>
-                <button class="accordion__item-btn" type="button">
+                <button class="faq__item-btn" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -852,14 +851,14 @@
                   расписание и обновления на почту каждую неделю.
                 </p>
               </div>
-              <div class="accordion__item">
+              <div class="faq__item" data-faq="accordion-item">
                 <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
-                <button class="accordion__item-btn" type="button">
+                <button class="faq__item-btn" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -870,17 +869,17 @@
                   и договор придёт вам на почту.
                 </p>
               </div>
-              <div class="accordion__item">
+              <div class="faq__item" data-faq="accordion-item">
                 <h3>
                   Сколько тренеров работает в клубе и какова
                   их квалификация?
                 </h3>
-                <button class="accordion__item-btn" type="button">
+                <button class="faq__item-btn" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -892,15 +891,15 @@
                 </p>
               </div>
             </div>
-            <div class="accordion__wrapper">
-              <div class="accordion__item is-active">
+            <div class="faq__wrapper" data-faq="tabs-content" data-tab-content="tab2">
+              <div class="faq__item" data-faq="accordion-item">
                 <h3>Занятия с тренером входят в абонемент?</h3>
-                <button class="accordion__item-btn" type="button">
+                <button class="faq__item-btn" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -912,14 +911,14 @@
                   выполнения упражнения.
                 </p>
               </div>
-              <div class="accordion__item">
+              <div class="faq__item" data-faq="accordion-item">
                 <h3>Можно ли заморозить абонемент?</h3>
-                <button class="accordion__item-btn" type="button">
+                <button class="faq__item-btn" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -930,17 +929,17 @@
                   и договор придёт вам на почту.
                 </p>
               </div>
-              <div class="accordion__item">
+              <div class="faq__item" data-faq="accordion-item">
                 <h3>
                   Есть ли лимит по посещениям тренажерного зала и
                   групповых занятий?
                 </h3>
-                <button class="accordion__item-btn" type="button">
+                <button class="faq__item-btn" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -951,14 +950,14 @@
                   и договор придёт вам на почту.
                 </p>
               </div>
-              <div class="accordion__item">
+              <div class="faq__item" data-faq="accordion-item">
                 <h3>Что такое семейный доступ и доступ для друзей?</h3>
-                <button class="accordion__item-btn" type="button">
+                <button class="faq__item-btn" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -970,18 +969,18 @@
                 </p>
               </div>
             </div>
-            <div class="accordion__wrapper">
-              <div class="accordion__item is-active">
+            <div class="faq__wrapper" data-faq="tabs-content" data-tab-content="tab3">
+              <div class="faq__item" data-faq="accordion-item">
                 <h3>
                   Предлагает ли клуб услуги по консультированию по
                   вопросам питания?
                 </h3>
-                <button class="accordion__item-btn" type="button">
+                <button class="faq__item-btn" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -991,17 +990,17 @@
                   цели и предложит программу питания.
                 </p>
               </div>
-              <div class="accordion__item">
+              <div class="faq__item" data-faq="accordion-item">
                 <h3>
                   Проводятся ли в клубе какие-либо мероприятия или
                   соревнования?
                 </h3>
-                <button class="accordion__item-btn" type="button">
+                <button class="faq__item-btn" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -1012,14 +1011,14 @@
                   и договор придёт вам на почту.
                 </p>
               </div>
-              <div class="accordion__item">
+              <div class="faq__item" data-faq="accordion-item">
                 <h3>Можно ли приобрести в центре спортивное питание?</h3>
-                <button class="accordion__item-btn" type="button">
+                <button class="faq__item-btn" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -1030,14 +1029,14 @@
                   и договор придёт вам на почту.
                 </p>
               </div>
-              <div class="accordion__item">
+              <div class="faq__item" data-faq="accordion-item">
                 <h3>Есть ли в центре детская комната?</h3>
-                <button class="accordion__item-btn" type="button">
+                <button class="faq__item-btn" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -1049,15 +1048,15 @@
                 </p>
               </div>
             </div>
-            <div class="accordion__wrapper">
-              <div class="accordion__item is-active">
+            <div class="faq__wrapper" data-faq="tabs-content" data-tab-content="tab4">
+              <div class="faq__item">
                 <h3>Есть в фитнес-центре дресс-код?</h3>
-                <button class="accordion__item-btn" type="button">
+                <button class="faq__item-btn" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -1071,14 +1070,14 @@
                   составляют специальные классы (например, йога, пилатес).
                 </p>
               </div>
-              <div class="accordion__item">
+              <div class="faq__item">
                 <h3>Можно ли приводить с собой детей на тренировки?</h3>
-                <button class="accordion__item-btn" type="button">
+                <button class="faq__item-btn" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -1089,14 +1088,14 @@
                   и договор придёт вам на почту.
                 </p>
               </div>
-              <div class="accordion__item">
+              <div class="faq__item">
                 <h3>Какие дополнительные правила посещения центра?</h3>
-                <button class="accordion__item-btn" type="button">
+                <button class="faq__item-btn" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -1107,17 +1106,17 @@
                   и договор придёт вам на почту.
                 </p>
               </div>
-              <div class="accordion__item">
+              <div class="faq__item">
                 <h3>
                   Нужна ли медицинская справка для посещения залов и
                   бассейна?
                 </h3>
-                <button class="accordion__item-btn" type="button">
+                <button class="faq__item-btn" type="button">
                   <span class="visually-hidden">открыть/скрыть ответ</span>
-                  <svg class="accordion__item-btn-plus" width="22" height="22">
+                  <svg class="faq__item-btn-plus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-plus"></use>
                   </svg>
-                  <svg class="accordion__item-btn-minus" width="22" height="22">
+                  <svg class="faq__item-btn-minus" width="22" height="22">
                     <use href="/__spritemap#sprite-icon-minus"></use>
                   </svg>
                 </button>
@@ -1291,6 +1290,8 @@
         </div>
       </div>
     </footer>
+
+
   </div>
   <script type="module" src="js/main.js"></script>
 </body>

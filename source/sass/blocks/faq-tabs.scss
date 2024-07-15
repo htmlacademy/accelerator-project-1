@@ -1,4 +1,4 @@
-.accordion-tabs {
+.faq-tabs {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,13 +48,13 @@
   }
 }
 
-.accordion-tabs.is-active {
+.faq-tabs.is-active {
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border: 1px solid $color-transparent;
   color: $color-white;
 }
 
-.accordion-tabs.disabled {
+.faq-tabs.disabled {
   color: #c8c9cc;
   border: 1px solid rgba($color-dark, 0.2);
   pointer-events: none;

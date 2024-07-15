@@ -1,4 +1,4 @@
-.tabs__controls {
+.price-tabs__controls {
   margin: 0 auto;
   margin-bottom: 39px;
   display: inline-flex;
@@ -17,7 +17,7 @@
   }
 }
 
-.tabs__control {
+.price-tabs__control {
   border: none;
   padding: 0;
   background-color: $color-transparent;
@@ -90,7 +90,7 @@
   }
 }
 
-.tabs__control.is-active {
+.price-tabs__control.is-active {
   color: $color-dark;
 
   &::after {
@@ -98,7 +98,7 @@
   }
 }
 
-.tabs__control.disabled {
+.price-tabs__control.disabled {
   opacity: 0.3;
   color: $color-dark;
   pointer-events: none;
@@ -108,11 +108,11 @@
   }
 }
 
-.tabs__content {
+.price-tabs__content {
   width: 100%;
 }
 
-.tabs__element {
+.price-tabs__element {
   display: none;
   width: 100%;
   justify-content: space-between;
@@ -129,6 +129,6 @@
   }
 }
 
-.tabs__element.is-active {
+.price-tabs__element.is-active {
   display: flex;
 }

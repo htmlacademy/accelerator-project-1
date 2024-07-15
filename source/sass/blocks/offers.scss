@@ -215,7 +215,7 @@
     }
   }
 
-  &:hover:not(:disabled):not(:focus-visible) {
+  &:hover:not(.disabled):not(:focus-visible) {
     opacity: 0.8;
   }
 
@@ -227,19 +227,9 @@
       display: block;
     }
   }
-
-  &:disabled {
-    border: 1px solid $color-transparent;
-    opacity: 0.3;
-    pointer-events: none;
-
-    &::after {
-      display: block;
-    }
-  }
 }
 
-.offers__main-item-col--text .disabled {
+.offers__main-item-col--text a.disabled {
   border: 1px solid $color-transparent;
   opacity: 0.3;
   pointer-events: none;

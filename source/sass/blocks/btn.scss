@@ -32,7 +32,7 @@
       color: $color-action;
     }
 
-    &:hover:not(:disabled):not(:focus-visible) {
+    &:hover:not(:disabled):not(:focus-visible):not(:active):not(.disabled) {
       background-color: $color-white;
       color: $color-action;
     }
@@ -68,7 +68,7 @@
       color: $color-white;
     }
 
-    &:hover:not(:disabled):not(:focus-visible) {
+    &:hover:not(:disabled):not(:focus-visible):not(:active):not(.disabled) {
       border: none;
       background: $fill-gradient;
       color: $color-white;
