@@ -1,22 +1,28 @@
 .hero {
-  width: $mobile-width;
-  margin: 0 auto;
-  padding-bottom: 32px;
   background: linear-gradient(to right, #003d85 35%, #b80027);
+  &__container {
+    width: $mobile-width;
+    margin: 0 auto;
+    padding-bottom: 32px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .hero {
-    position: relative;
-    width: $tablet-width;
-    padding-bottom: 100px;
+    &__container {
+      position: relative;
+      width: $tablet-width;
+      padding-bottom: 100px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .hero {
-    position: relative;
-    width: $desktop-width;
-    padding-bottom: 120px;
+    &__container {
+      position: relative;
+      width: $desktop-width;
+      padding-bottom: 120px;
+    }
   }
 }

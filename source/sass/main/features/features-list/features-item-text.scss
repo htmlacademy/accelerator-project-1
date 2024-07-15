@@ -1,0 +1,40 @@
+.features-item-text h3 {
+  margin: 0 0 12px;
+  font-family: "Roboto-regular", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 0;
+}
+
+.features-item-text p {
+  margin: 0 auto;
+  font-family: "Roboto-light", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  width: 230px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .features-item-text h3 {
+    font-size: 20px;
+  }
+
+  .features-item-text p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 238px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features-item-text h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .features-item-text p {
+    width: 210px;
+  }
+}

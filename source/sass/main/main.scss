@@ -1,16 +1,3 @@
 .main {
   margin: 0 auto;
-  width: $mobile-width;
-}
-
-@media (min-width: $tablet-width) {
-  .main {
-    width: $tablet-width;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main {
-    width: $desktop-width;
-  }
 }

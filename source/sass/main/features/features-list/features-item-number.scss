@@ -1,0 +1,37 @@
+.features-item-number p {
+  margin: 0;
+  font-family: "Roboto-bold", sans-serif;
+  font-size: 64px;
+  line-height: 64px;
+  padding: 0;
+  background-image: linear-gradient(135deg, #D10A42 25%, #0041CA 50%);
+  background-clip: text;
+  color: transparent;
+}
+
+.features-item-number span {
+  margin: 0;
+  font-family: "Roboto-regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  color: #2E35AC;
+}
+
+@media (min-width: $tablet-width) {
+  .features-item-number p {
+    margin-right: 14px;
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .features-item-number span {
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features-item-number p {
+    margin-right: 0;
+  }
+}

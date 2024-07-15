@@ -1,16 +1,22 @@
 .about {
+  margin: 0 auto;
+  width: $mobile-width;
   padding-bottom: 40px;
   background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
   .about {
+    margin: 0 auto;
+    width: $tablet-width;
     padding-bottom: 35px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about {
+    margin: 0 auto;
+    width: $desktop-width;
     padding: 0;
   }
 }

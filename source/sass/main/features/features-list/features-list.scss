@@ -1,0 +1,23 @@
+.features-list {
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  padding: 0 15px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .features-list {
+    flex-direction: row ;
+    width: 678px;
+    padding: 0 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features-list {
+    width: 1160px;
+    padding: 0 103px;
+  }
+}

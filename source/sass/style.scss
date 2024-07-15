@@ -68,5 +68,12 @@
 @import "main/juri/juri-list/juri-hover/juri-hover-list/juri-hover-list";
 @import "main/juri/juri-list/juri-hover/juri-hover-direction";
 @import "main/juri/juri-list/juri-hover/juri-hover-list/juri-progress-item";
-@import 'swiper/css';
+@import "swiper/css";
+@import "main/features/features.scss";
+@import "main/features/features-title";
+@import "main/features/features-list/features-list";
+@import "main/features/features-list/features-item";
+@import "main/features/features-list/features-item-number";
+@import "main/features/features-list/features-item-text";
+@import "main/features/features-block";
 
