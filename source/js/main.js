@@ -25,6 +25,5 @@ window.addEventListener('DOMContentLoaded', () => {
     validateForm();
 
 
-
   });
 });

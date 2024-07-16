@@ -83,7 +83,7 @@ const validateForm = () => {
     event.preventDefault();
 
     // Проверяем каждое поле при отправке формы
-    inputs.forEach(input => {
+    inputs.forEach((input) => {
       // Проверяем поле Имя
       if (input.name === 'name') {
         validateName(input);
@@ -94,7 +94,7 @@ const validateForm = () => {
     });
 
     // Проверяем, если все поля валидны (не содержат классы ошибки)
-    const isValid = Array.from(inputs).every(input => !input.classList.contains('error'));
+    const isValid = Array.from(inputs).every((input) => !input.classList.contains('error'));
     if (isValid) {
       // Если все поля валидны, отправляем форму
       form.submit();
@@ -102,7 +102,7 @@ const validateForm = () => {
   });
 
   // Обработчики событий для удаления класса error при потере фокуса и пустом значении
-  inputs.forEach(input => {
+  inputs.forEach((input) => {
     // Обработчик события потери фокуса
     input.addEventListener('blur', () => {
       // Если значение инпута пустое
