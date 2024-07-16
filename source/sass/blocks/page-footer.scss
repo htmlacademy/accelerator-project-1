@@ -1,0 +1,80 @@
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #030a1a;
+  color: $color-white;
+
+  @include vp-1365 {
+    padding-top: 45px;
+    padding-bottom: 48px;
+  }
+
+  @include vp-767 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.page-footer img {
+  @include vp-1366 {
+    height: 27px;
+  }
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  //test
+  align-items: flex-start;
+
+  //
+
+  @include vp-1365 {
+    align-items: stretch;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.page-footer__col {
+  &--logo {
+    flex-shrink: 0;
+
+    @include vp-767 {
+      margin-bottom: 31px;
+    }
+  }
+
+  &--nav {
+    width: 100%;
+    max-width: 620px; //600
+
+    @include vp-1365 {
+      max-width: 100%;
+      padding-left: 25.5px;
+      padding-right: 25.5px;
+    }
+
+    @include vp-767 {
+      padding: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  &--social {
+    width: 100%;
+    max-width: 95px;
+
+    @include vp-1365 {
+      max-width: 105px;
+    }
+
+    @include vp-767 {
+      max-width: 100%;
+    }
+  }
+}

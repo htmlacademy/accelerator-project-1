@@ -1,0 +1,20 @@
+/* stylelint-disable */
+// Desktop first
+
+@mixin vp-1366 {
+  @media (min-width: ($vp-1366)) {
+    @content;
+  }
+}
+
+@mixin vp-1365 {
+  @media (max-width: ($vp-1366 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-767 {
+  @media (max-width: ($vp-768 - 1px)) {
+    @content;
+  }
+}

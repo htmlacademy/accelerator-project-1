@@ -1,0 +1,92 @@
+.nav {
+  font-size: 0;
+  line-height: 0;
+}
+
+.nav__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 22px;
+
+  @include vp-1365 {
+    column-gap: 10px;
+  }
+
+  @include vp-767 {
+    column-gap: 36px;
+    justify-content: flex-start;
+    row-gap: 0;
+    line-height: 20px;
+  }
+}
+
+.nav__list li {
+  @include vp-767 {
+    margin-bottom: 20px;
+  }
+}
+
+.nav__list a {
+  color: inherit;
+  position: relative;
+  padding: 4px 9px;
+  border: 1px solid $color-transparent;
+  transition: border-color $trans-default;
+
+  @include vp-767 {
+    padding: 0;
+    border: none;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 18px);
+    height: 1px;
+    bottom: 0;
+    left: 10px;
+    transition: background-color $trans-default;
+
+    // @include vp-767 {
+    //   display: none;
+    // }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid $color-white;
+  }
+
+  &:hover:not(:disabled):not(:focus-visible):not(:active):not(.disabled) {
+    border: 1px solid $color-transparent;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &:active {
+    color: $color-white;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+}
+
+.nav__list .disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
