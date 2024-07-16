@@ -114,8 +114,14 @@
   }
 }
 
-.faq__item.is-active p {
-  display: block;
+.faq__item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq__item-content.is-active {
+  max-height: 1000px;
 }
 
 .faq__item h3 {
@@ -138,7 +144,6 @@
 }
 
 .faq__item p {
-  display: none;
   margin: 0;
   margin-top: 23px;
   font-size: 18px;
@@ -211,6 +216,10 @@
   }
 }
 
+.faq__item-btn .faq__item-btn-plus {
+  display: block;
+}
+
 .faq__item-btn .faq__item-btn-minus {
   display: none;
 }
@@ -218,6 +227,22 @@
 .faq__item-btn.is-active {
   background-color: $color-dark-alternative;
   color: $color-white;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid $color-dark-alternative;
+    background-color: #74819c;
+    color: $color-white;
+  }
+
+  &:hover:not(:disabled):not(:focus-visible):not(:active) {
+    background-color: $color-dark-alternative;
+    color: $color-white;
+  }
 }
 
 .faq__item-btn.is-active .faq__item-btn-plus {
@@ -225,5 +250,5 @@
 }
 
 .faq__item-btn.is-active .faq__item-btn-minus {
-  display: inline-block;
+  display: block;
 }

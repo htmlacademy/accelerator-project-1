@@ -215,7 +215,7 @@
     }
   }
 
-  &:hover:not(.disabled):not(:focus-visible) {
+  &:hover:not(:focus-visible):not(:active):not(.disabled) {
     opacity: 0.8;
   }
 
@@ -359,6 +359,10 @@
 
   &:focus {
     outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
     border: 1px solid $color-dark-alternative;
 
     &::after {
@@ -366,7 +370,7 @@
     }
   }
 
-  &:hover {
+  &:hover:not(:focus-visible):not(:active):not(.disabled) {
     opacity: 0.8;
 
     &::after {
@@ -377,18 +381,6 @@
   &:active {
     border: 1px solid $color-transparent;
     color: $color-dark-alternative;
-
-    &::after {
-      display: block;
-      background-color: $color-dark-alternative;
-    }
-  }
-
-  &:disabled {
-    border: 1px solid $color-transparent;
-    color: $color-dark-alternative;
-    opacity: 0.3;
-    pointer-events: none;
 
     &::after {
       display: block;

@@ -63,7 +63,7 @@
     }
   }
 
-  &:hover:not(:disabled):not(:focus-visible) {
+  &:hover:not(:disabled):not(:focus-visible):not(:active) {
     color: rgba(16, 38, 84, 0.7);
 
     &::after {

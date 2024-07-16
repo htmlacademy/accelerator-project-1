@@ -1,7 +1,19 @@
-const initFaqAccordion = () => {
-  if (document.querySelector('[ data-faq="tabs-content"]') && document.querySelector('[data-faq="accordion-item"]')) {
-    console.log('yes')
-  }
-};
+export const initFaqAccordions = () => {
+  const buttons = document.querySelectorAll('[data-faq="accordion-button"]');
 
-export { initFaqAccordion };
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      const isActive = button.classList.contains('is-active');
+
+      if (isActive) {
+        content.style.maxHeight = 0;
+      } else {
+        content.style.maxHeight = `${content.scrollHeight}px`;
+      }
+
+      button.classList.toggle('is-active');
+      content.classList.toggle('is-active');
+    });
+  });
+};

@@ -32,7 +32,7 @@
       color: $color-action;
     }
 
-    &:hover:not(:disabled):not(:focus-visible):not(:active):not(.disabled) {
+    &:hover:not(:disabled):not(.disabled):not(:focus-visible):not(:active) {
       background-color: $color-white;
       color: $color-action;
     }
@@ -68,7 +68,7 @@
       color: $color-white;
     }
 
-    &:hover:not(:disabled):not(:focus-visible):not(:active):not(.disabled) {
+    &:hover:not(:disabled):not(.disabled):not(:focus-visible):not(:active) {
       border: none;
       background: $fill-gradient;
       color: $color-white;
@@ -98,16 +98,16 @@
   pointer-events: none;
 }
 
-.btn--on-light.is-hover {
-  border: none;
-  background: $fill-gradient;
-  color: $color-white;
-}
-
 .btn--on-light.is-active {
   border: none;
   background: $fill-gradient;
   color: rgba($color-white, 0.7);
+
+  &:active {
+    border: none;
+    background: $fill-gradient;
+    color: rgba($color-white, 0.7);
+  }
 }
 
 .btn--on-light.disabled {

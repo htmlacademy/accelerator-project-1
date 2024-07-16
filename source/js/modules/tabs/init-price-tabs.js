@@ -54,22 +54,22 @@ const setActivePriceCard = () => {
       });
 
       tab.addEventListener('mouseenter', () => {
-        // Проверяем наличием класса .is-active у элемента и .is-hover у кнопки
+        // Проверяем наличием класса .is-active у элемента и .is-active у кнопки
         if (
           !tab.classList.contains('is-active') &&
-          !btn.classList.contains('is-hover')
+          !btn.classList.contains('is-active')
         ) {
           tab.classList.add('is-active'); // Добавляем класс .is-active при наведении
-          btn.classList.add('is-hover'); // Добавляем класс .is-hover при наведении
+          btn.classList.add('is-active'); // Добавляем класс .is-active при наведении
         }
       });
 
       tab.addEventListener('mouseleave', () => {
-        // Проверяем наличием класса .is-active у элемента и .is-hover у кнопки
+        // Проверяем наличием класса .is-active у элемента и .is-active у кнопки
         if (tab.classList.contains('is-active') &&
-          btn.classList.contains('is-hover')) {
+          btn.classList.contains('is-active')) {
           tab.classList.remove('is-active'); // Удаляем класс .is-active при уходе курсора
-          btn.classList.remove('is-hover'); // Удаляем класс .is-hover при уходе курсора
+          btn.classList.remove('is-active'); // Удаляем класс .is-active при уходе курсора
         }
       });
     });
