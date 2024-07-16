@@ -8,17 +8,23 @@ import { juriSliderInit } from '../js/modules/sliders/juri-slider-init';
 import { reviewsSliderInit } from '../js/modules/sliders/reviews-slider-init';
 import { play } from '../js/modules/video-player';
 import { initFaqAccordions } from '../js/modules/accordions/faq-accordion';
+import { validateForm } from '../js/modules/validate-form';
 
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
+
+    play();
     initPriceTabs();
-    initFaqTabs();
     setActivePriceCard();
     juriSliderInit();
     setActiveJuriSlideInfo();
-    juriSliderInit();
-    reviewsSliderInit();
-    play();
+    initFaqTabs();
     initFaqAccordions();
+    reviewsSliderInit();
+
+    validateForm();
+
+
+
   });
 });
