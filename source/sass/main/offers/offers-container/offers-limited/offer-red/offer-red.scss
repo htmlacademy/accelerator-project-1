@@ -1,0 +1,74 @@
+.offer-red {
+  width: 100%;
+  font-family: "Roboto-bold", sans-serif;
+  color: #ffffff;
+  background-color: #ED0233;
+  padding: 30px 0 31px;
+}
+
+.offer-red h3 {
+  margin: 0 auto 9px;
+  font-size: 22px;
+  line-height: 22px;
+  padding: 0;
+}
+
+.offer-red span {
+  margin: 0;
+  font-size: 64px;
+  line-height: 64px;
+  padding: 0;
+}
+
+.offer-red p {
+  margin: 27px auto 26px;
+  font-family: "Roboto-light", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  width: 170px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .offer-red {
+    width: 228px;
+    padding: 40px 25px 41px;
+    text-align: start;
+  }
+
+  .offer-red h3 {
+    margin: 0 0 19px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .offer-red span {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .offer-red p {
+    margin: 40px 0 157px;
+    font-size: 18px;
+    line-height: 24px;
+    width: 190px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer-red {
+    width: 190px;
+    padding: 40px 45px;
+  }
+
+  .offer-red h3 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .offer-red p {
+    margin-bottom: 156px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

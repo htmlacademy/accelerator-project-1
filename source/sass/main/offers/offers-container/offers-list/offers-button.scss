@@ -1,0 +1,31 @@
+.offers-button {
+  margin: 0 auto 20px;
+  display: block;
+  font-family: "Roboto-bold", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  padding-bottom: 5px;
+  width: 73px;
+  color: #1C3374;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: #1C3374 1px solid;
+  outline: none;
+}
+
+@media (min-width: $tablet-width) {
+  .offers-button {
+    margin: 0 20px;
+    padding-bottom: 5px;
+    text-align: start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offers-list {
+    flex-direction: column;
+    gap: 30px;
+    width: 560px;
+  }
+}

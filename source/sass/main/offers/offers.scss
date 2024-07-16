@@ -1,0 +1,19 @@
+.offers {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .offers {
+    padding: 61px 45px 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offers {
+    padding: 100px 103px;
+  }
+}
