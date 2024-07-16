@@ -1,0 +1,52 @@
+.slider-arrow {
+  background-color: $color-transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: $color-dark;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid $color-dark;
+    background-color: $color-grey;
+  }
+
+  &:hover:not(:disabled):not(:focus-visible) {
+    border: 1px solid $color-dark;
+  }
+
+  &:active {
+    border: 1px solid $color-dark;
+    background-color: $color-dark;
+    color: $color-light;
+  }
+
+  &:disabled {
+    border: none;
+    color: rgba($color-dark, 0.3);
+    pointer-events: none;
+  }
+}
+
+.slider-arrow svg {
+  width: 16px;
+  height: 32px;
+}
+
+.slider-arrow--next svg {
+  transform: rotate(180deg);
+}
+
+.slider-arrow.disabled {
+  border: none;
+  color: rgba($color-dark, 0.3);
+  pointer-events: none;
+}
