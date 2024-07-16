@@ -1,7 +1,7 @@
 export const initFaqAccordions = () => {
   const buttons = document.querySelectorAll('[data-faq="accordion-button"]');
 
-  buttons.forEach(button => {
+  buttons.forEach((button) => {
     button.addEventListener('click', () => {
       const content = button.nextElementSibling;
       const isActive = button.classList.contains('is-active');

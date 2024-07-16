@@ -5,7 +5,9 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 const reviewsSliderInit = () => {
   if (document.querySelector('[data-slider="reviews-slider"]')) {
-    const reviewsSlider = document.querySelector('[data-slider="reviews-slider"]');
+    const reviewsSlider = document.querySelector(
+      '[data-slider="reviews-slider"]',
+    );
     new Swiper(reviewsSlider, {
       // Install modules
       modules: [Navigation],

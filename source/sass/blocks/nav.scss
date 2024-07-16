@@ -28,7 +28,6 @@
 }
 
 .nav__list li {
-
   @include vp-767 {
     margin-bottom: 20px;
   }
@@ -39,8 +38,7 @@
   position: relative;
   padding: 4px 9px;
   border: 1px solid $color-transparent;
-  transition:
-    border-color $trans-default;
+  transition: border-color $trans-default;
 
   @include vp-767 {
     padding: 0;
@@ -88,7 +86,7 @@
   }
 }
 
-.nav__list a.disabled {
+.nav__list .disabled {
   pointer-events: none;
   opacity: 0.4;
 }

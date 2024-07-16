@@ -1,10 +1,10 @@
 module.exports = async (page, scenario, vp) => {
-  console.log('SCENARIO > ' + scenario.label);
+  console.log("SCENARIO > " + scenario.label);
 
   // add more ready handlers here...
   await page.waitForFunction(() => {
     return document.fonts.ready.then(() => {
-      console.log('Fonts loaded');
+      console.log("Fonts loaded");
       return true;
     });
   });
@@ -13,7 +13,7 @@ module.exports = async (page, scenario, vp) => {
     /** force load lazy images */
     const lazyImages = document.querySelectorAll('img[loading="lazy"]');
     lazyImages.forEach((i) => {
-      i.removeAttribute('loading');
+      i.removeAttribute("loading");
     });
   }, scenario);
 
@@ -22,13 +22,12 @@ module.exports = async (page, scenario, vp) => {
   if (scenario.showSelectors) {
     await Promise.all(
       scenario.showSelectors.map(async (selector) => {
-        await page
-          .evaluate((sel) => {
-            document.querySelectorAll(sel).forEach(s => {
-              s.style.visibility = 'visible';
-            });
-          }, selector);
-      })
+        await page.evaluate((sel) => {
+          document.querySelectorAll(sel).forEach((s) => {
+            s.style.visibility = "visible";
+          });
+        }, selector);
+      }),
     );
   }
 

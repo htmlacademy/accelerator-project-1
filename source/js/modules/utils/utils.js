@@ -26,9 +26,7 @@ const setActiveJuriSlideInfo = () => {
           slideItem.classList.remove('is-active');
         });
         // Проверяем наличием класса .is-active у элемента
-        if (
-          !slide.classList.contains('is-active')
-        ) {
+        if (!slide.classList.contains('is-active')) {
           slide.classList.add('is-active'); // Добавляем класс .is-active при наведении
         }
       });

@@ -91,7 +91,7 @@
   }
 }
 
-.social__list a.disabled {
+.social__list .disabled {
   pointer-events: none;
   background-color: rgba($color-white, 0.3);
 

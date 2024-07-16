@@ -1,7 +1,14 @@
 const initPriceTabs = () => {
-  if (document.querySelectorAll('[data-price="tabs-control"]') && document.querySelectorAll('[data-price="tabs-content"]')) {
-    const tabsControls = document.querySelectorAll('[data-price="tabs-control"]');
-    const tabsElements = document.querySelectorAll('[data-price="tabs-content"]');
+  if (
+    document.querySelectorAll('[data-price="tabs-control"]') &&
+    document.querySelectorAll('[data-price="tabs-content"]')
+  ) {
+    const tabsControls = document.querySelectorAll(
+      '[data-price="tabs-control"]',
+    );
+    const tabsElements = document.querySelectorAll(
+      '[data-price="tabs-content"]',
+    );
     // Обработчик события клика для вкладок
     tabsControls.forEach((tabsControl) => {
       tabsControl.addEventListener('click', (e) => {
@@ -66,8 +73,10 @@ const setActivePriceCard = () => {
 
       tab.addEventListener('mouseleave', () => {
         // Проверяем наличием класса .is-active у элемента и .is-active у кнопки
-        if (tab.classList.contains('is-active') &&
-          btn.classList.contains('is-active')) {
+        if (
+          tab.classList.contains('is-active') &&
+          btn.classList.contains('is-active')
+        ) {
           tab.classList.remove('is-active'); // Удаляем класс .is-active при уходе курсора
           btn.classList.remove('is-active'); // Удаляем класс .is-active при уходе курсора
         }

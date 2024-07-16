@@ -229,7 +229,7 @@
   }
 }
 
-.offers__main-item-col--text a.disabled {
+.offers__main-item-col--text .disabled {
   border: 1px solid $color-transparent;
   opacity: 0.3;
   pointer-events: none;

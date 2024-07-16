@@ -167,7 +167,7 @@
   color: $color-error;
 }
 
-.form__container button[type="submit"] {
+.form__container [type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;

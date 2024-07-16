@@ -21,12 +21,14 @@ $color-black: #000000;
 $color-dark: #102654;
 $color-dark-alternative: #1c3374;
 $color-transparent: rgba(255, 255, 255, 0);
-$color-gradient: linear-gradient(90deg,
-    #1c3477 0%,
-    #1c3477 0.01%,
-    #1a3578 39.11%,
-    #73184b 75.5%,
-    #b4022a 100%);
+$color-gradient: linear-gradient(
+  90deg,
+  #1c3477 0%,
+  #1c3477 0.01%,
+  #1a3578 39.11%,
+  #73184b 75.5%,
+  #b4022a 100%
+);
 $fill-gradient: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
 $fz-default: 16px;
 $font-family: "RobotoCondensed", "Arial", sans-serif;
