@@ -1,8 +1,8 @@
 // https://swiperjs.com/get-started#installation
-import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import Swiper from "swiper";
+import { Navigation } from "swiper/modules";
 // import Swiper and modules styles
-import 'swiper/css';
+import "swiper/css";
 const reviewsSliderInit = () => {
   if (document.querySelector('[data-slider="reviews-slider"]')) {
     const reviewsSlider = document.querySelector(
@@ -19,9 +19,9 @@ const reviewsSliderInit = () => {
       autoHeight: true,
       slidesPerView: 1,
       navigation: {
-        nextEl: '.reviews__arrow--next',
-        prevEl: '.reviews__arrow--prev',
-        lockClass: 'disabled',
+        nextEl: ".reviews__arrow--next",
+        prevEl: ".reviews__arrow--prev",
+        lockClass: "disabled",
       },
     });
   }

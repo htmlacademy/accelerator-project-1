@@ -61,12 +61,11 @@
     &:focus-visible {
       outline: none;
       border-color: $color-black;
-      background:
-        linear-gradient(
-          151deg,
-          rgba(237, 2, 51, 0.8) 0%,
-          rgba(0, 62, 183, 0.8) 100%
-        );
+      background: linear-gradient(
+        151deg,
+        rgba(237, 2, 51, 0.8) 0%,
+        rgba(0, 62, 183, 0.8) 100%
+      );
       color: $color-white;
     }
 
