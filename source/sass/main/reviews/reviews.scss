@@ -5,6 +5,11 @@
   padding: 40px;
 }
 
+.reviews .swiper-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
 @media (min-width: $tablet-width) {
   .reviews {
     padding: 60px 45px;
