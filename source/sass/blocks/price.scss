@@ -1,5 +1,13 @@
 .price {
   background-color: $color-light;
+
+  @include vp-767 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.price .container {
   padding-top: 100px;
   padding-bottom: 101px;
   background-image: url("../../img/decor-desktop.webp");
@@ -7,8 +15,8 @@
   background-position: 100% 100.4%;
   background-size: 303px 448px;
 
-  @media (resolution >= 2dppx) {
-    background-image: url("../../img/decor-desktop2x.webp");
+  @media (resolution >=2dppx) {
+    background-image: url("../../img/decor-desktop@2x.webp");
   }
 
   @include vp-1365 {
@@ -19,13 +27,11 @@
     background-size: 325px 388px;
   }
 
-  @media (width >= 768px) and (width <= 1365px) and (resolution >= 2dppx) {
-    background-image: url("../../img/decor-tablet2x.webp");
+  @media (width >=768px) and (width <=1365px) and (resolution >=2dppx) {
+    background-image: url("../../img/decor-tablet@2x.webp");
   }
 
   @include vp-767 {
-    padding-top: 40px;
-    padding-bottom: 40px;
     background-image: none;
   }
 }
