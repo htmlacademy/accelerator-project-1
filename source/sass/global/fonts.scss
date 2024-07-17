@@ -1,0 +1,14 @@
+@use "./mixins.scss";
+
+@include mixins.font-face("Alumni Sans", 800, extrabold, url("../../fonts/alumni-sans/alumni-sans-extrabold.woff2"));
+@include mixins.font-face("Alumni Sans", 600, semibold, url("../../fonts/alumni-sans/alumni-sans-semibold.woff2"));
+@include mixins.font-face("Alumni Sans", 800, extrabold, url("../../fonts/alumni-sans/alumni-sans-extrabold.woff"));
+@include mixins.font-face("Alumni Sans", 600, semibold, url("../../fonts/alumni-sans/alumni-sans-semibold.woff"));
+
+@include mixins.font-face("Roboto Condensed", 700, bold, url("../../fonts/roboto-condensed/roboto-condensed-bold.woff2"));
+@include mixins.font-face("Roboto Condensed", 700, bold, url("../../fonts/roboto-condensed/roboto-condensed-bold.woff"));
+@include mixins.font-face("Roboto Condensed", 300, light, url("../../fonts/roboto-condensed/roboto-condensed-light.woff2"));
+@include mixins.font-face("Roboto Condensed", 300, light, url("../../fonts/roboto-condensed/roboto-condensed-light.woff"));
+@include mixins.font-face("Roboto Condensed", 400, regular, url("../../fonts/roboto-condensed/roboto-condensed-regular.woff2"));
+@include mixins.font-face("Roboto Condensed", 400, regular, url("../../fonts/roboto-condensed/roboto-condensed-regular.woff"));
+
