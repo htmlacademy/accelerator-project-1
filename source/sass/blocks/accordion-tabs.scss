@@ -1,0 +1,45 @@
+.accordion-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  padding-top: 6px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: $color-dark;
+  cursor: pointer;
+  background-color: $color-transparent;
+  border: 1px solid rgba($color-dark, 0.2);
+  transition: opacity $trans-default, background-color $trans-default,
+    color $trans-default;
+
+  @include vp-1365 {
+    padding-top: 0;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $color-dark;
+    background-color: $color-white;
+  }
+
+  &:hover {
+    border: 1px solid $color-dark;
+  }
+
+  &:active,
+  &.is-active {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    border: 1px solid $color-transparent;
+    color: $color-white;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: #c8c9cc;
+    border: 1px solid rgba($color-dark, 0.2);
+    pointer-events: none;
+  }
+}

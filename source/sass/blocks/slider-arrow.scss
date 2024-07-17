@@ -1,0 +1,45 @@
+.slider-arrow {
+  background-color: $color-transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: $color-dark;
+
+  & svg {
+    width: 16px;
+    height: 32px;
+  }
+
+  &--next {
+    & svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $color-dark;
+    background-color: $color-dark-alternative;
+  }
+
+  &:hover {
+    border: 1px solid $color-dark;
+  }
+
+  &:active {
+    border: 1px solid $color-dark;
+    background-color: $color-dark;
+    color: $color-light;
+  }
+
+  &:disabled,
+  &.disabled {
+    border: none;
+    color: rgba($color-dark, 0.3);
+    pointer-events: none;
+  }
+}

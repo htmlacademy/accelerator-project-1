@@ -1,0 +1,9 @@
+.section-title {
+  font-family: $second-family;
+  &--dark {
+    color: $color-dark;
+  }
+  &--light {
+    color: $color-white;
+  }
+}
