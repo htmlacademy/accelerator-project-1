@@ -60,6 +60,10 @@
       width: auto;
       max-width: none;
     }
+
+    @include vp-767 {
+      display: none;
+    }
   }
 }
 
