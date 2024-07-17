@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-position: 100% 100.4%;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../../img/decor-desktop2x.webp");
   }
 
@@ -17,7 +17,7 @@
     background-position: 100% 100%;
   }
 
-  @media (min-width: 768px) and (min-resolution: 2dppx) {
+  @media (width >= 768px) and (resolution >= 2dppx) {
     background-image: url("../../img/decor-tablet2x.webp");
   }
 
