@@ -5,8 +5,9 @@
   background-image: url("../../img/decor-desktop.webp");
   background-repeat: no-repeat;
   background-position: 100% 100.4%;
+  background-size: 303px 448px;
 
-  @media (resolution >= 2dppx) {
+  @media (resolution >=2dppx) {
     background-image: url("../../img/decor-desktop2x.webp");
   }
 
@@ -15,9 +16,10 @@
     padding-bottom: 60px;
     background-image: url("../../img/decor-tablet.webp");
     background-position: 100% 100%;
+    background-size: 325px 388px;
   }
 
-  @media (width >= 768px) and (resolution >= 2dppx) {
+  @media (width >=768px) and (width <=1365px) and (resolution >=2dppx) {
     background-image: url("../../img/decor-tablet2x.webp");
   }
 
