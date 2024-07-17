@@ -1,6 +1,8 @@
 import Swiper from 'swiper';
 import {Navigation} from 'swiper/modules';
 
+document.documentElement.classList.remove('juri-slider-disabled');
+
 export default () => {
   new Swiper('.juri-list .swiper', {
     slidesPerView: 1,

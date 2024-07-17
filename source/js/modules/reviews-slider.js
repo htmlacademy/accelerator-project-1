@@ -1,6 +1,8 @@
 import Swiper from 'swiper';
 import {Navigation} from 'swiper/modules';
 
+document.documentElement.classList.remove('reviews-slider-disabled');
+
 export default () => {
   new Swiper('.reviews-slyder .swiper', {
     slidesPerView: 1,

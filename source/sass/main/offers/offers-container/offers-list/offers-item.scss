@@ -1,8 +1,8 @@
 .offers-item {
   width: 276px;
-  color: #1C3374;
+  color: #1c3374;
   border: double 7px transparent;
-  background-image: linear-gradient(white, white), radial-gradient(circle at 0% 0%, #D10A42,#00359F);
+  background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at 0% 0%, #d10a42, #00359f);
   background-origin: border-box;
   background-clip: content-box, border-box;
   text-align: center;
@@ -10,7 +10,7 @@
 
 .offers-item h3 {
   margin: 20px 0;
-  font-family: "Roboto-bold",sans-serif;
+  font-family: "Roboto-bold", sans-serif;
   font-size: 22px;
   line-height: 22px;
   padding: 0;
@@ -18,7 +18,7 @@
 
 .offers-item p {
   margin: 0 0 20px;
-  font-family: "Roboto-light",sans-serif;
+  font-family: "Roboto-light", sans-serif;
   font-size: 14px;
   line-height: 22px;
   padding: 0;
