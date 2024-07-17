@@ -1,0 +1,24 @@
+.reviews-title {
+  margin: 0 auto 40px;
+  font-family: "Alumni-semibold", sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  color: #102654;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews-title {
+    margin: -1px auto 40px;
+    margin-bottom: 35px;
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews-title {
+    margin-top: 0;
+    margin-bottom: 75px;
+  }
+}

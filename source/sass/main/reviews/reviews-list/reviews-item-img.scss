@@ -1,0 +1,11 @@
+.reviews-item-img {
+  margin: 0 0 10px;
+  display: block;
+  background-color: #1C3374;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews-item-img {
+    margin: 0;
+  }
+}

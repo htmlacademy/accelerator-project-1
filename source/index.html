@@ -723,7 +723,7 @@
         </div>
       </section>
       <section class="main__sections-list reviews" data-test="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
+        <h2 class="reviews__title reviews-title">Отзывы</h2>
         <div class="reviews__slyder reviews-slyder">
           <ul class="reviews-slyder__list reviews-list">
             <li class="reviews-list__item reviews-item">
@@ -731,22 +731,38 @@
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-user.webp 1x, img/reviews/reviews-user@2x.webp 2x" width="80" height="80">
                 <source type="image/webp" srcset="img/reviews/reviews-user.webp 1x, img/reviews/reviews-user@2x.webp 2x" width="68" height="68">
                 <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="80" height="80">
-                <img class="reviews-item__img" src="img/reviews/reviews-user.jpg" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="68" height="68" alt="Фото отзыва.">
+                <img class="reviews-item__img reviews-item-img" src="img/reviews/reviews-user.jpg" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="68" height="68" alt="Фото отзыва.">
               </picture>
-              <h3>Анна Орлова</h3>
-              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              <div class="reviews-item__text reviews-text">
+                <h3>Анна Орлова</h3>
+                <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный.&#32;<br class="br-one">Зал просторный,&#32;<br class="br-three">даже в вечернее время&#32;<br class="br-two">нет очередей»</p>
+              </div>
             </li>
             <li class="reviews-list__item reviews-item">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-user.webp 1x, img/reviews/reviews-user@2x.webp 2x" width="80" height="80">
                 <source type="image/webp" srcset="img/reviews/reviews-user.webp 1x, img/reviews/reviews-user@2x.webp 2x" width="68" height="68">
-                <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="80" height="80">
-                <img class="reviews-item__img" src="img/reviews/reviews-user.jpg" srcset="img/reviews/reviews-user.jpg 1x, img/reviews/reviews-user@2x.jpg 2x" width="68" height="68" alt="Фото отзыва.">
+                <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/reviews-user.png 1x, img/reviews/reviews-user@2x.png 2x" width="80" height="80">
+                <img class="reviews-item__img reviews-item-img" src="img/reviews/reviews-user.png" srcset="img/reviews/reviews-user.png 1x, img/reviews/reviews-user@2x.png 2x" width="68" height="68" alt="Фото отзыва.">
               </picture>
-              <h3>Анна Орлова</h3>
-              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              <div class="reviews-item__text reviews-text">
+                <h3>Анна Орлова</h3>
+                <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный.&#32;<br class="br-one">Зал просторный,&#32;<br class="br-three">даже в вечернее время&#32;<br class="br-two">нет очередей»</p>
+              </div>
             </li>
           </ul>
+          <button class="reviews-slyder__btn reviews-btn reviews-btn--left" type="button">
+            <span class="visually-hidden">Кнопка влево</span>
+            <svg class="reviews-btn__img" width="16" height="32">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </button>
+          <button class="reviews-slyder__btn reviews-btn reviews-btn--right" type="button">
+            <span class="visually-hidden">Кнопка вправо</span>
+            <svg class="reviews-btn__img" width="16" height="32">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="main__sections-list form-contacts" data-test="form">
