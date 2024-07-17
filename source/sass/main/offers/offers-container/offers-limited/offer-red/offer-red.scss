@@ -32,7 +32,7 @@
 @media (min-width: $tablet-width) {
   .offer-red {
     width: 228px;
-    padding: 40px 25px 41px;
+    padding: 40px 25px 42px;
     text-align: start;
   }
 
@@ -48,7 +48,7 @@
   }
 
   .offer-red p {
-    margin: 40px 0 157px;
+    margin: 40px 0 156px;
     font-size: 18px;
     line-height: 24px;
     width: 190px;
@@ -58,16 +58,18 @@
 @media (min-width: $desktop-width) {
   .offer-red {
     width: 190px;
-    padding: 40px 45px;
+    padding: 40px 45px 42px;
   }
 
   .offer-red h3 {
+    margin-top: 1px;
     font-size: 26px;
     line-height: 26px;
+    margin-bottom: 20px;
   }
 
   .offer-red p {
-    margin-bottom: 156px;
+    margin-bottom: 151px;
     font-size: 18px;
     line-height: 24px;
   }

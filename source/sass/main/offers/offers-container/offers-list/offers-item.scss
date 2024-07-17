@@ -2,7 +2,7 @@
   width: 276px;
   color: #1C3374;
   border: double 7px transparent;
-  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #D10A42,#00359F);
+  background-image: linear-gradient(white, white), radial-gradient(circle at 0% 0%, #D10A42,#00359F);
   background-origin: border-box;
   background-clip: content-box, border-box;
   text-align: center;
@@ -32,13 +32,13 @@
   }
 
   .offers-item h3 {
-    margin: 20px 20px 10px;
+    margin: 20px 20px 9px;
     font-size: 26px;
     line-height: 26px;
   }
 
   .offers-item p {
-    margin: 0 20px 30px;
+    margin: 0 20px 31px;
     font-size: 16px;
     line-height: 24px;
     min-height: 48px;

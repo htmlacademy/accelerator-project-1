@@ -17,6 +17,7 @@
 @media (min-width: $desktop-width) {
   .offers-container {
     flex-direction: row;
+    align-items: end;
     width: 1160px;
   }
 }
