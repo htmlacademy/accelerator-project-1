@@ -28,12 +28,13 @@
     &:focus-visible {
       outline: none;
       border-color: $color-black;
-      background-color: rgba($color-transparent, 0.8);
+      background-color: rgba($color-white, 0.8);
       color: $color-action;
     }
 
     &:hover:not(:disabled):not(.disabled):not(:focus-visible):not(:active) {
       background-color: $color-white;
+      border-color: $color-white;
       color: $color-action;
     }
 
@@ -44,7 +45,8 @@
     }
 
     &:disabled {
-      opacity: 0.5;
+      color: rgba($color-white, 0.5);
+      border-color: rgba($color-white, 0.5);
       pointer-events: none;
     }
   }
@@ -61,28 +63,27 @@
     &:focus-visible {
       outline: none;
       border-color: $color-black;
-      background:
-        linear-gradient(151deg,
-        rgba(237, 2, 51, 0.8) 0%,
-        rgba(0, 62, 183, 0.8) 100%);
       color: $color-white;
+      background: linear-gradient(97.05deg, rgba(237, 2, 51, 0.8) 17.6%, rgba(0, 62, 183, 0.8) 95.31%);
     }
 
     &:hover:not(:disabled):not(.disabled):not(:focus-visible):not(:active) {
-      border: none;
-      background: $fill-gradient;
+      border-color: $color-transparent;
       color: $color-white;
+      background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
     }
 
     &:active {
-      border: none;
-      background: $fill-gradient;
+      border-color: $color-transparent;
+      ;
       color: rgba($color-white, 0.7);
+      background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
     }
 
     &:disabled {
       pointer-events: none;
-      opacity: 0.3;
+      color: rgba($color-dark, 0.3);
+      background-color: rgba($color-dark, 0.3);
     }
   }
 }
@@ -94,14 +95,15 @@
 }
 
 .btn--on-dark.disabled {
-  opacity: 0.5;
+  color: rgba($color-white, 0.5);
+  border-color: rgba($color-white, 0.5);
   pointer-events: none;
 }
 
 .btn--on-light.is-active {
   border: none;
-  background: $fill-gradient;
   color: rgba($color-white, 0.7);
+  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
 
   &:active {
     border: none;
@@ -112,5 +114,6 @@
 
 .btn--on-light.disabled {
   pointer-events: none;
-  opacity: 0.3;
+  color: rgba($color-dark, 0.3);
+  background-color: rgba($color-dark, 0.3);
 }

@@ -220,7 +220,11 @@
   }
 
   &:hover:not(:focus-visible):not(:active):not(.disabled) {
-    opacity: 0.8;
+    color: rgba($color-white, 0.8);
+
+    &::after {
+      background-color: rgba($color-white, 0.8);
+    }
   }
 
   &:active {
@@ -235,11 +239,12 @@
 
 .offers__main-item-col--text .disabled {
   border: 1px solid $color-transparent;
-  opacity: 0.3;
+  color: rgba($color-white, 0.3);
   pointer-events: none;
 
   &::after {
     display: block;
+    background-color: rgba($color-white, 0.3);
   }
 }
 
@@ -367,6 +372,7 @@
 
   &:focus-visible {
     outline: none;
+    color: $color-dark-alternative;
     border: 1px solid $color-dark-alternative;
 
     &::after {
@@ -375,10 +381,10 @@
   }
 
   &:hover:not(:focus-visible):not(:active):not(.disabled) {
-    opacity: 0.8;
+    color: rgba($color-dark-alternative, 0.8);
 
     &::after {
-      background-color: $color-dark-alternative;
+      background-color: rgba($color-dark-alternative, 0.8);
     }
   }
 
@@ -395,12 +401,11 @@
 
 .offers__item-content .disabled {
   border: 1px solid $color-transparent;
-  color: $color-dark-alternative;
-  opacity: 0.3;
+  color: rgba($color-dark-alternative, 0.3);
   pointer-events: none;
 
   &::after {
     display: block;
-    background-color: $color-dark-alternative;
+    background-color: rgba($color-dark-alternative, 0.3);
   }
 }

@@ -33,11 +33,12 @@
 
   &:hover:not(:disabled):not(:focus-visible) {
     border: 1px solid $color-dark;
+    background-color: $color-transparent;
   }
 
   &:active {
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-    border: 1px solid $color-transparent;
+    border: none;
     color: $color-white;
   }
 
@@ -50,7 +51,7 @@
 
 .faq-tabs.is-active {
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  border: 1px solid $color-transparent;
+  border: none;
   color: $color-white;
 
   &:focus {

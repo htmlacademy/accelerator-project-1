@@ -52,33 +52,33 @@ const setActivePriceCard = () => {
       // Добавляем обработчик события focus для кнопки .price-card__btn
       const btn = tab.querySelector('[data-price="card-btn"]');
       btn.addEventListener('focus', () => {
-        tab.classList.add('is-active');
+        tab.classList.add('active');
       });
 
       // Добавляем обработчик события blur для кнопки .price-card__btn
       btn.addEventListener('blur', () => {
-        tab.classList.remove('is-active');
+        tab.classList.remove('active');
       });
 
       tab.addEventListener('mouseenter', () => {
-        // Проверяем наличием класса .is-active у элемента и .is-active у кнопки
+        // Проверяем наличием класса .active у элемента и .active у кнопки
         if (
-          !tab.classList.contains('is-active') &&
-          !btn.classList.contains('is-active')
+          !tab.classList.contains('active') &&
+          !btn.classList.contains('active')
         ) {
-          tab.classList.add('is-active'); // Добавляем класс .is-active при наведении
-          btn.classList.add('is-active'); // Добавляем класс .is-active при наведении
+          tab.classList.add('active'); // Добавляем класс .active при наведении
+          btn.classList.add('active'); // Добавляем класс .active при наведении
         }
       });
 
       tab.addEventListener('mouseleave', () => {
-        // Проверяем наличием класса .is-active у элемента и .is-active у кнопки
+        // Проверяем наличием класса .active у элемента и .active у кнопки
         if (
-          tab.classList.contains('is-active') &&
-          btn.classList.contains('is-active')
+          tab.classList.contains('active') &&
+          btn.classList.contains('active')
         ) {
-          tab.classList.remove('is-active'); // Удаляем класс .is-active при уходе курсора
-          btn.classList.remove('is-active'); // Удаляем класс .is-active при уходе курсора
+          tab.classList.remove('active'); // Удаляем класс .active при уходе курсора
+          btn.classList.remove('active'); // Удаляем класс .active при уходе курсора
         }
       });
     });

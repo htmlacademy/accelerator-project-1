@@ -85,7 +85,7 @@
     pointer-events: none;
 
     &::after {
-      background-color: #787878;
+      background-color: rgba($color-dark, 0.3);
     }
   }
 }
