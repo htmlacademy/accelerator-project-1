@@ -56,7 +56,6 @@ input {
   }
 }
 
-// test
 input:matches([type="tel"],
   [type="text"]) {
   appearance: none;
@@ -67,5 +66,3 @@ button,
 [type="submit"] {
   appearance: none;
 }
-
-// test

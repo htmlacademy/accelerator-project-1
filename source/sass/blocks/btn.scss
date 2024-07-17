@@ -70,14 +70,14 @@
     &:hover:not(:disabled):not(.disabled):not(:focus-visible):not(:active) {
       border-color: $color-transparent;
       color: $color-white;
-      background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+      background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     }
 
     &:active {
       border-color: $color-transparent;
-      ;
+
       color: rgba($color-white, 0.7);
-      background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+      background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     }
 
     &:disabled {
@@ -103,7 +103,7 @@
 .btn--on-light.is-active {
   border: none;
   color: rgba($color-white, 0.7);
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 
   &:active {
     border: none;
