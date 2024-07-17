@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: $base-primary;
+  background-color: $base-white;
+}

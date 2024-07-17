@@ -1,0 +1,19 @@
+.footer {
+  padding: 40px 15px;
+  background-color: $background-footer;
+  color: $base-white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer__list {
+  font-family: $secondary-font;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 35px;
+}

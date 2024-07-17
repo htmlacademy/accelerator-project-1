@@ -1,0 +1,61 @@
+.button {
+  padding: 22px;
+  font-family: $secondary-font;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $base-white;
+  border: 2px solid $base-white;
+}
+
+.button--primary {
+  color: $base-primary;
+  border: 2px solid $base-primary;
+}
+
+.button--primary:hover {
+  border: 2px solid;
+  color: $base-white;
+  background: linear-gradient(to bottom right, #d10a42 15%, #00359f 100%);
+}
+
+.button--primary:focus {
+  border: 2px solid #000000;
+  background: linear-gradient(to bottom right, #d10a42 15%, #00359f 100%);
+  opacity: 0.8;
+  color: $base-white;
+}
+
+.button--primary:active {
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  background: linear-gradient(to bottom right, #d10a42 15%, #00359f 100%);
+}
+
+// Класс для состояния disabled у ссылки-кнопки
+.button--primary-disabled {
+  opacity: 0.3;
+}
+
+.button--secondary:hover {
+  background-color: $base-white;
+  color: $base-secondary;
+}
+
+.button--secondary:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: $base-secondary;
+  border: 2px solid #000000;
+}
+
+.button--secondary:active {
+  background-color: $base-white;
+  color: $base-primary;
+}
+
+// Класс для состояния disabled у ссылки-кнопки
+.button--secondary-disabled {
+  opacity: 0.5;
+}
