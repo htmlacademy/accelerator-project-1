@@ -48,17 +48,21 @@
           </div>
           <div class="hero__col hero__col--img">
             <picture>
-              <source type="image/webp" media="(min-width: 1365px)"
-                srcset="img/hero-desktop.jpg 1x, img/hero-desktop@2x.jpg 2x">
               <!-- desktop -->
-              <source type="image/webp" media="(min-width: 767px)"
+              <source type="image/webp" media="(min-width: 1365px)" width="500" height="524"
+                srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x">
+              <!-- tablet -->
+              <source type="image/webp" media="(min-width: 767px)" width="324" height="390"
+                srcset="img/hero-tablet.webp 1x, img/hero-desktop@2x.webp 2x">
+              <!-- desktop -->
+              <source type="image/webp" media="(min-width: 1365px)" width="500" height="524"
+                srcset="img/hero-desktop.jpg 1x, img/hero-desktop@2x.jpg 2x">
+              <!-- tablet -->
+              <source type="image/webp" media="(min-width: 767px)" width="324" height="390"
                 srcset="img/hero-tablet.jpg 1x, img/hero-desktop@2x.jpg 2x">
-              <!-- tablet -->
-              <source type="image/webp" media="(min-width: 767px)"
-                srcset="img/hero-tablet.jpg 1x, img/hero-tablet@2x.jpg 2x">
-              <!-- tablet -->
+              <!-- desktop -->
               <img width="500" height="524" src="img/hero-desktop.jpg" srcset="img/hero-desktop@2x.jpg 2x"
-                alt="Мужчина, в спортивной темной майке с логотипом на груди в виде буквы S, смотрит в лево."><!-- desktop -->
+                alt="Мужчина, в спортивной темной майке с логотипом на груди в виде буквы S.">
             </picture>
           </div>
         </div>
@@ -91,55 +95,48 @@
             </div>
             <div class="about__col about__col--img">
               <picture>
-                <source type="image/webp" media="(min-width: 1365px)"
-                  srcset="img/gym-desktop.jpg 1x, img/gym-desktop@2x.jpg 2x">
                 <!-- desktop -->
-                <source type="image/webp" media="(min-width: 767px)"
-                  srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
+                <source width="660" height="400" type="image/webp" media="(min-width: 1365px)"
+                  srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
                 <!-- tablet -->
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
+                <source width="678" height="345" type="image/webp" media="(min-width: 767px)"
+                  srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
                 <!-- mobile -->
-                <source type="image/webp" media="(min-width: 767px)"
-                  srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
+                <source width="320" height="280" type="image/webp" media="(max-width: 767px)"
+                  srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
                 <!-- tablet -->
-                <source type="image/webp" media="(max-width: 767px)"
+                <source width="678" height="345" type="image/webp" media="(min-width: 767px)"
                   srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
                 <!-- mobile -->
+                <source width="320" height="280" type="image/webp" media="(max-width: 767px)"
+                  srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
+                <!-- desktop -->
                 <img width="660" height="400" src="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x"
-                  alt="зал с тренажерами на светлом фоне."><!-- desktop -->
+                  alt="зал со спортивными тренажерами.">
               </picture>
+
             </div>
             <div class="about__video">
               <div class="video" data-id="video" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1365px)" srcset="
-                        img/video-preview-desktop.jpg    1x,
-                        img/video-preview-desktop@2x.jpg 2x
-                      ">
                   <!-- desktop -->
-                  <source type="image/webp" media="(min-width: 767px)" srcset="
-                        img/video-preview-tablet.jpg    1x,
-                        img/video-preview-tablet@2x.jpg 2x
-                      ">
+                  <source width="360" height="230" type="image/webp" media="(min-width: 1365px)"
+                    srcset="img/video-preview-desktop.webp 1x, img/video-preview-desktop@2x.webp 2x">
                   <!-- tablet -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="
-                        img/video-preview-mobile.jpg    1x,
-                        img/video-preview-mobile@2x.jpg 2x
-                      ">
+                  <source width="270" height="170" type="image/webp" media="(min-width: 767px)"
+                    srcset="img/video-preview-tablet.webp 1x, img/video-preview-tablet@2x.webp 2x">
                   <!-- mobile -->
-                  <source type="image/webp" media="(min-width: 767px)" srcset="
-                        img/video-preview-tablet.jpg    1x,
-                        img/video-preview-tablet@2x.jpg 2x
-                      ">
+                  <source width="320" height="170" type="image/webp" media="(max-width: 767px)"
+                    srcset="img/video-preview-mobile.webp 1x, img/video-preview-mobile@2x.webp 2x">
                   <!-- tablet -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="
-                        img/video-preview-mobile.jpg    1x,
-                        img/video-preview-mobile@2x.jpg 2x
-                      ">
+                  <source width="270" height="170" type="image/webp" media="(min-width: 767px)"
+                    srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
                   <!-- mobile -->
+                  <source width="320" height="170" type="image/webp" media="(max-width: 767px)"
+                    srcset="img/video-preview-mobile.jpg 1x, img/video-preview-mobile@2x.jpg 2x">
+                  <!-- desktop -->
                   <img width="360" height="230" src="img/video-preview-desktop.jpg"
-                    srcset="img/video-preview-desktop@2x.jpg 2x" alt="зал с тренажерами."><!-- desktop -->
+                    srcset="img/video-preview-desktop@2x.jpg 2x" alt="зал с тренажерами.">
                 </picture>
                 <button class="video__btn" type="button">
                   <span class="visually-hidden">play</span>
@@ -337,19 +334,6 @@
               </div>
             </div>
           </div>
-          <picture>
-            <source type="image/webp" media="(min-width: 1365px)"
-              srcset="img/decor-desktop.png 1x, img/decor-desktop@2x.png 2x">
-            <!-- desktop -->
-            <source type="image/webp" media="(min-width: 767px)"
-              srcset="img/decor-tablet.png 1x, img/decor-tablet@2x.png 2x">
-            <!-- tablet -->
-            <source type="image/webp" media="(min-width: 767px)"
-              srcset="img/decor-tablet.png 1x, img/decor-tablet@2x.png 2x">
-            <!-- tablet -->
-            <img width="303" height="448" src="img/decor-desktop.png" srcset="img/decor-desktop@2x.png 2x"
-              alt=""><!-- desktop -->
-          </picture>
         </div>
       </section>
       <section class="games" data-test="games">
@@ -386,26 +370,26 @@
             </div>
             <div class="games__col games__col--img">
               <picture>
-                <source type="image/webp" media="(min-width: 1365px)" srcset="
-                      img/games-desktop.jpg    1x,
-                      img/games-desktop@2x.jpg 2x
-                    ">
                 <!-- desktop -->
-                <source type="image/webp" media="(min-width: 767px)"
-                  srcset="img/games-tablet.jpg 1x, img/games-tablet@2x.jpg 2x">
+                <source width="660" height="500" type="image/webp" media="(min-width: 1365px)"
+                  srcset="img/games-desktop.webp 1x, img/games-desktop@2x.webp 2x">
                 <!-- tablet -->
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/games-mobile.jpg 1x, img/games-mobile@2x.jpg 2x">
+                <source width="378" height="348" type="image/webp" media="(min-width: 767px)"
+                  srcset="img/games-tablet.webp 1x, img/games-tablet@2x.webp 2x">
                 <!-- mobile -->
-                <source type="image/webp" media="(min-width: 767px)"
-                  srcset="img/games-mobile.jpg 1x, img/games-mobile@2x.jpg 2x">
+                <source width="290" height="290" type="image/webp" media="(max-width: 767px)"
+                  srcset="img/games-mobile.webp 1x, img/games-mobile@2x.webp 2x">
                 <!-- tablet -->
-                <source type="image/webp" media="(max-width: 767px)"
+                <source width="378" height="348" type="image/webp" media="(min-width: 767px)"
                   srcset="img/games-tablet.jpg 1x, img/games-tablet@2x.jpg 2x">
                 <!-- mobile -->
+                <source width="290" height="290" type="image/webp" media="(max-width: 767px)"
+                  srcset="img/games-mobile.jpg 1x, img/games-mobile@2x.jpg 2x">
+                <!-- desktop -->
                 <img width="660" height="500" src="img/games-desktop.jpg" srcset="img/games-desktop@2x.jpg 2x"
-                  alt="зал с тренажерами на светлом фоне."><!-- desktop -->
+                  alt="спортсмен за разлетающимся тальком">
               </picture>
+
             </div>
           </div>
         </div>
@@ -426,10 +410,8 @@
               <div class="juri__slide juri-slide swiper-slide" tabindex="0">
                 <div class="juri-slide__img-container">
                   <picture>
-                    <source type="image/webp" srcset="
-                          img/juri/juri-1.webp    1x,
-                          img/juri/juri-1@2x.webp 2x
-                        ">
+                    <source width="260" height="300" type="image/webp"
+                      srcset="img/juri/juri-1.webp 1x, img/juri/juri-1@2x.webp 2x">
                     <img width="260" height="300" src="img/juri/juri-1.jpg" srcset="img/juri/juri-1@2x.jpg 2x"
                       alt="Анна Павлова">
                   </picture>
@@ -454,10 +436,8 @@
               <div class="juri__slide juri-slide swiper-slide" tabindex="0">
                 <div class="juri-slide__img-container">
                   <picture>
-                    <source type="image/webp" srcset="
-                          img/juri/juri-2.webp    1x,
-                          img/juri/juri-2@2x.webp 2x
-                        ">
+                    <source width="260" height="300" type="image/webp"
+                      srcset="img/juri/juri-2.webp 1x, img/juri/juri-2@2x.webp 2x">
                     <img width="260" height="300" src="img/juri/juri-2.jpg" srcset="img/juri/juri-2@2x.jpg 2x"
                       alt="Алексей Лавров">
                   </picture>
@@ -482,10 +462,8 @@
               <div class="juri__slide juri-slide swiper-slide" tabindex="0">
                 <div class="juri-slide__img-container">
                   <picture>
-                    <source type="image/webp" srcset="
-                          img/juri/juri-3.webp    1x,
-                          img/juri/juri-3@2x.webp 2x
-                        ">
+                    <source width="260" height="300" type="image/webp"
+                      srcset="img/juri/juri-3.webp 1x, img/juri/juri-3@2x.webp 2x">
                     <img width="260" height="300" src="img/juri/juri-3.jpg" srcset="img/juri/juri-3@2x.jpg 2x"
                       alt="Александр Пашков">
                   </picture>
@@ -510,10 +488,8 @@
               <div class="juri__slide juri-slide swiper-slide" tabindex="0">
                 <div class="juri-slide__img-container">
                   <picture>
-                    <source type="image/webp" srcset="
-                          img/juri/juri-4.webp    1x,
-                          img/juri/juri-4@2x.webp 2x
-                        ">
+                    <source width="260" height="300" type="image/webp"
+                      srcset="img/juri/juri-4.webp 1x, img/juri/juri-4@2x.webp 2x">
                     <img width="260" height="300" src="img/juri/juri-4.jpg" srcset="img/juri/juri-4@2x.jpg 2x"
                       alt="Мария Кетова">
                   </picture>
@@ -538,10 +514,8 @@
               <div class="juri__slide juri-slide swiper-slide" tabindex="0">
                 <div class="juri-slide__img-container">
                   <picture>
-                    <source type="image/webp" srcset="
-                          img/juri/juri-1.webp    1x,
-                          img/juri/juri-1@2x.webp 2x
-                        ">
+                    <source width="260" height="300" type="image/webp"
+                      srcset="img/juri/juri-1.webp 1x, img/juri/juri-1@2x.webp 2x">
                     <img width="260" height="300" src="img/juri/juri-1.jpg" srcset="img/juri/juri-1@2x.jpg 2x"
                       alt="Анна Павлова">
                   </picture>
@@ -566,10 +540,8 @@
               <div class="juri__slide juri-slide swiper-slide" tabindex="0">
                 <div class="juri-slide__img-container">
                   <picture>
-                    <source type="image/webp" srcset="
-                          img/juri/juri-2.webp    1x,
-                          img/juri/juri-2@2x.webp 2x
-                        ">
+                    <source width="260" height="300" type="image/webp"
+                      srcset="img/juri/juri-2.webp 1x, img/juri/juri-2@2x.webp 2x">
                     <img width="260" height="300" src="img/juri/juri-2.jpg" srcset="img/juri/juri-2@2x.jpg 2x"
                       alt="Алексей Лавров">
                   </picture>
@@ -594,10 +566,8 @@
               <div class="juri__slide juri-slide swiper-slide" tabindex="0">
                 <div class="juri-slide__img-container">
                   <picture>
-                    <source type="image/webp" srcset="
-                          img/juri/juri-3.webp    1x,
-                          img/juri/juri-3@2x.webp 2x
-                        ">
+                    <source width="260" height="300" type="image/webp"
+                      srcset="img/juri/juri-3.webp 1x, img/juri/juri-3@2x.webp 2x">
                     <img width="260" height="300" src="img/juri/juri-3.jpg" srcset="img/juri/juri-3@2x.jpg 2x"
                       alt="Александр Пашков">
                   </picture>
@@ -622,10 +592,8 @@
               <div class="juri__slide juri-slide swiper-slide" tabindex="0">
                 <div class="juri-slide__img-container">
                   <picture>
-                    <source type="image/webp" srcset="
-                          img/juri/juri-4.webp    1x,
-                          img/juri/juri-4@2x.webp 2x
-                        ">
+                    <source width="260" height="300" type="image/webp"
+                      srcset="img/juri/juri-4.webp 1x, img/juri/juri-4@2x.webp 2x">
                     <img width="260" height="300" src="img/juri/juri-4.jpg" srcset="img/juri/juri-4@2x.jpg 2x"
                       alt="Мария Кетова">
                   </picture>
@@ -739,32 +707,24 @@
               </div>
               <div class="offers__main-item-col offers__main-item-col--img">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1366px)" srcset="
-                        img/action-desktop.webp    1x,
-                        img/action-desktop@2x.webp 2x
-                      ">
-                  <source type="image/webp" media="(min-width: 767px)" srcset="
-                        img/action-tablet.webp    1x,
-                        img/action-tablet@2x.webp 2x
-                      ">
-                  <source type="image/webp" media="(max-width: 767px)" srcset="
-                        img/action-mobile.webp    1x,
-                        img/action-mobile@2x.webp 2x
-                      ">
-                  <source type="image/webp" media="(min-width: 1366px)" srcset="
-                        img/action-desktop.jpg    1x,
-                        img/action-desktop@2x.jpg 2x
-                      ">
-                  <source type="image/webp" media="(min-width: 767px)" srcset="
-                        img/action-tablet.jpg    1x,
-                        img/action-tablet@2x.jpg 2x
-                      ">
-                  <source type="image/webp" media="(max-width: 767px)" srcset="
-                        img/action-mobile.jpg    1x,
-                        img/action-mobile@2x.jpg 2x
-                      ">
+                  <!-- desktop -->
+                  <source width="280" height="460" type="image/webp" media="(min-width: 1365px)"
+                    srcset="img/action-desktop.webp 1x, img/action-desktop@2x.webp 2x">
+                  <!-- tablet -->
+                  <source width="400" height="462" type="image/webp" media="(min-width: 767px)"
+                    srcset="img/action-tablet.webp 1x, img/action-tablet@2x.webp 2x">
+                  <!-- mobile -->
+                  <source width="320" height="360" type="image/webp" media="(max-width: 767px)"
+                    srcset="img/action-mobile.webp 1x, img/action-mobile@2x.webp 2x">
+                  <!-- tablet -->
+                  <source width="400" height="462" type="image/webp" media="(min-width: 767px)"
+                    srcset="img/action-tablet.jpg 1x, img/action-tablet@2x.jpg 2x">
+                  <!-- mobile -->
+                  <source width="320" height="360" type="image/webp" media="(max-width: 767px)"
+                    srcset="img/action-mobile.jpg 1x, img/action-mobile@2x.jpg 2x">
+                  <!-- desktop -->
                   <img width="280" height="460" src="img/action-desktop.jpg" srcset="img/action-desktop@2x.jpg 2x"
-                    alt="девушка в синей спортивной одежде на голубом фоне">
+                    alt="девушка в синей спортивной одежде на голубом фоне.">
                 </picture>
               </div>
             </div>
@@ -1170,7 +1130,8 @@
                   <div class="review-slide__content">
                     <div class="review-slide__img">
                       <picture>
-                        <source type="image/webp" srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x">
+                        <source width="80" height="80" type="image/webp"
+                          srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x">
                         <img width="80" height="80" src="img/avatar.png" srcset="img/avatar@2x.png 2x"
                           alt="Анна Орлова">
                       </picture>
@@ -1187,7 +1148,8 @@
                   <div class="review-slide__content">
                     <div class="review-slide__img">
                       <picture>
-                        <source type="image/webp" srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x">
+                        <source width="80" height="80" type="image/webp"
+                          srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x">
                         <img width="80" height="80" src="img/avatar.png" srcset="img/avatar@2x.png 2x"
                           alt="Анна Орлова">
                       </picture>

@@ -35,6 +35,8 @@
   @include vp-1365 {
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
+    width: 100%;
   }
 }
 
@@ -51,11 +53,13 @@
     column-gap: 10px;
     flex-direction: row;
     margin-bottom: 45px;
+    max-width: 678px;
   }
 
   @include vp-767 {
     flex-wrap: wrap;
     margin-bottom: 35px;
+    max-width: 290px;
   }
 }
 
@@ -80,6 +84,14 @@
   max-width: 860px;
   border-top: 1px solid #74819c;
   display: none;
+
+  @include vp-1365 {
+    max-width: 678px;
+  }
+
+  @include vp-767 {
+    max-width: 290px;
+  }
 }
 
 .faq__wrapper.is-active {

@@ -46,6 +46,9 @@
     column-gap: 30px;
     row-gap: 35px;
     grid-template-rows: auto auto;
+    width: 100%;
+    max-width: 678px;
+    margin: 0 auto;
   }
 
   @include vp-767 {
@@ -55,6 +58,7 @@
     row-gap: 0;
     align-items: stretch;
     justify-content: flex-start;
+    max-width: 320px;
   }
 }
 
@@ -90,13 +94,13 @@
     padding-right: 45px;
 
     @include vp-1365 {
-      width: 41%;
       max-width: none;
       flex-shrink: 0;
       padding-top: 40px;
       padding-bottom: 34px;
       padding-left: 25px;
       padding-right: 25px;
+      width: 278px;
     }
 
     @include vp-767 {
@@ -111,7 +115,7 @@
 
   &--img {
     @include vp-1365 {
-      width: 59%;
+      width: 278px;
     }
 
     @include vp-767 {
@@ -264,7 +268,7 @@
 
   @include vp-767 {
     margin: 0 auto;
-    width: 90.6%;
+    width: 290px;
 
     &:not(:last-child) {
       margin-bottom: 30px;

@@ -19,24 +19,30 @@
 
   @include vp-1365 {
     column-gap: 30px;
+    width: 100%;
+    max-width: 678px;
+    margin: 0 auto;
   }
 
   @include vp-767 {
     column-gap: 0;
+    max-width: 290px;
   }
 }
 
 .hero__col {
   &--text {
-    width: 48.1%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding-top: 52px;
+    width: 100%;
+    max-width: 532px;
 
     @include vp-1365 {
       width: 50%;
       padding-top: 31px;
+      max-width: none;
     }
 
     @include vp-767 {
@@ -46,11 +52,13 @@
   }
 
   &--img {
-    width: 49.3%;
     flex-shrink: 0;
+    width: 100%;
+    max-width: 572px;
 
     @include vp-1365 {
       width: auto;
+      max-width: none;
     }
   }
 }

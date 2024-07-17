@@ -41,12 +41,14 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows:
       minmax(92px, auto) minmax(262px, auto) minmax(92px,
-      auto);
+        auto);
     grid-column-gap: 30px;
     grid-row-gap: 40px;
     justify-content: stretch;
     justify-items: stretch;
     align-items: stretch;
+    max-width: 678px;
+    margin: 0 auto;
   }
 
   @include vp-767 {
@@ -57,6 +59,7 @@
     grid-row-gap: 0;
     grid-column-gap: 0;
     row-gap: 35px;
+    max-width: 320px;
   }
 }
 

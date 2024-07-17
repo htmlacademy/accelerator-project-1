@@ -2,35 +2,29 @@
   background-color: $color-light;
   padding-top: 100px;
   padding-bottom: 101px;
-  position: relative;
+  background-image: url("../../img/decor-desktop.webp");
+  background-repeat: no-repeat;
+  background-position: 100% 100.4%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/decor-desktop2x.webp");
+  }
 
   @include vp-1365 {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-image: url("../../img/decor-tablet.webp");
+    background-position: 100% 100%;
+  }
+
+  @media (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: url("../../img/decor-tablet2x.webp");
   }
 
   @include vp-767 {
     padding-top: 40px;
     padding-bottom: 40px;
-  }
-}
-
-.price img {
-  position: absolute;
-  bottom: -1px;
-  right: 0;
-  z-index: 1;
-  width: 303px;
-  height: 448px;
-
-  @include vp-1365 {
-    bottom: 0;
-    width: 325px;
-    height: 388px;
-  }
-
-  @include vp-767 {
-    display: none;
+    background-image: none;
   }
 }
 
@@ -54,4 +48,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include vp-767 {
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+  }
 }

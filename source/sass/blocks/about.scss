@@ -39,12 +39,19 @@
     }
 
     @include vp-767 {
-      padding: 0 15px;
+      width: 100%;
+      max-width: 290px;
+      margin: 0 auto;
     }
   }
 
   &--img {
     flex-shrink: 0;
+
+    @include vp-1365 {
+      display: flex;
+      justify-content: center;
+    }
 
     @include vp-767 {
       margin-bottom: 36px;
@@ -145,13 +152,15 @@
   object-fit: cover;
 
   @include vp-1365 {
-    width: 100%;
-    height: auto;
     min-height: 345px;
+    width: 678px;
+    height: 345px;
   }
 
   @include vp-767 {
     min-height: 280px;
+    width: 320px;
+    height: 280px;
   }
 }
 
@@ -166,8 +175,8 @@
     left: 50%;
     top: 85.07%;
     transform: translateX(-50%);
-    width: 39.8%;
-    height: auto;
+    width: 270px;
+    height: 170px;
   }
 
   @include vp-767 {
@@ -175,7 +184,9 @@
     left: 0;
     top: 0;
     transform: translateX(0);
-    width: 100%;
+    width: 320px;
+    height: 170px;
+    margin: 0 auto;
   }
 }
 
