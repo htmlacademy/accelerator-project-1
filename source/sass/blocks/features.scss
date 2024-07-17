@@ -39,7 +39,8 @@
 
   @include vp-1365 {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: minmax(92px, auto) minmax(262px, auto) minmax(
+    grid-template-rows:
+      minmax(92px, auto) minmax(262px, auto) minmax(
         92px,
         auto
       );

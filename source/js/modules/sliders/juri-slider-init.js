@@ -1,8 +1,8 @@
 // https://swiperjs.com/get-started#installation
-import Swiper from "swiper";
-import { Navigation } from "swiper/modules";
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 // import Swiper and modules styles
-import "swiper/css";
+import 'swiper/css';
 const juriSliderInit = () => {
   if (document.querySelector('[data-slider="juri-slider"]')) {
     const juriSlider = document.querySelector('[data-slider="juri-slider"]');
@@ -14,8 +14,8 @@ const juriSliderInit = () => {
       speed: 500,
       loop: true,
       navigation: {
-        nextEl: ".juri__arrow--next",
-        prevEl: ".juri__arrow--prev",
+        nextEl: '.juri__arrow--next',
+        prevEl: '.juri__arrow--prev',
       },
       breakpoints: {
         320: {
