@@ -803,45 +803,47 @@
       </section>
       <section class="main__sections-list form-contacts" data-test="form">
         <h2 class="visually-hidden">Блок формы и контактов</h2>
-        <form class="form-contacts__sections-list form"  action="https://echo.htmlacademy.ru">
-          <h3 class="visually-hidden">Форма отправки и контакты</h3>
-          <fieldset class="form__application form-application">
-            <legend class="form-application__title">Бесплатное занятие</legend>
-            <label class="form-application__input">
-              <span class="visually-hidden">Поле ввода имени</span>
-              <input type="text" placeholder="Имя" name="name">
-            </label>
-            <label class="form-application__input">
-              <span class="visually-hidden">Поле ввода телефона</span>
-              <input type="number" placeholder="Телефон" name="tel">
-            </label>
-          </fieldset>
-          <button class="form__btn form-btn" type="submit">
-            <span class="form-btn__text">Отправить</span>
-          </button>
-        </form>
+        <div class="form-contacts__container form-container">
+          <form class="form-container__sections-list form"  action="https://echo.htmlacademy.ru">
+            <h3 class="visually-hidden">Форма отправки и контакты</h3>
+            <fieldset class="form__application form-application">
+              <legend class="form-application__title form-application-title">Бесплатное занятие</legend>
+              <label class="form-application__input application-input">
+                <span class="visually-hidden">Поле ввода имени</span>
+                <input class="application-input__input form-input" type="text" placeholder="Имя" name="name">
+              </label>
+              <label class="form-application__input application-input">
+                <span class="visually-hidden">Поле ввода телефона</span>
+                <input class="application-input__input form-input" type="number" placeholder="Телефон" name="tel">
+              </label>
+            </fieldset>
+            <button class="form__btn form-btn" type="submit">Отправить</button>
+          </form>
+        </div>
         <div class="form-contacts__contacts contacts">
-          <h3 class="contacts__title">Контакты</h3>
-          <ul class="contacts__list contact-list contact-list--mod">
-            <li class="contact-list__item contact-item">
-              <h4 class="contact-item__title">Адрес:</h4>
-              <p class="contact-item__text">г. Омск, ул. 60 лет Октября, 7</p>
-            </li>
-            <li class="contact-list__item contact-item">
-              <h4 class="contact-item__title">График работы:</h4>
-              <p class="contact-item__text">Пн-Вс: с 8:00 до 22:00</p>
-            </li>
-          </ul>
-          <ul class="form-contacts__list contact-list">
-            <li class="contact-list__item contact-item">
-              <h4 class="contact-item__title">Телефон:</h4>
-              <p class="contact-item__text">8 800 555-55-55</p>
-            </li>
-            <li class="contact-list__item contact-item">
-              <h4 class="contact-item__title">Email:</h4>
-              <p class="contact-item__text">oмск@supergym.ru</p>
-            </li>
-          </ul>
+          <h3 class="contacts__title contacts-title">Контакты</h3>
+          <div class="contacts__container contacts-container">
+            <ul class="contacts-container__list contact-list contact-list--mod">
+              <li class="contact-list__item contact-item">
+                <h4 class="contact-item__title contact-item-title">Адрес:</h4>
+                <p class="contact-item__text contact-item-text">г. Омск, ул. 60 лет Октября, 7</p>
+              </li>
+              <li class="contact-list__item contact-item">
+                <h4 class="contact-item__title contact-item-title">График работы:</h4>
+                <p class="contact-item__text contact-item-text">Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+            </ul>
+            <ul class="contacts-container__list contact-list">
+              <li class="contact-list__item contact-item">
+                <h4 class="contact-item__title contact-item-title">Телефон:</h4>
+                <p class="contact-item__text contact-item-text">8 800 555-55-55</p>
+              </li>
+              <li class="contact-list__item contact-item">
+                <h4 class="contact-item__title contact-item-title">Email:</h4>
+                <p class="contact-item__text contact-item-text">oмск@supergym.ru</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
