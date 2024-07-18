@@ -1,0 +1,12 @@
+.contact-item-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-item-text {
+    line-height: 22px;
+  }
+}

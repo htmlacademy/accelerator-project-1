@@ -6,8 +6,17 @@
   width: 100%;
 }
 
+@media (min-width: $tablet-width) {
+  .form-contacts {
+    margin: 1px 0 -1px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .form-contacts {
+    margin: 0 auto;
+    width: 1366px;
+    align-items: center;
     flex-direction: row;
   }
 }
