@@ -41,4 +41,23 @@ const setActiveJuriSlideInfo = () => {
   }
 };
 
-export { setActiveJuriSlideInfo };
+const lazyLoadImages = () => {
+  const images = document.querySelectorAll('img');
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth < 768) {
+    images.forEach((img, index) => {
+      if (index !== 0 && index !== 2) {
+        img.setAttribute('loading', 'lazy');
+      }
+    });
+  } else {
+    images.forEach((img, index) => {
+      if (index !== 0 && index !== 1) {
+        img.setAttribute('loading', 'lazy');
+      }
+    });
+  }
+};
+
+export { setActiveJuriSlideInfo, lazyLoadImages };
