@@ -1,0 +1,13 @@
+.form-contacts {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .form-contacts {
+    flex-direction: row;
+  }
+}

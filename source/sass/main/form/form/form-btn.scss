@@ -1,0 +1,24 @@
+.form-btn {
+  margin: 0;
+  font-family: "Roboto-bold",sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 22px 0;
+  width: 290px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: #ffffff 2px solid;
+  background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .form-btn {
+    width: 440px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-btn {
+    width: 477px;
+  }
+}

@@ -803,23 +803,21 @@
       </section>
       <section class="main__sections-list form-contacts" data-test="form">
         <h2 class="visually-hidden">Блок формы и контактов</h2>
-        <div class="form-contacts__container form-container">
-          <form class="form-container__sections-list form"  action="https://echo.htmlacademy.ru">
-            <h3 class="visually-hidden">Форма отправки и контакты</h3>
-            <fieldset class="form__application form-application">
-              <legend class="form-application__title form-application-title">Бесплатное занятие</legend>
-              <label class="form-application__input application-input">
-                <span class="visually-hidden">Поле ввода имени</span>
-                <input class="application-input__input form-input" type="text" placeholder="Имя" name="name">
-              </label>
-              <label class="form-application__input application-input">
-                <span class="visually-hidden">Поле ввода телефона</span>
-                <input class="application-input__input form-input" type="number" placeholder="Телефон" name="tel">
-              </label>
-            </fieldset>
-            <button class="form__btn form-btn" type="submit">Отправить</button>
-          </form>
-        </div>
+        <form class="form-contacts__sections-list form"  action="https://echo.htmlacademy.ru">
+          <h3 class="form__title form-title">Бесплатное занятие</h3>
+          <fieldset class="form__application form-application">
+            <legend class="visually-hidden">Поля ввода</legend>
+            <label class="form-application__input application-input">
+              <span class="visually-hidden">Поле ввода имени</span>
+              <input class="application-input__input form-input" type="text" placeholder="Имя" name="name">
+            </label>
+            <label class="form-application__input application-input">
+              <span class="visually-hidden">Поле ввода телефона</span>
+              <input class="application-input__input form-input" type="tel" placeholder="Телефон" name="tel">
+            </label>
+          </fieldset>
+          <button class="form__btn form-btn" type="submit">Отправить</button>
+        </form>
         <div class="form-contacts__contacts contacts">
           <h3 class="contacts__title contacts-title">Контакты</h3>
           <div class="contacts__container contacts-container">

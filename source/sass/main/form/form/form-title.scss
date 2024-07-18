@@ -1,0 +1,25 @@
+.form-title {
+  margin: 0 auto 36px;
+  font-family: "Alumni-semibold", sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  padding: 0;
+  width: 290px;
+  text-align: start;
+}
+
+@media (min-width: $tablet-width) {
+  .form-title {
+    font-size: 54px;
+    line-height: 54px;
+    width: 440px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-title {
+    width: 477px;
+    text-align: start;
+  }
+}
