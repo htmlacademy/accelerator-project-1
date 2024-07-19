@@ -10,7 +10,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .games-title {
+  .nav-link {
     line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav-link {
+    line-height: 20px;
   }
 }

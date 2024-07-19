@@ -1,5 +1,4 @@
 .social-link {
-  display: block;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,4 +9,12 @@
   background-color: #ffffff;
   text-decoration: none;
   outline: none;
+}
+
+@media (min-width: $desktop-width) {
+  .social-link {
+    display: block;
+    align-items: baseline;
+    justify-content: start;
+  }
 }
