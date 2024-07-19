@@ -1,0 +1,16 @@
+.nav-link {
+  display: block;
+  font-family: "Roboto-regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  color: #ffffff;
+  outline: none;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .games-title {
+    line-height: 22px;
+  }
+}

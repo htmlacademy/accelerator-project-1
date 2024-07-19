@@ -1,0 +1,18 @@
+.footer {
+  margin: 0;
+  padding: 40px 0;
+  color: #ffffff;
+  background-color: #030A1A;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    padding: 45px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 40px 0;
+  }
+}
