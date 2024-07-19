@@ -36,18 +36,13 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, minmax(150px, auto));
   grid-column-gap: 40px;
-
-  // test
   grid-auto-rows: minmax(110px, auto);
-  grid-template-rows: repeat(2, minmax(110px, auto));
-  grid-row-gap: 80px;
-  // test
 
   @include vp-1365 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows:
       minmax(92px, auto) minmax(262px, auto) minmax(92px,
-        auto);
+      auto);
     grid-column-gap: 30px;
     grid-row-gap: 40px;
     justify-content: stretch;
@@ -95,10 +90,14 @@
   &:nth-child(2) {
     grid-column: 1 / 2;
     grid-row: 1;
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+    padding-bottom: 10px;
 
     @include vp-1365 {
       grid-column: 1 / 2;
       grid-row: 1;
+      border-bottom: none;
+      padding-bottom: 0;
     }
 
     @include vp-767 {
@@ -109,10 +108,14 @@
   &:nth-child(3) {
     grid-column: 3 / 4;
     grid-row: 1;
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+    padding-bottom: 10px;
 
     @include vp-1365 {
       grid-column: 2 / 3;
       grid-row: 1;
+      border-bottom: none;
+      padding-bottom: 0;
     }
 
     @include vp-767 {
@@ -158,31 +161,5 @@
 
   &:nth-child(n+6):nth-of-type(odd) {
     grid-column: 3 / 4;
-  }
-}
-
-.features__item--main {
-  position: relative;
-
-  &::before,
-  &::after {
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 360px;
-    background-color: rgba(209, 10, 66, 0.2);
-    top: 50%;
-
-    @include vp-1365 {
-      display: none;
-    }
-  }
-
-  &::before {
-    left: -400px;
-  }
-
-  &::after {
-    right: -400px;
   }
 }
