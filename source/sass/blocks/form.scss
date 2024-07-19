@@ -20,6 +20,7 @@
   align-items: flex-start;
   padding-top: 60px;
   min-height: 339px;
+  padding-bottom: 60px;
 
   @include vp-1365 {
     max-width: 440px;
@@ -34,6 +35,7 @@
     padding-top: 70px;
     align-items: flex-start;
     min-height: 394px;
+    padding-bottom: 70px;
   }
 }
 
@@ -68,6 +70,8 @@
   column-gap: 30px;
   width: 100%;
   margin-bottom: 35px;
+  flex-wrap: wrap;
+  row-gap: 30px;
 
   @include vp-767 {
     margin-bottom: 36px;
@@ -75,12 +79,23 @@
     align-items: stretch;
     column-gap: 0;
     row-gap: 36px;
+    flex-wrap: nowrap;
   }
 }
 
 .form__input {
   flex: 0 1 50%;
   position: relative;
+  width: 100%;
+  max-width: 223.5px;
+
+  @include vp-1365 {
+    max-width: 205px;
+  }
+
+  @include vp-767 {
+    max-width: none;
+  }
 }
 
 .form__input input {

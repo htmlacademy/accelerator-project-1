@@ -1,9 +1,9 @@
 .info {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   font-size: 0;
   line-height: 0;
+  align-items: stretch;
 
   @include vp-1365 {
     flex-direction: column;
