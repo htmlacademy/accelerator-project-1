@@ -43,26 +43,3 @@ picture {
   font-size: 0;
   line-height: 0;
 }
-
-input {
-  border-radius: 0;
-
-  &::placeholder {
-    opacity: 1;
-  }
-
-  &:invalid {
-    box-shadow: none;
-  }
-}
-
-input:matches([type="tel"],
-  [type="text"]) {
-  appearance: none;
-}
-
-button,
-[type="button"],
-[type="submit"] {
-  appearance: none;
-}
