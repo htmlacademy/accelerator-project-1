@@ -1,0 +1,29 @@
+.pane-text {
+  display: none;
+}
+
+.pane-text p {
+  margin: 0;
+  font-family: "Roboto-light", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 0 20px;
+  width: 238px;
+}
+
+@media (min-width: $tablet-width) {
+  .pane-text p {
+    margin-top: -13px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 0 23px;
+    width: 521px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pane-text p {
+    margin-top: -8px;
+    width: 608px;
+  }
+}

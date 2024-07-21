@@ -1,0 +1,20 @@
+.pane-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  appearance: none;
+}
+
+.pane-input:checked ~ .pane-text {
+  display: block;
+}
+
+.pane-input:checked ~ label::before {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: url("../img/sprite/minus.svg") no-repeat;
+    background-size: 14px 2px;
+    background-position: right 50% top 50%;
+    background-color: #1C3374;
+}
