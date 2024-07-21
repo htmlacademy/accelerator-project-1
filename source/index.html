@@ -82,20 +82,20 @@
           </div>
         </div>
       </section>
-      <section class="price" id="anchor" data-test="price">
+      <section class="price price--contaner" id="anchor" data-test="price">
         <h2 class="price__title price-title">Абонементы</h2>
         <ul class="price__tab tab-list">
-          <li class="tab-list__item" data-tab="tab1">
-            <button class="tab-list__btn tab-item-btn tab-item-btn--active" type="button">1 месяц</button>
+          <li class="tab-list__item">
+            <button class="tab-list__btn tab-item-btn tab-item-btn--active" type="button" data-tab-id="0">1 месяц</button>
           </li>
-          <li class="tab-list__item tab-item" data-tab="tab2">
-            <button class="tab-item__btn tab-item-btn" type="button">6 месяцев</button>
+          <li class="tab-list__item tab-item">
+            <button class="tab-item__btn tab-item-btn" type="button" data-tab-id="1">6 месяцев</button>
           </li>
-          <li class="tab-list__item tab-item" data-tab="tab3">
-            <button class="tab-item__btn tab-item-btn" type="button">12 месяцев</button>
+          <li class="tab-list__item tab-item">
+            <button class="tab-item__btn tab-item-btn" type="button" data-tab-id="2">12 месяцев</button>
           </li>
         </ul>
-        <div class="price__pane pane pane--active" id="tab1">
+        <div class="price__pane pane pane--active" data-tab-id="0">
           <ul class="pane__price-month price-month">
             <li class="price-month__item month-item">
               <h3 class="month-item__title month-item-title">С тренером</h3>
@@ -132,7 +132,7 @@
             </li>
           </ul>
         </div>
-        <div class="price__pane pane" id="tab2">
+        <div class="price__pane pane" data-tab-id="1">
           <ul class="pane__price-month price-month">
             <li class="price-month__item month-item">
               <h3 class="month-item__title month-item-title">С тренером</h3>
@@ -169,7 +169,7 @@
             </li>
           </ul>
         </div>
-        <div class="price__pane pane" id="tab3">
+        <div class="price__pane pane" data-tab-id="2">
           <ul class="pane__price-month price-month">
             <li class="price-month__item month-item">
               <h3 class="month-item__title month-item-title">С тренером</h3>
@@ -545,13 +545,13 @@
         <h2 class="faq__title faq-title">Вопросы и ответы</h2>
         <div class="faq__container faq-container">
           <div class="faq-container__tab-nav faq-tab">
-            <button class="faq-tab__btn faq-tab-btn faq-tab-btn--active" type="button" data-target-id="0">Центр</button>
-            <button class="faq-tab__btn faq-tab-btn" type="button" data-target-id="1">Абонемент</button>
-            <button class="faq-tab__btn faq-tab-btn" type="button" data-target-id="2">Услуги</button>
-            <button class="faq-tab__btn faq-tab-btn" type="button" data-target-id="3">Правила</button>
+            <button class="faq-tab__btn faq-tab-btn faq-tab-btn--active" type="button" data-tab-id="0">Центр</button>
+            <button class="faq-tab__btn faq-tab-btn" type="button" data-tab-id="1">Абонемент</button>
+            <button class="faq-tab__btn faq-tab-btn" type="button" data-tab-id="2">Услуги</button>
+            <button class="faq-tab__btn faq-tab-btn" type="button" data-tab-id="3">Правила</button>
           </div>
           <div class="faq-container__content faq-content">
-            <ul class="faq-content__pane faq-pane faq-pane--show" data-id="0">
+            <ul class="faq-content__pane faq-pane faq-pane--show" data-tab-id="0">
               <li class="faq-pane__item pane-item">
                 <input class="pane-item__input pane-input" type="checkbox" name="faq-1" id="faq-1" checked>
                 <label for="faq-1">Как cтать членом&#32;<br class="faq-br-one">фитнес-центра?</label>
@@ -581,9 +581,9 @@
                 </div>
               </li>
             </ul>
-            <ul class="faq-content__pane faq-pane" data-id="1">
+            <ul class="faq-content__pane faq-pane" data-tab-id="1">
               <li class="faq-pane__item pane-item">
-                <input class="pane-item__input pane-input" type="checkbox" name="faq-5" id="faq-5">
+                <input class="pane-item__input pane-input" type="checkbox" name="faq-5" id="faq-5" checked>
                 <label for="faq-5">Занятия с тренером входят в абонемент?</label>
                 <div class="pane-item__text pane-text">
                   <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
@@ -611,9 +611,9 @@
                 </div>
               </li>
             </ul>
-            <ul class="faq-content__pane faq-pane" data-id="2">
+            <ul class="faq-content__pane faq-pane" data-tab-id="2">
               <li class="faq-pane__item pane-item">
-                <input class="pane-item__input pane-input" type="checkbox" name="faq-9" id="faq-9">
+                <input class="pane-item__input pane-input" type="checkbox" name="faq-9" id="faq-9" checked>
                 <label for="faq-9">Предлагает ли клуб услуги по консультированию по вопросам питания?</label>
                 <div class="pane-item__text pane-text">
                   <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели &#32;<br>и предложит программу питания.</p>
@@ -641,9 +641,9 @@
                 </div>
               </li>
             </ul>
-            <ul class="faq-content__pane faq-pane" data-id="3">
+            <ul class="faq-content__pane faq-pane" data-tab-id="3">
               <li class="faq-pane__item pane-item">
-                <input class="pane-item__input pane-input" type="checkbox" name="faq-13" id="faq-13">
+                <input class="pane-item__input pane-input" type="checkbox" name="faq-13" id="faq-13" checked>
                 <label for="faq-13">Есть в фитнес-центре дресс-код?</label>
                 <div class="pane-item__text pane-text">
                   <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
