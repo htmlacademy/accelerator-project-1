@@ -1,23 +1,22 @@
-.reviews {
+.faq {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 40px;
-}
-
-.reviews .swiper-wrapper {
-  padding: 0;
-  margin: 0;
+  align-items: center;
+  padding: 70px 0;
+  width: 100%;
+  background-color: #F8F9FC;
 }
 
 @media (min-width: $tablet-width) {
-  .reviews {
-    padding: 62px 45px 58px;
+  .faq {
+    padding: 60px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .reviews {
+  .faq {
+    align-items: start;
     padding: 100px 0;
   }
 }

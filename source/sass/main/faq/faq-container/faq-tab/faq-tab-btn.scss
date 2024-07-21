@@ -1,0 +1,54 @@
+.faq-tab-btn {
+  font-family: "Roboto-regular", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 14px 0;
+  width: 140px;
+  min-height: 46px;
+  color: #102654;
+  background-color: transparent;
+  border: rgba(16, 38, 84, 20%) 1px solid;
+  outline: none;
+
+  &:hover {
+    border-color: #102654;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    border-color: #102654;
+  }
+
+  &:active{
+    color: #ffffff;
+    border: none;
+    background: linear-gradient(135deg, #ED0233 15%, #003EB7 85%);
+  }
+
+  &:disabled{
+    border-color: #102654;
+    opacity: 20%;
+  }
+}
+
+.faq-tab-btn--active {
+  color: #ffffff;
+  border: none;
+  background: linear-gradient(135deg, #ED0233 15%, #003EB7 85%);
+}
+
+@media (min-width: $tablet-width) {
+  .faq-tab-btn {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 17px 0;
+    min-height: 54px;
+    width: 162px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .faq-tab-btn {
+    width: 260px;
+  }
+}

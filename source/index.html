@@ -51,8 +51,8 @@
         </div>
       </div>
     </header>
-    <main class="main">
-      <section class="main__sections-list about" data-test="about">
+    <main>
+      <section class="about" data-test="about">
         <h2 class="visually-hidden">Немного о нашем клубе</h2>
         <div class="about__container about-container">
           <div class="about-container__title-text title-text">
@@ -82,7 +82,7 @@
           </div>
         </div>
       </section>
-      <section class="main__sections-list price" id="anchor" data-test="price">
+      <section class="price" id="anchor" data-test="price">
         <h2 class="price__title price-title">Абонементы</h2>
         <ul class="price__tab tab-list">
           <li class="tab-list__item" data-tab="tab1">
@@ -207,7 +207,7 @@
           </ul>
         </div>
       </section>
-      <section class="main__sections-list games" data-test="games">
+      <section class="games" data-test="games">
         <h2 class="visually-hidden">Промо предложение</h2>
         <div class="games__container games-container">
           <div class="games-container__info games-info">
@@ -241,7 +241,7 @@
           </picture>
         </div>
       </section>
-      <section class="main__sections-list juri" data-test="juri">
+      <section class="juri" data-test="juri">
         <h2 class="juri__title juri-title">Жюри</h2>
         <div class="juri__list juri-list">
           <div class="swiper">
@@ -454,7 +454,7 @@
           </svg>
         </button>
       </section>
-      <section class="main__sections-list features" data-test="features">
+      <section class="features" data-test="features">
         <h2 class="features__title features-title">Наши преимущества</h2>
         <div class="features__container features-container">
           <div class="features-container__list features-list">
@@ -508,7 +508,7 @@
           </div>
         </div>
       </section>
-      <section class="main__sections-list offers" data-test="offers">
+      <section class="offers" data-test="offers">
         <h2 class="offers__title offers-title">Акции</h2>
         <div class="offers__container offers-container">
           <div class="offers-container__limited offers-limited">
@@ -541,188 +541,140 @@
           </ul>
         </div>
       </section>
-      <section class="main__sections-list faq" data-test="faq">
-        <div class="faq__container">
-          <h2 class="faq__title">Вопросы и ответы</h2>
-          <div class="faq__tab-nav tab-nav">
-            <button class="tab-nav__btn tab-btn tab-btn--active" type="button" data-target-id="0">Центр</button>
-            <button class="tab-nav__btn tab-btn" type="button" data-target-id="1">Абонемент</button>
-            <button class="tab-nav__btn tab-btn" type="button" data-target-id="2">Услуги</button>
-            <button class="tab-nav__btn tab-btn" type="button" data-target-id="3">Правила</button>
+      <section class="faq" data-test="faq">
+        <h2 class="faq__title faq-title">Вопросы и ответы</h2>
+        <div class="faq__container faq-container">
+          <div class="faq-container__tab-nav faq-tab">
+            <button class="faq-tab__btn faq-tab-btn faq-tab-btn--active" type="button" data-target-id="0">Центр</button>
+            <button class="faq-tab__btn faq-tab-btn" type="button" data-target-id="1">Абонемент</button>
+            <button class="faq-tab__btn faq-tab-btn" type="button" data-target-id="2">Услуги</button>
+            <button class="faq-tab__btn faq-tab-btn" type="button" data-target-id="3">Правила</button>
           </div>
-          <div class="faq__content tab-content">
-            <ul class="tab-content__pane tab-pane tab-pane--show" data-id="0">
-              <li class="tab-pane__item pane-item">
-                <h3>Как cтать членом фитнес-центра?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+          <div class="faq-container__content faq-content">
+            <ul class="faq-content__pane faq-pane faq-pane--show" data-id="0">
+              <li class="faq-pane__item pane-item">
+                <label for="faq_1">Как cтать членом фитнес-центра?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_1">
+                <div class="pane-item__text pane-text">
+                  <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                </div>
               </li>
-              <li class="tab-pane__item pane-item">
-                <h3>Где можно посмотреть расписание?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>На сайте или спросить бумажную копию на ресепшене.</p>
+              <li class="faq-pane__item pane-item">
+                <label for="faq_2">Где можно посмотреть расписание?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_2">
+                <div class="pane-item__text pane-text">
+                  <p>На сайте или спросить бумажную копию на ресепшене.</p>
+                </div>
               </li>
-              <li class="tab-pane__item pane-item">
-                <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>Полотенца предоставляются при посещении. Кулер в каждом зале.</p>
+              <li class="faq-pane__item pane-item">
+                <label for="faq_3">Есть кулеры в центре? Предоставляются полотенца?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_3">
+                <div class="pane-item__text pane-text">
+                  <p>Полотенца предоставляются при посещении. Кулер в каждом зале.</p>
+                </div>
               </li>
-              <li class="tab-pane__item pane-item">
-                <h3>Сколько тренеров работает в клубе и какова &#32;<br>их квалификация?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>Подробнее о тренерах нашего клуба вы найдете в разделе жюри.</p>
+              <li class="faq-pane__item pane-item">
+                <label for="faq_4">Сколько тренеров работает в клубе и какова &#32;<br>их квалификация?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_4">
+                <div class="pane-item__text pane-text">
+                  <p>Подробнее о тренерах нашего клуба вы найдете в разделе жюри.</p>
+                </div>
               </li>
             </ul>
-            <ul class="tab-content__pane tab-pane" data-id="1">
-              <li class="tab-pane__item pane-item">
-                <h3>Занятия с тренером входят в абонемент?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+            <ul class="faq-content__pane faq-pane" data-id="1">
+              <li class="faq-pane__item pane-item">
+                <label for="faq_5">Занятия с тренером входят в абонемент?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_5">
+                <div class="pane-item__text pane-text">
+                  <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                </div>
               </li>
-              <li class="tab-pane__item pane-item">
-                <h3>Можно ли заморозить абонемент?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>Можно. Количество дней зависит от типа карты. Подробнее узнать наличие заморозки на своей карте можно у менеджера продаж.</p>
+              <li class="faq-pane__item pane-item">
+                <label for="faq_6">Можно ли заморозить абонемент?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_6">
+                <div class="pane-item__text pane-text">
+                  <p>Можно. Количество дней зависит от типа карты. Подробнее узнать наличие заморозки на своей карте можно у менеджера продаж.</p>
+                </div>
               </li>
-              <li class="tab-pane__item pane-item">
-                <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>Часы посещения клуба регламинтируется типом карты. Подробнее узнать можно у менеджера продаж.</p>
+              <li class="faq-pane__item pane-item">
+                <label for="faq_7">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_7">
+                <div class="pane-item__text pane-text">
+                  <p>Часы посещения клуба регламинтируется типом карты. Подробнее узнать можно у менеджера продаж.</p>
+                </div>
               </li>
-              <li class="tab-pane__item pane-item">
-                <h3>Что такое семейный доступ и доступ для друзей?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>Подробнее узнать можно у менеджера продаж.</p>
+              <li class="faq-pane__item pane-item">
+                <label for="faq_8">Что такое семейный доступ и доступ для друзей?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_8">
+                <div class="pane-item__text pane-text">
+                  <p>Подробнее узнать можно у менеджера продаж.</p>
+                </div>
               </li>
             </ul>
-            <ul class="tab-content__pane tab-pane" data-id="2">
-              <li class="tab-pane__item pane-item">
-                <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели &#32;<br>и предложит программу питания.</p>
+            <ul class="faq-content__pane faq-pane" data-id="2">
+              <li class="faq-pane__item pane-item">
+                <label for="faq_9">Предлагает ли клуб услуги по консультированию по вопросам питания?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_9">
+                <div class="pane-item__text pane-text">
+                  <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели &#32;<br>и предложит программу питания.</p>
+                </div>
               </li>
-              <li class="tab-pane__item pane-item">
-                <h3>Проводятся ли в клубе какие-либо мероприятия &#32;<br>или соревнования?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>Да. Информация по анонсам мероприятий или соревнований вы можете найти на сайте. Следите за новостями.</p>
+              <li class="faq-pane__item pane-item">
+                <label for="faq_10">Проводятся ли в клубе какие-либо мероприятия или соревнования?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_10">
+                <div class="pane-item__text pane-text">
+                  <p>Да. Информация по анонсам мероприятий или соревнований вы можете найти на сайте. Следите за новостями.</p>
+                </div>
               </li>
-              <li class="tab-pane__item pane-item">
-                <h3>Можно ли приобрести в центре спортивное питание?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>Подробнее узнать можно у менеджера продаж.</p>
+              <li class="faq-pane__item pane-item">
+                <label for="faq_11">Можно ли приобрести в центре спортивное питание?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_11">
+                <div class="pane-item__text pane-text">
+                  <p>Подробнее узнать можно у менеджера продаж.</p>
+                </div>
               </li>
-              <li class="tab-pane__item pane-item">
-                <h3>Есть ли в центре детская комната?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>Подробнее узнать можно у менеджера продаж.</p>
+              <li class="faq-pane__item pane-item">
+                <label for="faq_12">Есть ли в центре детская комната?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_12">
+                <div class="pane-item__text pane-text">
+                  <p>Подробнее узнать можно у менеджера продаж.</p>
+                </div>
               </li>
             </ul>
-            <ul class="tab-content__pane tab-pane" data-id="3">
-              <li class="tab-pane__item pane-item">
-                <h3>Есть в фитнес-центре дресс-код?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
+            <ul class="faq-content__pane faq-pane" data-id="3">
+              <li class="faq-pane__item pane-item">
+                <label for="faq_13">Есть в фитнес-центре дресс-код?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_13">
+                <div class="pane-item__text pane-text">
+                  <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
+                </div>
               </li>
-              <li class="tab-pane__item pane-item">
-                <h3>Можно ли приводить с собой детей на тренировки?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>Да. Вы можете оставить детей в детской комнате. В силовом зале детям находить запрещено.</p>
+              <li class="faq-pane__item pane-item">
+                <label for="faq_14">Можно ли приводить с собой детей на тренировки?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_14">
+                <div class="pane-item__text pane-text">
+                  <p>Да. Вы можете оставить детей в детской комнате. В силовом зале детям находить запрещено.</p>
+                </div>
               </li>
-              <li class="tab-pane__item pane-item">
-                <h3>Какие дополнительные правила посещения центра?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>Не красть полотенца, не бросать их на пол. Остальное вы можете узнать у вашего менеджера.</p>
+              <li class="faq-pane__item pane-item">
+                <label for="faq_15">Какие дополнительные правила посещения центра?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_15">
+                <div class="pane-item__text pane-text">
+                  <p>Не красть полотенца, не бросать их на пол. Остальное вы можете узнать у вашего менеджера.</p>
+                </div>
               </li>
-              <li class="tab-pane__item pane-item">
-                <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
-                <svg class="pane-item__img btn-plus btn-plus--open" width="30" height="30">
-                  <use href="/__spritemap#sprite-plus"></use>
-                </svg>
-                <svg class="pane-item__img btn-minus" width="30" height="30">
-                  <use href="/__spritemap#sprite-minus"></use>
-                </svg>
-                <p>Нет. Однако Вам лучше проконсультироваться с врачом о наличии у Вас противопоказаний.</p>
+              <li class="faq-pane__item pane-item">
+                <label for="faq_16">Нужна ли медицинская справка для посещения залов и бассейна?</label>
+                <input class="pane-item__input pane-input" type="checkbox" id="faq_16">
+                <div class="pane-item__text pane-text">
+                  <p>Нет. Однако Вам лучше проконсультироваться с врачом о наличии у Вас противопоказаний.</p>
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <section class="main__sections-list reviews" data-test="reviews">
+      <section class="reviews" data-test="reviews">
         <h2 class="reviews__title reviews-title">Отзывы</h2>
         <div class="reviews__slyder reviews-slyder">
 
@@ -801,7 +753,7 @@
           </button>
         </div>
       </section>
-      <section class="main__sections-list form-contacts" data-test="form">
+      <section class="form-contacts" data-test="form">
         <h2 class="visually-hidden">Блок формы и контактов</h2>
         <form class="form-contacts__sections-list form"  action="https://echo.htmlacademy.ru">
           <h3 class="form__title form-title">Бесплатное занятие</h3>

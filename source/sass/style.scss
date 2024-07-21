@@ -19,7 +19,6 @@
 @import "header/hero-banner/picture/banner-picture";
 @import "header/btn-container/btn-container";
 @import "header/btn-container/hero-btn";
-@import "main/main";
 @import "main/about/about";
 @import "main/about/about-container";
 @import "main/about/title-text/title-text";
@@ -88,6 +87,14 @@
 @import "main/offers/offers-container/offers-list/offers-list";
 @import "main/offers/offers-container/offers-list/offers-item";
 @import "main/offers/offers-container/offers-list/offers-button";
+@import "main/faq/faq";
+@import "main/faq/faq-title";
+@import "main/faq/faq-container/faq-container";
+@import "main/faq/faq-container/faq-tab/faq-tab";
+@import "main/faq/faq-container/faq-tab/faq-tab-btn";
+@import "main/faq/faq-container/faq-content/faq-content";
+@import "main/faq/faq-container/faq-content/faq-pane";
+
 @import "main/reviews/reviews";
 @import "main/reviews/reviews-title";
 @import "main/reviews/reviews-slyder";
