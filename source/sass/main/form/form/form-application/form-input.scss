@@ -1,6 +1,7 @@
 .form-input {
   margin: 0;
-  font-family: "Roboto-light", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
   font-size: 14px;
   line-height: 22px;
   width: 281px;
@@ -45,7 +46,8 @@
 
 @media (min-width: $tablet-width) {
   .form-input {
-    font-family: "Roboto-regular", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
     padding: 0 0 3px;
     width: 204px;
 

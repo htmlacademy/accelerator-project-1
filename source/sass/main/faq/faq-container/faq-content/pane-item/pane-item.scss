@@ -6,7 +6,8 @@
   margin: 0;
   position: relative;
   display: block;
-  font-family: "Roboto-regular", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
   font-size: 20px;
   line-height: 20px;
   padding: 20px 0;
@@ -28,6 +29,15 @@
   }
 }
 
+.pane-item--mod label {
+  padding-right: 52px;
+  width: 238px;
+}
+
+.pane-item--mod .pane-text p {
+  width: 268px;
+}
+
 @media (min-width: $tablet-width) {
   .pane-item label {
     font-size: 22px;
@@ -42,6 +52,15 @@
     }
   }
 
+  .pane-item--mod label {
+    padding-right: 100px;
+    width: 578px;
+  }
+
+  .pane-item--mod .pane-text p {
+    width: 527px;
+  }
+
   .pane-item .faq-br-one {
     display: none;
   }
@@ -52,6 +71,15 @@
     font-size: 24px;
     line-height: 24px;
     padding: 31px 0 30px;
+  }
+
+  .pane-item--mod label {
+    padding-right: 100px;
+    width: 760px;
+  }
+
+  .pane-item--mod .pane-text p {
+    width: 660px;
   }
 
   .pane-item .faq-br-two {

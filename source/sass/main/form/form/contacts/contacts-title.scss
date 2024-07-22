@@ -1,6 +1,7 @@
 .contacts-title {
   margin: 0 0 37px;
-  font-family: "Alumni-semibold", sans-serif;
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 600;
   font-size: 32px;
   line-height: 32px;
   padding: 0;
@@ -19,6 +20,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts-title {
+    margin-bottom: 35px;
     width: 477px;
     text-align: start;
   }

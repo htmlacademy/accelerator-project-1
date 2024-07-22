@@ -15,8 +15,8 @@
 @media (min-width: $desktop-width) {
   .form-contacts {
     margin: 0 auto;
-    width: 1366px;
-    align-items: center;
+    justify-content: center;
     flex-direction: row;
+    border-top: #74819c 1px solid;
   }
 }

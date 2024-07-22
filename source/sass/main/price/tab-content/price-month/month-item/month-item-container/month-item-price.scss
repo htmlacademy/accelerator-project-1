@@ -2,7 +2,8 @@
   position: relative;
   z-index: 2;
   margin: 0 10px 0 0;
-  font-family: "Roboto-bold", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
   font-size: 48px;
   line-height: 150%;
   color: #103aae;
@@ -20,6 +21,13 @@
   }
 }
 
+.month-item-price--mod {
+  &::before {
+    left: -25px;
+    z-index: -1;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .month-item-price {
     margin: 0 14px 0 0;
@@ -29,6 +37,12 @@
       left: -18px;
       font-size: 100px;
       line-height: 150%;
+    }
+  }
+
+  .month-item-price--mod {
+    &::before {
+      left: -30px;
     }
   }
 }

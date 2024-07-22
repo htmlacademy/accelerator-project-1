@@ -13,12 +13,12 @@
 
 @media (min-width: $tablet-width) {
   .faq-pane li:last-child label {
-    padding: 23px 0;
+    padding: 23px 100px 23px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .faq-pane li:last-child label {
-    padding: 31px 0;
+    padding: 31px 100px 31px 0;
   }
 }
