@@ -10,17 +10,17 @@
 
 .contact-item-text--mod {
   &:hover {
-    color: #1C3374;
+    color: #1c3374;
     opacity: 50;
   }
 
   &:focus {
-    color: #1C3374;
+    color: #1c3374;
   }
 
   &:active {
     color: #102654;
-    text-decoration:underline;
+    text-decoration: underline;
   }
 
   &:disabled {

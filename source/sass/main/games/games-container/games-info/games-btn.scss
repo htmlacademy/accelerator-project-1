@@ -19,13 +19,13 @@
   text-transform: uppercase;
 
   &:hover {
-    color: #103AAE;
+    color: #103aae;
     border-color: #ffffff;
     background-color: #ffffff;
   }
 
   &:focus {
-    color: #103AAE;
+    color: #103aae;
     border-color: #000000;
     background-color: rgba(255, 255, 255, 80%);
   }
@@ -37,6 +37,10 @@
   }
 
   &:disabled {
+    opacity: 50%;
+  }
+
+  &--disabled {
     opacity: 50%;
   }
 }

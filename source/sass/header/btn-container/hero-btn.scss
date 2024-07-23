@@ -38,6 +38,13 @@
     color: #ffffff;
     opacity: 50%;
   }
+
+  &--disabled {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+    opacity: 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {

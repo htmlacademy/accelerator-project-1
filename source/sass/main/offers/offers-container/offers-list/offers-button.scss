@@ -25,11 +25,15 @@
   }
 
   &:active {
-    color: #1C3374;
-    border-bottom: #1C3374 1px solid;
+    color: #1c3374;
+    border-bottom: #1c3374 1px solid;
   }
 
   &:disabled {
+    opacity: 50%;
+  }
+
+  &--disabled {
     opacity: 50%;
   }
 }
@@ -38,6 +42,7 @@
   .offers-button {
     margin: 0 20px;
     text-align: start;
+
     &:focus {
       margin: -11px 0 15px 9px;
       padding: 10px;

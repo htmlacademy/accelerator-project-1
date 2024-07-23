@@ -1,23 +1,54 @@
 .month-item {
+  position: relative;
+  background-color: #ffffff;
+  padding: 7px;
+  z-index: 1;
+
+  &::before {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: linear-gradient(135deg, #d10a42, #00359f); /* Полупрозрачный градиент */
+  }
+}
+
+.month-item:has(.month-item-btn:hover) {
+  &::before {
+    display: block;
+  }
+}
+
+.month-item:has(.month-item-btn:focus) {
+  &::before {
+    display: block;
+  }
+}
+
+.month-item__inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 206px;
-  padding: 50px 42px;
   background-color: #ffffff;
+  width: 206px;
+  padding: 43px 35px;
 }
 
-
 @media (min-width: $tablet-width) {
-  .month-item {
+  .month-item__inner {
     width: 250px;
-    padding: 65px;
+    padding: 58px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .month-item {
+  .month-item__inner {
     width: 230px;
   }
 }

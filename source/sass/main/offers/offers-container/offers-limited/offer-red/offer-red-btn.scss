@@ -27,6 +27,10 @@
   &:disabled {
     opacity: 50%;
   }
+
+  &--disabled {
+    opacity: 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {
