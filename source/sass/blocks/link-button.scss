@@ -1,0 +1,71 @@
+.link-button {
+  color: $primary-color;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: 2px solid $primary-color;
+
+  display: inline-block;
+  width: 206px;
+  padding: 25px 10px;
+
+  &:focus {
+    color: $white-color;
+    background-image: $bg-focus;
+    border-color: $black;
+  }
+
+  &:active {
+    color: $white-opacity;
+    background-image: $bg-button;
+    border: none;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      color: $white-color;
+      background-image: $bg-button;
+      border: none;
+
+      cursor: pointer;
+    }
+  }
+}
+
+.link-button--secondary {
+  color: $white-color;
+  border-color: $white-color;
+
+  &:focus {
+    color: $blue-color;
+    background-color: $white-focus;
+    background-image: none;
+    border-color: $black;
+  }
+
+  &:active {
+    color: $primary-color;
+    background-color: $white-color;
+    background-image: none;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      color: $blue-color;
+      background-color: $white-color;
+      background-image: none;
+      border: none;
+    }
+  }
+}
