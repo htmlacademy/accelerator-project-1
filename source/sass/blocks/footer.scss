@@ -1,0 +1,171 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $dark;
+
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 34px;
+
+  a {
+    color: $white-color;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+
+.footer__item {
+  border: 1px solid $dark;
+
+  &:focus {
+    border-color: $white-color;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
+
+.footer__list--social {
+  gap: 20px;
+  align-items: center;
+}
+
+.footer__social-link {
+  display: block;
+  background-color: $white-color;
+  border-radius: 50%;
+  position: relative;
+  width: 25px;
+  height: 25px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $dark;
+  }
+
+  &--vk::before {
+    mask-image: url("/__spritemap#sprite-vk-view");
+    mask-size: 13px 8px;
+  }
+
+  &--ok::before {
+    mask-image: url("/__spritemap#sprite-ok-view");
+    mask-size: 10px 17px;
+  }
+
+  &--reddit::before {
+    mask-image: url("/__spritemap#sprite-reddit-view");
+    mask-size: 15px 15px;
+  }
+
+  &:focus {
+    background-color: $blue-color;
+  }
+
+  &:focus::before {
+    background-color: $white-color;
+  }
+
+  &:active {
+    background-color: $bg-blue;
+  }
+
+  &:active::before {
+    background-color: $white-color;
+  }
+
+  &:disabled {
+    background-color: $white-opacity2;
+  }
+
+  &:disabled::before {
+    background-color: $dark;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    padding: 45px;
+
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .footer__list {
+    gap: 30px;
+    margin: 0 auto;
+
+    &--nav {
+      margin-top: -2px;
+    }
+  }
+
+  .footer__list--social {
+    gap: 15px;
+    margin: 0;
+  }
+
+  .footer__item {
+    a {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 300;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 40px 103px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__list {
+    gap: 82px;
+    align-items: center;
+  }
+
+  .footer__list--social {
+    gap: 10px;
+  }
+
+  .footer__item {
+    a {
+      line-height: 23px;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $white-color;
+    }
+  }
+
+  .footer__social-link {
+    &:hover {
+      cursor: pointer;
+      background-color: $grey-color;
+    }
+
+    &:hover::before {
+      background-color: $white-color;
+    }
+  }
+}
+

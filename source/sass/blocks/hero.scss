@@ -1,0 +1,237 @@
+.hero {
+  background-image: $bg-color;
+  color: $white-color;
+}
+
+.hero__header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.hero__phone-number {
+  color: $white-color;
+  font-family: $secondary-ff;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 6px;
+
+  &:focus {
+    color: $bg-blue;
+  }
+
+  &:active {
+    color: $primary-color;
+    border-color: $primary-color;
+  }
+
+  &:disabled {
+    color: $bg-secondary;
+  }
+}
+
+.hero__promo-wrap {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 41px 0 32px;
+}
+
+.hero__text-wrap {
+  margin-bottom: 48px;
+
+  p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 14px;
+
+    font-family: $primary-ff;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 600;
+    text-align: right;
+  }
+}
+
+.hero__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  h1 {
+    padding: 0;
+    margin: 0;
+
+    font-family: $primary-ff;
+    font-size: 62px;
+    line-height: 62px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: right;
+    text-transform: uppercase;
+  }
+}
+
+.hero__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: right;
+}
+
+.hero__button {
+  width: 290px;
+  padding-top: 23px;
+  padding-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    padding-bottom: 100px;
+  }
+
+  .hero__header {
+    padding-top: 30px;
+    padding-bottom: 23px;
+
+    img {
+      width: 110px;
+      height: 22px;
+    }
+  }
+
+  .hero__phone-number {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .hero__promo-wrap {
+    margin-left: 45px;
+    margin-right: 45px;
+    padding: 31px 0;
+
+    background-image:
+      image-set(
+        url("../../img/hero-img-tablet-1x.webp") type("image/webp") 1x,
+        url("../../img/hero-img-tablet-2x.webp") type("image/webp") 2x,
+        url("../../img/hero-img-tablet-1x.jpg") type("image/jpg") 1x,
+        url("../../img/hero-img-tablet-2x.jpg") type("image/jpg") 2x,);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .hero__text-wrap {
+    width: 324px;
+    margin-bottom: 50px;
+
+    p {
+      font-size: 42px;
+      line-height: 42px;
+
+      margin-bottom: 10px;
+    }
+  }
+
+  .hero__wrap {
+    align-items: normal;
+
+    h1 {
+      font-size: 72px;
+      line-height: 85px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .hero__list {
+    line-height: 22px;
+
+    margin-top: 79px;
+  }
+
+  .hero__button {
+    width: 185px;
+
+    margin-bottom: 0;
+    margin-left: 139px;
+    padding: 20px 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    padding-bottom: 120px;
+  }
+
+  .hero__header {
+    padding-top: 30px;
+    padding-bottom: 22px;
+    margin-bottom: 30px;
+
+    img {
+      width: 130px;
+      height: 26px;
+    }
+  }
+
+  .hero__phone-number {
+    font-size: 26px;
+    line-height: 26px;
+
+    &:hover {
+      cursor: pointer;
+      color: $blue-opacity;
+    }
+  }
+
+  .hero__promo-wrap {
+    margin-left: 252px;
+    margin-right: 175px;
+    padding: 52px 0;
+
+    background-image:
+      image-set(
+        url("../../img/hero-img-desktop-1x.webp") type("image/webp") 1x,
+        url("../../img/hero-img-desktop-2x.webp") type("image/webp") 2x,
+        url("../../img/hero-img-desktop-1x.jpg") type("image/jpg") 1x,
+        url("../../img/hero-img-desktop-2x.jpg") type("image/jpg") 2x,);
+  }
+
+  .hero__text-wrap {
+    width: 383px;
+    margin-bottom: 40px;
+
+    p {
+      font-size: 54px;
+      line-height: 54px;
+
+      margin-bottom: 40px;
+    }
+  }
+
+  .hero__wrap {
+    h1 {
+      font-size: 92px;
+      line-height: 110px;
+      letter-spacing: 4px;
+    }
+  }
+
+  .hero__list {
+    margin-top: 85px;
+  }
+
+  .hero__button {
+    width: 270px;
+
+    margin-left: 12%;
+    padding: 27px;
+  }
+}

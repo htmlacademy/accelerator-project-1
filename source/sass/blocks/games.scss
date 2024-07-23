@@ -1,0 +1,253 @@
+.games {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.games__wrap {
+  background-color: $red-color;
+
+  min-height: 610px;
+  display: flex;
+  flex-direction: column;
+  background-image:
+    image-set(
+      url("../../img/games-mobile-1x.webp") type("image/webp") 1x,
+      url("../../img/games-mobile-2x.webp") type("image/webp") 2x,
+      url("../../img/games-mobile-1x.jpg") type("image/jpg") 1x,
+      url("../../img/games-mobile-2x.jpg") type("image/jpg") 2x,);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.games__text-wrap {
+  color: $white-color;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 40px;
+
+  h2 {
+    padding: 0;
+    margin: 0;
+
+    font-family: $primary-ff;
+    font-size: 48px;
+    line-height: 54px;
+    font-weight: 600;
+  }
+}
+
+.games__list {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.games__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  dt {
+    font-size: 16px;
+    line-height: 19px;
+    border-bottom: 1px solid $white-color;
+
+    grid-column: 1/-1;
+    padding-bottom: 2px;
+    margin-bottom: 3px;
+  }
+
+  dd {
+    padding: 0;
+    margin: 0;
+
+    &:nth-child(2) {
+      grid-column: 1/2;
+      grid-row: 2/4;
+      align-self: center;
+      margin-right: 3px;
+
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 700;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      font-size: 12px;
+      line-height: 12px;
+      font-weight: 400;
+    }
+
+    &:nth-child(6) {
+      grid-column: 1/-1;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 700;
+    }
+  }
+}
+
+.games__title-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+}
+
+.games__desc {
+  padding: 0;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.games__button {
+  border-color: $white-color;
+  color: $white-color;
+
+  padding: 22px 10px;
+  width: 220px;
+  align-self: flex-end;
+}
+
+@media (min-width: $tablet-width) {
+  .games {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .games__wrap {
+    min-height: 348px;
+    flex-direction: row;
+    background-image:
+      image-set(
+        url("../../img/games-tablet-1x.webp") type("image/webp") 1x,
+        url("../../img/games-tablet-2x.webp") type("image/webp") 2x,
+        url("../../img/games-tablet-1x.jpg") type("image/jpg") 1x,
+        url("../../img/games-tablet-2x.jpg") type("image/jpg") 2x,);
+    background-position: right top;
+  }
+
+  .games__text-wrap {
+    padding: 40px;
+    width: 300px;
+
+    gap: 8px;
+  }
+
+  .games__title-wrap {
+    gap: 22px;
+  }
+
+  .games__list {
+    gap: 10px;
+  }
+
+  .games__item {
+    dt {
+      font-size: 18px;
+      line-height: 24px;
+
+      margin-bottom: 0;
+    }
+
+    dd {
+      &:nth-child(3),
+      &:nth-child(4) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      &:nth-child(2) {
+        line-height: 28px;
+      }
+    }
+  }
+
+  .games__desc {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .games__button {
+    padding: 26px 15px 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .games {
+    padding: 100px 103px;
+  }
+
+  .games__wrap {
+    min-height: 500px;
+    background-image:
+      image-set(
+        url("../../img/games-desktop-1x.webp") type("image/webp") 1x,
+        url("../../img/games-desktop-2x.webp") type("image/webp") 2x,
+        url("../../img/games-desktop-1x.jpg") type("image/jpg") 1x,
+        url("../../img/games-desktop-2x.jpg") type("image/jpg") 2x,);
+    background-position: right top;
+  }
+
+  .games__text-wrap {
+    width: 500px;
+    padding: 60px 80px 95px;
+
+    gap: 30px;
+  }
+
+  .games__title-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 77px;
+
+    h2 {
+      font-size: 82px;
+      line-height: 96px;
+    }
+
+    dd {
+      &:nth-child(2),
+      &:nth-child(6) {
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .games__list {
+    gap: 20px;
+  }
+
+  .games__item {
+    dt {
+      padding-bottom: 6px;
+      margin-bottom: 3px;
+    }
+
+    dd {
+      &:nth-child(2) {
+        margin-right: 7px;
+
+        line-height: 46px;
+      }
+    }
+  }
+
+  .games__desc {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .games__button {
+    padding: 27px 15px;
+    width: 100%;
+  }
+}
