@@ -8,6 +8,28 @@
   color: #ffffff;
   outline: none;
   text-decoration: none;
+
+  &:hover {
+    margin-bottom: -6px;
+    padding-bottom: 5px;
+    border-bottom: #ffffff 1px solid;
+  }
+
+  &:focus {
+    margin: -6px -11px;
+    padding: 5px 10px;
+    border: #ffffff 1px solid;
+  }
+
+  &:active {
+    margin: 0;
+    border: none;
+    padding: 0;
+  }
+
+  &:disabled {
+    opacity: 40%;
+  }
 }
 
 @media (min-width: $tablet-width) {

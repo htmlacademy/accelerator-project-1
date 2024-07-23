@@ -761,14 +761,17 @@
             <legend class="visually-hidden">Поля ввода</legend>
             <label class="form-application__input application-input">
               <span class="visually-hidden">Поле ввода имени</span>
-              <input class="application-input__input form-input" type="text" placeholder="Имя" name="name" required>
+              <input class="application-input__input form-input input-name" type="text" placeholder="Имя" name="name" required->
+              <div class="application-input__input-error input-error"></div>
             </label>
             <label class="form-application__input application-input">
               <span class="visually-hidden">Поле ввода телефона</span>
-              <input class="application-input__input form-input" type="tel" placeholder="Телефон" name="tel" required>
+              <input class="application-input__input form-input input-phone" type="tel" placeholder="Телефон" name="tel" required->
+              <div class="application-input__input-error input-error"></div>
             </label>
           </fieldset>
           <button class="form__btn form-btn" type="submit">Отправить</button>
+          <div class="form__success-message success-message success-message--hidden">Сообщение отправлено.</div>
         </form>
         <div class="form-contacts__contacts contacts">
           <h3 class="contacts__title contacts-title">Контакты</h3>
@@ -786,11 +789,11 @@
             <ul class="contacts-container__list contact-list">
               <li class="contact-list__item contact-item">
                 <h4 class="contact-item__title contact-item-title">Телефон:</h4>
-                <a class="contact-item__text contact-item-text" href="tel:+78005555555">8 800 555-55-55</a>
+                <a class="contact-item__text contact-item-text contact-item-text--mod" href="tel:+78005555555">8 800 555-55-55</a>
               </li>
               <li class="contact-list__item contact-item">
                 <h4 class="contact-item__title contact-item-title">Email:</h4>
-                <a class="contact-item__text contact-item-text" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+                <a class="contact-item__text contact-item-text contact-item-text--mod" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
               </li>
             </ul>
           </div>

@@ -11,6 +11,8 @@
   font-size: 20px;
   line-height: 20px;
   padding: 20px 0;
+  background-color: transparent;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -26,6 +28,34 @@
     background-size: 14px 14px;
     background-position: right 50% top 50%;
     background-color: transparent;
+  }
+}
+
+.pane-item label:hover {
+  &::before {
+    background: url("../img/sprite/plus-white.svg") no-repeat;
+    background-size: 14px 14px;
+    background-position: right 50% top 50%;
+    background-color: #1C3374;
+  }
+}
+
+.pane-item label:focus {
+  &::before {
+    background: url("../img/sprite/plus-white.svg") no-repeat;
+    background-size: 14px 14px;
+    background-position: right 50% top 50%;
+    background-color: #74819C;
+  }
+}
+
+.pane-item label:disabled {
+  &::before {
+    background: url("../img/sprite/plus.svg") no-repeat;
+    background-size: 14px 14px;
+    background-position: right 50% top 50%;
+    background-color: transparent;
+    opacity: 30%;
   }
 }
 
@@ -49,6 +79,24 @@
       height: 38px;
       background-size: 20px 20px;
       background-position: right 50% top 50%;
+    }
+  }
+
+  .pane-item label:hover {
+    &::before {
+      background: url("../img/sprite/plus-white.svg") no-repeat;
+      background-size: 20px 20px;
+      background-position: right 50% top 50%;
+      background-color: #1C3374;
+    }
+  }
+
+  .pane-item label:focus {
+    &::before {
+      background: url("../img/sprite/plus-white.svg") no-repeat;
+      background-size: 20px 20px;
+      background-position: right 50% top 50%;
+      background-color: #74819C;
     }
   }
 

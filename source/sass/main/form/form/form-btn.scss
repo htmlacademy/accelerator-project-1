@@ -10,6 +10,29 @@
   text-transform: uppercase;
   border: #ffffff 2px solid;
   background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: #103AAE;
+    border-color: #ffffff;
+    background-color: #ffffff;
+  }
+
+  &:focus {
+    color: #103AAE;
+    border-color: #000000;
+    background-color: rgba(255, 255, 255, 80%);
+  }
+
+  &:active {
+    color: #102654;
+    border-color: #ffffff;
+    background-color: #ffffff;
+  }
+
+  &:disabled {
+    opacity: 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -8,10 +8,33 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:focus {
+    margin: -11px 0 11px;
+    padding: 10px;
+    border: #ffffff 1px solid;
+  }
+
+  &:active {
+    color: #ffffff;
+    border-bottom: #ffffff 1px solid;
+  }
+
+  &:disabled {
+    opacity: 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .offer-red-btn {
     padding-bottom: 4px;
+
+    &:focus {
+      margin: -11px 0 11px -11px;
+    }
   }
 }

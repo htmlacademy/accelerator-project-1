@@ -7,6 +7,26 @@
   color: #ffffff;
   outline: none;
   text-decoration: none;
+
+  &:hover {
+    color: #1C3374;
+    opacity: 50;
+  }
+
+  &:focus {
+    color: #1C3374;
+  }
+
+  &:active {
+    margin-bottom: -7px;
+    color: #102654;
+    padding-bottom: 6px;
+    border-bottom: #102654 1px solid;
+  }
+
+  &:disabled {
+    opacity: 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -8,6 +8,26 @@
   text-decoration: none;
 }
 
+.contact-item-text--mod {
+  &:hover {
+    color: #1C3374;
+    opacity: 50;
+  }
+
+  &:focus {
+    color: #1C3374;
+  }
+
+  &:active {
+    color: #102654;
+    text-decoration:underline;
+  }
+
+  &:disabled {
+    opacity: 50%;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .contact-item-text {
     line-height: 22px;

@@ -6,7 +6,8 @@
 }
 
 .pane-input:checked ~ .pane-text {
-  display: block;
+  max-height: 500px;
+  transition: max-height 0.2s ease-in;
 }
 
 .pane-input:checked ~ label::before {
@@ -21,6 +22,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .pane-input:checked ~ label {
+    padding-bottom: 18px;
+  }
+
   .pane-input:checked ~ label::before {
     width: 40px;
     height: 40px;
@@ -28,5 +33,11 @@
     background-size: 20px 2px;
     background-position: right 50% top 50%;
     background-color: #1c3374;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pane-input:checked ~ label {
+    padding-bottom: 30px;
   }
 }

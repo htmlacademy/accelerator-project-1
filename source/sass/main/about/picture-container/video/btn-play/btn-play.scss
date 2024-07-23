@@ -8,6 +8,7 @@
   border: rgba(237, 2, 51, 20%) 2px solid;
   border-radius: 50%;
   background-color: transparent;
+  cursor: pointer;
 
   &::before {
     top: 8px;
@@ -34,7 +35,7 @@
   }
 
   &:focus {
-    border-color: none;
+    border-color: transparent;
 
     svg {
       fill: #102654;
@@ -71,6 +72,9 @@
   }
 }
 
+.btn-play--hidden {
+  display: none;
+}
 
 @media (min-width: $desktop-width) {
   .btn-play {
