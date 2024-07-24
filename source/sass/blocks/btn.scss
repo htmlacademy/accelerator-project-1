@@ -1,0 +1,115 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  min-height: 66px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity $trans-default, background-color $trans-default,
+    color $trans-default;
+
+  &--on-dark {
+    background-color: $color-transparent;
+    border: 2px solid $color-white;
+    color: $color-white;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: none;
+      border-color: $color-black;
+      background-color: rgba($color-transparent, 0.8);
+      color: $color-action;
+    }
+
+    &:hover:not(:disabled):not(:focus-visible) {
+      background-color: $color-white;
+      color: $color-action;
+    }
+
+    &:active {
+      border-color: $color-white;
+      background-color: $color-white;
+      color: $color-dark;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+
+  &--on-light {
+    background-color: $color-transparent;
+    border: 2px solid $color-dark;
+    color: $color-dark;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: none;
+      border-color: $color-black;
+      background: linear-gradient(
+        151deg,
+        rgba(237, 2, 51, 0.8) 0%,
+        rgba(0, 62, 183, 0.8) 100%
+      );
+      color: $color-white;
+    }
+
+    &:hover:not(:disabled):not(:focus-visible) {
+      border: none;
+      background: $fill-gradient;
+      color: $color-white;
+    }
+
+    &:active {
+      border: none;
+      background: $fill-gradient;
+      color: rgba($color-white, 0.7);
+    }
+
+    &:disabled {
+      pointer-events: none;
+      opacity: 0.3;
+    }
+  }
+}
+
+.btn--on-dark.is-active {
+  border-color: $color-white;
+  background-color: $color-white;
+  color: $color-dark;
+}
+
+.btn--on-dark.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.btn--on-light.is-hover {
+  border: none;
+  background: $fill-gradient;
+  color: $color-white;
+}
+
+.btn--on-light.is-active {
+  border: none;
+  background: $fill-gradient;
+  color: rgba($color-white, 0.7);
+}
+
+.btn--on-light.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
