@@ -1,7 +1,18 @@
-@use "./variables.scss";
+@use "./variables";
 
 .container {
   margin: 0 auto;
-  
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (min-width: variables.$pre-desktop-width) {
+    min-width: 1250px;
+    max-width: 1250px;
+  }
 }
+

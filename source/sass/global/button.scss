@@ -1,0 +1,27 @@
+@use "../global/variables";
+
+
+.button {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 2px solid transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button--primary {
+  color: variables.$primary-white-color;
+  border-color: variables.$primary-white-color;
+}
+
+.button--accent {
+  border: 1px solid rgba(16, 38, 84, 0.2);
+}
+

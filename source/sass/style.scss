@@ -5,7 +5,15 @@
 
 // Global //
 
-@import "global/mixins.scss";
-@import "global/variables.scss";
-@import "global/visually-hidden.scss";
+@import "global/mixins";
+@import "global/variables";
+@import "global/visually-hidden";
 @import "global/container";
+@import "global/title";
+@import "global/button";
+@import "global/global";
+
+
+// Blocks //
+@import "blocks/hero";
+@import "blocks/header";

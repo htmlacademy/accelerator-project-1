@@ -1,0 +1,62 @@
+@use "../global/variables";
+@use "../global/mixins";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 18px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.header__logo {
+  @media (min-width: variables.$tablet-width) {
+    width: 110px;
+    height: 22px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 130px;
+    height: 26px;
+  }
+}
+
+.header__phone-link {
+  @include mixins.font-style(variables.$primary-font, 22px, 22px, 700);
+
+  color: variables.$primary-white-color;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(28, 51, 116, 0.5);
+  }
+
+  &:focus-visible {
+    color: variables.$primary-dark-blue-color;
+  }
+
+  &:active {
+    color: variables.$primary-dark-color;
+  }
+
+  &::after {
+    background-color: variables.$primary-dark-color;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.font-style(variables.$primary-font, 24px, 23px, 700);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    @include mixins.font-style(variables.$primary-font, 26px, 26px, 700);
+  }
+}

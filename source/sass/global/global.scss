@@ -1,3 +1,5 @@
+@use "../global/variables";
+
 *,
 *::before,
 *::after {
@@ -9,9 +11,21 @@ html {
   scroll-behavior: smooth;
 }
 
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: variables.$phone-width;
+  font-family: variables.$primary-font;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  min-height: 100%;
+  color: variables.$primary-dark-color;
+  margin: 0;
+}
+
 img {
   display: block;
   object-fit: contain;
-  min-width: 100%;
-  max-width: 100%;
 }
