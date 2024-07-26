@@ -4,15 +4,32 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 320px;
+  min-width: 320px;
+
 
   @media (min-width: variables.$tablet-width) {
     padding-left: 45px;
     padding-right: 45px;
+    max-width: 768px;
+    min-width: 768px;
   }
 
   @media (min-width: variables.$pre-desktop-width) {
     min-width: 1250px;
     max-width: 1250px;
+  }
+}
+
+.container--none {
+  @media (max-width: variables.$pre-tablet-width) {
+    display: contents;
+  }
+}
+
+.container--none-tablet {
+  @media (min-width: variables.$pre-tablet-width) {
+    display: contents;
   }
 }
 

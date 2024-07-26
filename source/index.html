@@ -39,7 +39,52 @@
       </section>
     </div>
   </section>
-    <div data-test="about">about</div>
+
+
+  <section class="gym" data-test="about" id="about">
+    <div class="gym__container container container--none">
+      <div class="gym__text-wrapper">
+        <div class="gym__inner-container container container--none-tablet">
+          <h2 class="gym__title title">Тренажёрный зал</h2>
+          <h3 class="gym__subtitle">Просторный зал площадью 900 кв/м</h3>
+          <p class="gym__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p class="gym__description">В зале расположены отдельная зона для Crossfit <br> и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов <br> для различных видов групповых занятий.</p>
+        </div>
+      </div>
+      <div class="gym__image-wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 1366px)" srcset="img/gym/gym_desktop@1x.webp 1x, img/gym/gym_desktop@2x.webp 2x" width="660" height="400">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/gym/gym_tablet@1x.webp 1x, img/gym/gym_tablet@1x.webp 2x" width="678" height="345">
+          <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/gym/gym_desktop@1x.png 1x, img/gym/gym_desktop@2x.png 2x" width="660" height="400">
+          <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gym/gym_tablet@1x.png 1x, img/gym/gym_tablet@2x.png 2x" width="678" height="345">
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/gym/gym_mobile@1x.webp 1x, img/gym/gym_mobile@2x.webp 2x" width="320" height="280">
+          <img class="gym__image" src="img/gym/gym_mobile@1x.png" alt="Тренажерный зал." width="320" height="280" draggable="false">
+        </picture>
+      </div>
+      <div class="gym__video-wrapper">
+        <div class="gym__video-placeholder">
+          <div class="gym__video-image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/gym/gym_video-preview-desktop@1x.webp 1x, img/gym/gym_video-preview-desktop@2x.webp 2x" width="360" height="230">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/gym/gym_video-preview-tablet@1x.webp 1x, img/gym/gym_video-preview-tablet@2x.webp 2x" width="270" height="170">
+              <source type="image/png" media="(min-width: 1366px)" srcset="img/gym/gym_video-preview-desktop@1x.png 1x, img/gym/gym_video-preview-desktop@2x.png 2x" width="360" height="230">
+              <source type="image/png" media="(min-width: 768px)" srcset="img/gym/gym_video-preview-tablet@1x.png 1x, img/gym/gym_video-preview-tablet@2x.png 2x" width="270" height="170">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/gym/gym_video-preview-mobile@1x.webp 1x, img/gym/gym_video-preview-mobile@2x.webp 2x" width="320" height="170">
+              <img class="gym__video-image" src="img/gym/gym_video-preview-mobile@1x.png" alt="Картинка перед видео." width="320" height="170">
+            </picture>
+          </div>
+          <div class="gym__button-play-wrapper">
+            <button class="gym__button-play" type="button">
+              <span class="visually-hidden">Кнопка проигрывателя.</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
     <div data-test="price">price</div>
     <div data-test="games">games</div>
     <div data-test="juri">juri</div>

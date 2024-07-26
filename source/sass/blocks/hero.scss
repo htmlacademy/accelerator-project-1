@@ -4,13 +4,16 @@
 .hero {
   background-image: variables.$bg-primary-color;
   color: variables.$primary-white-color;
+  margin-bottom: 40px;
 
   @media (min-width: variables.$tablet-width) {
     padding-bottom: 99px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: variables.$desktop-width) {
     padding-bottom: 120px;
+    margin-bottom: 120px;
   }
 }
 
