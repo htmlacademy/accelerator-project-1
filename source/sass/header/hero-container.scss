@@ -1,0 +1,22 @@
+
+.hero-container {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .hero-container {
+    position: relative;
+    width: $tablet-width;
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero-container {
+    position: relative;
+    width: $desktop-width;
+    padding-bottom: 120px;
+  }
+}

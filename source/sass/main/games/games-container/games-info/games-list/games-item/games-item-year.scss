@@ -1,0 +1,20 @@
+.games-item-year {
+  margin: -4px 0 4px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .games-item-year {
+    margin: -1px 0 1px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

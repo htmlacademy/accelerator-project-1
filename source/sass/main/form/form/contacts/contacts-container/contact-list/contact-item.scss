@@ -1,0 +1,21 @@
+.contact-item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 170px;
+  min-height: 52px;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-item {
+    width: 190px;
+    min-height: 51px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-item {
+    width: 178px;
+  }
+}

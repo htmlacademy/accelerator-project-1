@@ -1,0 +1,48 @@
+.month-item-price {
+  position: relative;
+  z-index: 2;
+  margin: 0 10px 0 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  color: #103aae;
+  padding: 0;
+
+  &::before {
+    position: absolute;
+    left: -14px;
+    bottom: 0;
+    z-index: -1;
+    content: attr(data-parent);
+    color: #e8e8e8;
+    font-size: 80px;
+    line-height: 150%;
+  }
+}
+
+.month-item-price--mod {
+  &::before {
+    left: -25px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .month-item-price {
+    margin: 0 14px 0 0;
+    font-size: 60px;
+
+    &::before {
+      left: -18px;
+      font-size: 100px;
+      line-height: 150%;
+    }
+  }
+
+  .month-item-price--mod {
+    &::before {
+      left: -30px;
+    }
+  }
+}

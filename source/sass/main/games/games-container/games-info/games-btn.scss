@@ -1,0 +1,60 @@
+.games-btn {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  margin: 2px 0 -2px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  display: block;
+  padding: 22px 0;
+  width: 206px;
+  color: #ffffff;
+  border: #ffffff 2px solid;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #103aae;
+    border-color: #ffffff;
+    background-color: #ffffff;
+  }
+
+  &:focus {
+    color: #103aae;
+    border-color: #000000;
+    background-color: rgba(255, 255, 255, 80%);
+  }
+
+  &:active {
+    color: #102654;
+    border-color: #ffffff;
+    background-color: #ffffff;
+  }
+
+  &:disabled {
+    opacity: 50%;
+  }
+
+  &--disabled {
+    opacity: 50%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .games-btn {
+    margin: 0;
+    padding: 25px 0 19px;
+    width: 216px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .games-btn {
+    width: 336px;
+  }
+}

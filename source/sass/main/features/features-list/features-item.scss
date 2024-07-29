@@ -1,0 +1,24 @@
+.features-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.features-item:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .features-item {
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features-item {
+    width: 360px;
+  }
+}

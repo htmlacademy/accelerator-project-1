@@ -1,0 +1,36 @@
+.juri-slider-disabled .swiper {
+  display: block;
+  overflow: visible;
+}
+
+.juri-slider-disabled .swiper-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.juri-slider-disabled .swiper-slide {
+  width: 260px;
+}
+
+.juri-slider-disabled .juri-btn {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .juri-slider-disabled .swiper-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 560px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .juri-slider-disabled .swiper-wrapper {
+    width: 1160px;
+  }
+}

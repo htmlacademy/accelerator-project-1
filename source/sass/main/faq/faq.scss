@@ -1,0 +1,22 @@
+.faq {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0;
+  width: 100%;
+  background-color: #f8f9fc;
+}
+
+@media (min-width: $tablet-width) {
+  .faq {
+    padding: 61px 0 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .faq {
+    align-items: start;
+    padding: 100px 0;
+  }
+}

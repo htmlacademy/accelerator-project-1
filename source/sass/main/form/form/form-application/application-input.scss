@@ -1,0 +1,18 @@
+.application-input {
+  margin: 0;
+  position: relative;
+  width: 290px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .application-input {
+    width: 205px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-input {
+    width: 223px;
+  }
+}

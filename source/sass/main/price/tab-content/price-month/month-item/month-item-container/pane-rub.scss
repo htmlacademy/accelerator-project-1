@@ -1,0 +1,12 @@
+.pane-rub {
+  margin-bottom: 19px;
+  z-index: 2;
+}
+
+@media (min-width: $tablet-width) {
+  .pane-rub {
+    margin-bottom: 24px;
+    width: 30px;
+    height: 42px;
+  }
+}

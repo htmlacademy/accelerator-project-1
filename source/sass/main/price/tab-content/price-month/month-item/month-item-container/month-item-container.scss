@@ -1,0 +1,21 @@
+.month-item-container {
+  margin: 0 0 18px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 120px;
+  width: 206px;
+}
+
+@media (min-width: $tablet-width) {
+  .month-item-container {
+    margin: 0 0 23px;
+    height: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .month-item-container {
+    margin: 0 0 17px;
+  }
+}

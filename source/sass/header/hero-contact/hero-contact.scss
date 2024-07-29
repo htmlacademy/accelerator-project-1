@@ -1,0 +1,17 @@
+.hero-contact {
+  padding: 16px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .hero-contact {
+    padding: 30px 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero-contact {
+    padding: 30px 103px;
+  }
+}

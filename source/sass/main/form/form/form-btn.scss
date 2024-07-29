@@ -1,0 +1,49 @@
+.form-btn {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 22px 0;
+  width: 290px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: #ffffff 2px solid;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: #103aae;
+    border-color: #ffffff;
+    background-color: #ffffff;
+  }
+
+  &:focus {
+    color: #103aae;
+    border-color: #000000;
+    background-color: rgba(255, 255, 255, 80%);
+  }
+
+  &:active {
+    color: #102654;
+    border-color: #ffffff;
+    background-color: #ffffff;
+  }
+
+  &:disabled {
+    opacity: 50%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-btn {
+    width: 440px;
+    padding: 26px 0 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-btn {
+    width: 477px;
+  }
+}

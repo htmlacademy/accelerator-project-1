@@ -1,0 +1,20 @@
+.footer-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 678px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-container {
+    width: 1160px;
+  }
+}

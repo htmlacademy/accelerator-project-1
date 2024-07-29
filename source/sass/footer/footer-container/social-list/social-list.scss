@@ -1,0 +1,21 @@
+.social-list {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 115px;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    width: 105px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-list {
+    width: 95px;
+  }
+}

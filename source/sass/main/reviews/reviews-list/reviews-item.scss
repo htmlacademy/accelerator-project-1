@@ -1,0 +1,29 @@
+.reviews-item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 25px;
+  width: 190px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #1c3374;
+}
+
+
+@media (min-width: $tablet-width) {
+  .reviews-item {
+    flex-direction: row;
+    align-items: start;
+    text-align: start;
+    justify-content: space-between;
+    padding: 40px 30px;
+    width: 440px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews-item {
+    padding: 60px;
+  }
+}

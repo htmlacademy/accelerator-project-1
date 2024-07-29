@@ -1,0 +1,16 @@
+.faq-content {
+  margin: 0;
+  width: 290px;
+}
+
+@media (min-width: $tablet-width) {
+  .faq-content {
+    width: 678px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .faq-content {
+    width: 860px;
+  }
+}

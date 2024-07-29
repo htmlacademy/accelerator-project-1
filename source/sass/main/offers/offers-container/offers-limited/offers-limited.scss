@@ -1,0 +1,20 @@
+.offers-limited {
+  margin: 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .offers-limited {
+    margin-bottom: 35px;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offers-limited {
+    height: 100%;
+    margin-bottom: 0;
+  }
+}

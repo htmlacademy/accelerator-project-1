@@ -1,0 +1,23 @@
+.reviews {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.reviews .swiper-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding: 62px 45px 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding: 100px 0;
+  }
+}

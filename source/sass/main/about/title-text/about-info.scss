@@ -1,0 +1,23 @@
+.about-info {
+  margin: 0 0 36px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .about-info {
+    margin-bottom: 35px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-info {
+    margin-bottom: 95px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}

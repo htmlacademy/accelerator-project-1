@@ -1,0 +1,24 @@
+.tab-list {
+  margin: 0 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  width: 290px;
+  border-bottom: rgba(120, 120, 120, 20%) 2px solid;
+  list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .tab-list {
+    margin: 0 0 45px;
+    width: 310px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tab-list {
+    margin: 0 0 41px;
+    width: 350px;
+  }
+}

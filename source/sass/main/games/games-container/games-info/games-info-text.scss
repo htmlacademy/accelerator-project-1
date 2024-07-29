@@ -1,0 +1,25 @@
+.games-info-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 0;
+  width: 185px;
+}
+
+@media (min-width: $tablet-width) {
+  .games-info-text {
+    font-size: 18px;
+    line-height: 24px;
+    width: 210px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .games-info-text {
+    width: 100%;
+  }
+}

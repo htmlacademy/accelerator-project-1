@@ -1,0 +1,24 @@
+.faq-pane {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.faq-pane--show {
+  border-top: #74819c  1px solid;
+  display: block;
+}
+
+
+@media (min-width: $tablet-width) {
+  .faq-pane li:last-child label {
+    padding: 23px 100px 23px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .faq-pane li:last-child label {
+    padding: 31px 100px 31px 0;
+  }
+}
