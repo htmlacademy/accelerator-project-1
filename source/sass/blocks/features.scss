@@ -60,7 +60,7 @@
       background-image: $price-color;
       background-clip: text;
 
-      // -webkit-background-clip: text;не удалять!!!
+      -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
   }
@@ -161,11 +161,20 @@
   .features {
     padding: 100px 103px;
 
+    h2 {
+      max-width: 1160px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+
     ul {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 40px;
       row-gap: 0;
+
+      max-width: 1160px;
+      margin: 0 auto;
     }
 
     li {

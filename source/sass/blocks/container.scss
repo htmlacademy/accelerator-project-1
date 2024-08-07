@@ -10,9 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    // width: 1366px;
-    // padding: 0;
-    padding-left: 103px;
-    padding-right: 103px;
+    max-width: 1366px;
+    padding: 0;
   }
 }

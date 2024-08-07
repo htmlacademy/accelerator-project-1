@@ -4,11 +4,11 @@
 }
 
 .games__wrap {
-  background-color: $red-color;
-
   min-height: 610px;
   display: flex;
   flex-direction: column;
+  background-color: $red-color;
+
   background-image:
     image-set(
       url("../../img/games-mobile-1x.webp") type("image/webp") 1x,
@@ -53,7 +53,7 @@
 
   dt {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 20px;
     border-bottom: 1px solid $white-color;
 
     grid-column: 1/-1;
@@ -80,7 +80,7 @@
     &:nth-child(4) {
       font-size: 12px;
       line-height: 12px;
-      font-weight: 400;
+      font-weight: 300;
     }
 
     &:nth-child(6) {
@@ -110,7 +110,7 @@
   border-color: $white-color;
   color: $white-color;
 
-  padding: 22px 10px;
+  padding: 23px 10px 22px;
   width: 220px;
   align-self: flex-end;
 }
@@ -137,7 +137,7 @@
     padding: 40px;
     width: 300px;
 
-    gap: 8px;
+    gap: 9px;
   }
 
   .games__title-wrap {
@@ -145,15 +145,16 @@
   }
 
   .games__list {
-    gap: 10px;
+    gap: 11px;
   }
 
   .games__item {
     dt {
-      font-size: 18px;
+      font-size: 17px;
       line-height: 24px;
 
-      margin-bottom: 0;
+      margin-bottom: 3px;
+      padding-bottom: 0;
     }
 
     dd {
@@ -164,7 +165,8 @@
       }
 
       &:nth-child(2) {
-        line-height: 28px;
+        line-height: 24px;
+        margin-right: 5px;
       }
     }
   }
@@ -175,7 +177,7 @@
   }
 
   .games__button {
-    padding: 26px 15px 25px;
+    padding: 25px 15px;
   }
 }
 

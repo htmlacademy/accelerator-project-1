@@ -6,7 +6,7 @@
 .hero__header {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 20px;
 
   padding-top: 16px;
   padding-bottom: 16px;
@@ -36,8 +36,6 @@
 }
 
 .hero__promo-wrap {
-  margin-left: 15px;
-  margin-right: 15px;
   padding: 41px 0 32px;
 }
 
@@ -114,8 +112,6 @@
   }
 
   .hero__promo-wrap {
-    margin-left: 45px;
-    margin-right: 45px;
     padding: 31px 0;
 
     background-image:
@@ -144,16 +140,18 @@
     align-items: normal;
 
     h1 {
-      font-size: 72px;
+      font-size: 71px;
       line-height: 85px;
       letter-spacing: 2px;
     }
   }
 
   .hero__list {
-    line-height: 22px;
-
     margin-top: 79px;
+  }
+
+  .hero__list li {
+    line-height: 22px;
   }
 
   .hero__button {
@@ -161,7 +159,7 @@
 
     margin-bottom: 0;
     margin-left: 139px;
-    padding: 20px 15px;
+    padding: 21px 15px 20px;
   }
 }
 
@@ -171,8 +169,7 @@
   }
 
   .hero__header {
-    padding-top: 30px;
-    padding-bottom: 22px;
+    padding: 31px 103px 22px;
     margin-bottom: 30px;
 
     img {
@@ -232,6 +229,6 @@
     width: 270px;
 
     margin-left: 12%;
-    padding: 27px;
+    padding: 27px 27px 24px;
   }
 }

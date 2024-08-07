@@ -1,6 +1,6 @@
 .offers {
   background-color: $white-color;
-  padding-top: 40px;
+  padding-top: 41px;
   padding-bottom: 40px;
 
   h2 {
@@ -177,6 +177,7 @@
     margin: 0;
     padding: 0;
     flex-direction: row;
+    flex-wrap: wrap;
 
     grid-column: 1/-1;
   }
@@ -194,7 +195,7 @@
       margin-bottom: 10px;
 
       font-size: 26px;
-      line-height: 26px;
+      line-height: 27px;
     }
 
     p {
@@ -209,6 +210,8 @@
 
 @media (min-width: $desktop-width) {
   .offers {
+    width: 1366px;
+    margin: 0 auto;
     padding: 100px 103px;
 
     display: grid;
@@ -256,6 +259,7 @@
   }
 
   .offers__list {
+    max-width: 560px;
     grid-column: 2/-1;
 
     flex-direction: column;

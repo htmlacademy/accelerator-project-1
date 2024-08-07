@@ -1,7 +1,8 @@
 // Vendor
 // ---------------------------------
 
-// @import "vendor/normalize";
+@import "vendor/normalize";
+@import "vendor/swiper.css";
 
 /* GLOBAL */
 @import "global/variables";
@@ -12,7 +13,6 @@
 
 /* BLOCKS */
 @import "blocks/link-button";
-@import "blocks/slider-buttons";
 @import "blocks/link-details";
 @import "blocks/container";
 @import "blocks/block-title";
