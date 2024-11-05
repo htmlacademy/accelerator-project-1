@@ -1,0 +1,19 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 0;
+  background-color: #f8f9fc;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    padding: 61px 0 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    padding: 101px 0;
+  }
+}

@@ -1,0 +1,10 @@
+
+.btn-container {
+  padding: 0 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .btn-container {
+    padding: 0;
+  }
+}

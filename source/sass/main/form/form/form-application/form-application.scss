@@ -1,0 +1,25 @@
+.form-application {
+  margin: 0 auto 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 0;
+  width: 290px;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-application {
+    gap: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-application {
+    margin-bottom: 35.5px;
+    width: 477px;
+  }
+}

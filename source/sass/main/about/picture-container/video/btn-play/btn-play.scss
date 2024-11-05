@@ -1,0 +1,91 @@
+.btn-play {
+  z-index: 1;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 72px;
+  height: 72px;
+  border: rgba(237, 2, 51, 20%) 2px solid;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    top: 8px;
+    left: 8px;
+    z-index: 0;
+    position: absolute;
+    content: "";
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #ed0233 35%, #003eb7);
+  }
+
+  &:hover {
+    border-color: rgba(16, 38, 84, 60%);
+
+    svg {
+      fill: rgba(16, 38, 84, 60%);
+    }
+
+    &::before {
+      background: #ffffff;
+    }
+  }
+
+  &:focus {
+    border-color: transparent;
+
+    svg {
+      fill: #102654;
+    }
+
+    &::before {
+      background: #c8c9cc;
+    }
+  }
+
+  &:active {
+    border-color: #102654;
+
+    svg {
+      fill: #102654;
+    }
+
+    &::before {
+      background: #ffffff;
+    }
+  }
+
+  &:disabled {
+    border-color: #102654;
+    opacity: 60%;
+
+    svg {
+      fill: #102654;
+    }
+
+    &::before {
+      background: #ffffff;
+    }
+  }
+}
+
+.btn-play--hidden {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .btn-play {
+    width: 100px;
+    height: 100px;
+
+    &::before {
+      top: 12px;
+      left: 12px;
+      width: 72px;
+      height: 72px;
+    }
+  }
+}

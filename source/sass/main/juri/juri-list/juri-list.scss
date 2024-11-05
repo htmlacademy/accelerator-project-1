@@ -1,0 +1,15 @@
+.juri-list {
+  width: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .juri-list {
+    width: 560px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .juri-list {
+    width: 1160px;
+  }
+}

@@ -1,0 +1,22 @@
+.form-contacts {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .form-contacts {
+    margin: 0.5px 0 -0.5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-contacts {
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: row;
+    border-top: #74819c 1px solid;
+  }
+}

@@ -1,0 +1,18 @@
+.month-item-text {
+  margin: 0 0 18px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .month-item-text {
+    margin: 0 0 22px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .month-item-text {
+    margin: 0 0 17px;
+  }
+}

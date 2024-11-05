@@ -1,0 +1,23 @@
+.faq-tab {
+  margin: 0 auto 35px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .faq-tab {
+    margin-bottom: 45px;
+    gap: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .faq-tab {
+    margin: 0;
+    flex-direction: column;
+    gap: 10px;
+    width: 260px;
+  }
+}

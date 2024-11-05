@@ -1,0 +1,22 @@
+.games {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  padding: 25px 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .games {
+    flex-direction: row;
+    width: 678px;
+    padding: 60.5px 45px 59.5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .games {
+    width: 1160px;
+    padding: 101px 103px 100px;
+  }
+}

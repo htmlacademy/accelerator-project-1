@@ -1,0 +1,26 @@
+.hero-banner {
+  padding: 48px 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .hero-banner {
+    padding: 0 45px;
+    display: grid;
+    grid-template-columns: 113px 185px 324px;
+    column-gap: 26px;
+    justify-content: end;
+    width: 678px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero-banner {
+    padding: 30px 175px 0 250px;
+    grid-template-columns: 115px 270px 500px;
+    width: 941px;
+    gap: 0;
+  }
+}

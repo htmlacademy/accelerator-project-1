@@ -1,0 +1,25 @@
+.juri {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 40px 30px;
+}
+
+.juri .swiper-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .juri {
+    padding: 30px 45px 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .juri {
+    padding: 100px 48px;
+  }
+}

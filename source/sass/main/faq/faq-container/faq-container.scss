@@ -1,0 +1,20 @@
+.faq-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+}
+
+@media (min-width: $tablet-width) {
+  .faq-container {
+    width: 678px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .faq-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1160px;
+  }
+}

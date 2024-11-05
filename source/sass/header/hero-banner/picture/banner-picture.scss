@@ -1,0 +1,15 @@
+.banner-picture {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .banner-picture {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .banner-picture__img {
+    background-color: #1c3374;
+  }
+}

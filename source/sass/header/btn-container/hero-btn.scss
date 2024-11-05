@@ -1,0 +1,67 @@
+.hero-btn {
+  display: block;
+  padding: 22px 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  width: 286px;
+  color: #ffffff;
+  background: transparent;
+  border: #ffffff 2px solid;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+
+  &:hover {
+    background-color: #ffffff;
+    color: #103aae;
+  }
+
+  &:focus {
+    background: rgb(255, 255, 255, 0.2);
+    border-color: #000000;
+    color: #103aae;
+  }
+
+  &:active {
+    background: #ffffff;
+    background-color: #ffffff;
+    color: #102654;
+  }
+
+  &:disabled {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+    opacity: 50%;
+  }
+
+  &--disabled {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+    opacity: 50%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero-btn {
+    position: absolute;
+    bottom: 138px;
+    left: 184px;
+    width: 181px;
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero-btn {
+    bottom: 180px;
+    left: 365px;
+    width: 266px;
+    padding: 25px 0;
+  }
+}
